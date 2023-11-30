@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 /* :root {
   --foreground-rgb:#f4e189;
   --background-start-rgb: #f4e189;
@@ -19,6 +17,11 @@
 } */
 
 body {
-  color:black;
+  color: black;
   background: #f4e189;
+}
+
+.text-stroke-3 {
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+    1px 1px 0 black;
 }
