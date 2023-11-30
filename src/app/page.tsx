@@ -1,7 +1,7 @@
 import './globals.css'
 import Image from 'next/image';
 import Navbar from '@/app/navbar'
-import {passionOne, JapaneseRobot} from '@/app/fonts';
+import {passionOne, JapaneseRobot, AnimeAceBBreg} from '@/app/fonts';
 
 export default function Home() {
   return (
@@ -25,12 +25,12 @@ export default function Home() {
       </div>
 
 
-      <div className='hero-content flex justify-center -mt-8 items-center'>
+      <div className='hero-content flex justify-center -mt-8 items-center relative'>
         
         
         <div className='left translate-x-20 relative'>
-          <Image src="/Leftbox.svg" alt='' width={285} height={500} className='' />
-          <ul className='block absolute top-16 left-4 content-center translate-x-5'>
+          <Image src="/Leftbox.svg" alt='' width={265} height={500} className='' />
+          <ul className='block absolute top-16 left-0 content-center translate-x-5'>
             <li><a href="https://gdsc.bio.link/"><Image src="/gdschero.svg" alt='' width={200} height={100} className='' /></a></li>
             <li><a href="https://discord.gg/tcaxPN6CNs"><Image src="/discordhero.svg" alt='' width={100} height={100} className='ml-12 my-8' /></a></li>
             <li><a href="https://twitter.com/gdsciiitkalyani"><Image src="/x.svg" alt='' width={60} height={100} className='ml-16 my-8' /></a></li>
@@ -42,10 +42,20 @@ export default function Home() {
         
         <div className='right'>
           <div className='relative'>
-            <Image src="/heroimage.svg" alt='' width={1400} height={600} className='-translate-y-[28px] -translate-x-16' />
+            <Image src="/heroimage.svg" alt='' width={1300} height={600} className='-translate-y-[28px] -translate-x-16' />
           </div>
-
         </div>
+
+        <div className='absolute bottom-32 left-[28rem]'>
+        <div className='Register-button'>
+          <div className='p-2 text-3xl font-extrabold w-72 h-16 text-center bg-[#f4e189] border-solid border-black border-4'>
+            <button className={AnimeAceBBreg.className}>
+              Register
+            </button>
+          </div>
+        </div>
+        </div>
+
       </div>
       </div>
     </section>
