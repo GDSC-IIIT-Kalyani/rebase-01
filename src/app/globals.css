@@ -27,12 +27,7 @@ body {
     1px 1px 0 black;
 }
 
-@font-face {
-  font-family: 'CustomFont';
-  src: url('/fonts/JapaneseRobot.otf') format('.otf'),
-       url('/fonts/JapaneseRobot.ttf') format('.ttf'),
-       url('/fonts/JapaneseRobotItalic.otf') format('.otf'),
-       url('/fonts/JapaneseRobotItalic.ttf') format('.ttf');
-  font-weight: normal;
-  font-style: normal;
+.hero-heading{
+  -webkit-text-stroke: 5px black;
+  text-shadow: -15px 15px #E32735;
 }

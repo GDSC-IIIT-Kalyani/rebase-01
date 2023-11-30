@@ -1,6 +1,7 @@
 import './globals.css'
 import Image from 'next/image';
 import Navbar from '@/app/navbar'
+import {passionOne, JapaneseRobot} from '@/app/fonts';
 
 export default function Home() {
   return (
@@ -8,23 +9,23 @@ export default function Home() {
       <Navbar />
       <div className='hero'>
       <div className='hero-text flex relative'>
-        <div className='translate-x-[46rem] translate-y-28 flex gap-10'>
-        <div className='hero-heading'>
-          <h1 className='text-9xl text-red-600 text-stroke' style={{fontFamily: 'CustomFont'}} >Rebase</h1>
+        <div className='translate-x-[16rem] translate-y-16 flex gap-10'>
+        <div className='hero-heading text-[12rem] text-[#f4e189]'>
+          <h1 className={JapaneseRobot.className} >Rebase</h1>
         </div>
-        <div className='hero-vol translate-y-12'>
-          <h3 className='font-extrabold text-xl' style={{fontFamily: 'CustomFont'}} >
+        <div className='hero-vol text-5xl translate-y-28'>
+          <h3 className={passionOne.className}>
             Volume
           </h3>
         </div>
         </div>
         <div>
-          <Image src="/01.svg" alt="01" width={600} height={600} className='absolute right-64 top-36 z-20' />
+          <Image src="/01.svg" alt="01" width={500} height={500} className='absolute right-84 top-48 z-20' />
         </div>
       </div>
 
 
-      <div className='hero-content flex justify-center mt-16 items-center'>
+      <div className='hero-content flex justify-center -mt-8 items-center'>
         
         
         <div className='left translate-x-20 relative'>
