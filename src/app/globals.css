@@ -19,9 +19,20 @@
 body {
   color: black;
   background: #f4e189;
+  font-family: 'CustomFont', sans-serif;
 }
 
 .text-stroke-3 {
   text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
     1px 1px 0 black;
+}
+
+@font-face {
+  font-family: 'CustomFont';
+  src: url('/fonts/JapaneseRobot.otf') format('.otf'),
+       url('/fonts/JapaneseRobot.ttf') format('.ttf'),
+       url('/fonts/JapaneseRobotItalic.otf') format('.otf'),
+       url('/fonts/JapaneseRobotItalic.ttf') format('.ttf');
+  font-weight: normal;
+  font-style: normal;
 }

@@ -1,29 +1,32 @@
 import './globals.css'
 import Image from 'next/image';
+import Navbar from '@/app/navbar'
 
 export default function Home() {
   return (
-    <section className='hero'>
+    <section className='landing'>
+      <Navbar />
+      <div className='hero'>
       <div className='hero-text flex relative'>
-        <div className='translate-x-[46rem] flex gap-10'>
+        <div className='translate-x-[46rem] translate-y-28 flex gap-10'>
         <div className='hero-heading'>
-          <h1 className='text-9xl text-red-600 text-stroke'>Rebase</h1>
+          <h1 className='text-9xl text-red-600 text-stroke' style={{fontFamily: 'CustomFont'}} >Rebase</h1>
         </div>
         <div className='hero-vol translate-y-12'>
-          <h3 className='font-extrabold text-xl'>
+          <h3 className='font-extrabold text-xl' style={{fontFamily: 'CustomFont'}} >
             Volume
           </h3>
         </div>
         </div>
         <div>
-          <Image src="/01.svg" alt="01" width={600} height={600} className='absolute right-64 top-8 z-20' />
+          <Image src="/01.svg" alt="01" width={600} height={600} className='absolute right-64 top-36 z-20' />
         </div>
       </div>
 
-      {/* Content */}
-      <div className='hero-content flex justify-center items-center'>
+
+      <div className='hero-content flex justify-center mt-16 items-center'>
         
-        {/* Left side stuff */}
+        
         <div className='left translate-x-20 relative'>
           <Image src="/Leftbox.svg" alt='' width={285} height={500} className='' />
           <ul className='block absolute top-16 left-4 content-center translate-x-5'>
@@ -35,13 +38,14 @@ export default function Home() {
           </ul>
         </div>
 
-        {/* Right side stuff */}
+        
         <div className='right'>
           <div className='relative'>
             <Image src="/heroimage.svg" alt='' width={1400} height={600} className='-translate-y-[28px] -translate-x-16' />
           </div>
 
         </div>
+      </div>
       </div>
     </section>
   )
