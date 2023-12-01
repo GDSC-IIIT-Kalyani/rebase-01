@@ -10,7 +10,7 @@ export default function Home() {
       <div className='hero'>
       <div className='hero-text flex relative'>
         <div className='translate-x-[16rem] translate-y-16 flex gap-10'>
-        <div className='hero-heading text-[12rem] text-[#f4e189]'>
+        <div className='hero-heading text-[12rem] text-[#f4e1b9]'>
           <h1 className={JapaneseRobot.className} >Rebase</h1>
         </div>
         <div className='hero-vol text-5xl translate-y-28'>
@@ -48,7 +48,7 @@ export default function Home() {
 
         <div className='absolute bottom-32 left-[28rem]'>
         <div className='Register-button'>
-          <div className='p-2 text-3xl font-extrabold w-72 h-16 text-center bg-[#f4e189] border-solid border-black border-4'>
+          <div className='p-2 text-3xl font-extrabold w-72 h-16 text-center bg-[#f4e1b9] border-solid border-black border-4'>
             <button className={AnimeAceBBreg.className}>
               Register
             </button>
