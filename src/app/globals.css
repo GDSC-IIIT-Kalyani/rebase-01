@@ -27,11 +27,16 @@ body {
     1px 1px 0 black;
 }
 
-.hero-heading{
+.text-stroke-2 {
   -webkit-text-stroke: 5px black;
-  text-shadow: -15px 15px #E32735;
+  text-shadow: 8px 8px #000;
 }
 
+.hero-heading{
+  -webkit-text-stroke: 5px black;
+  text-shadow: -15px 15px #000;
+}
+/* #E32735 */
 .Register-button{
   box-shadow: 3px 3px #DF2B2E;
 }

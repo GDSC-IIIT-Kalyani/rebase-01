@@ -1,6 +1,7 @@
 import './globals.css'
 import Image from 'next/image';
 import Navbar from '@/app/navbar'
+import Faq from '@/app/faq'
 import {passionOne, JapaneseRobot, AnimeAceBBreg} from '@/app/fonts';
 
 export default function Home() {
@@ -8,14 +9,18 @@ export default function Home() {
     <section className='landing'>
       <Navbar />
       <div className='hero'>
-      <div className='hero-text flex relative'>
-        <div className='translate-x-[16rem] translate-y-16 flex gap-10'>
-        <div className='hero-heading text-[12rem] text-[#f4e1b9]'>
+      <div className='hero-text flex'>
+        <div className='translate-x-[16rem] translate-y-20 flex gap-10'>
+        
+        <div className='text-[#e32735] relative text-[12rem]'>
+          <h1 className={JapaneseRobot.className} >Rebase</h1>
+        <div className='hero-heading absolute -top-6 left-6 text-[12rem] text-[#f4e1b9]'>
           <h1 className={JapaneseRobot.className} >Rebase</h1>
         </div>
-        <div className='hero-vol text-5xl translate-y-28'>
+        </div>
+        <div className='hero-vol text-5xl translate-y-24'>
           <h3 className={passionOne.className}>
-            Volume
+            VOLUME
           </h3>
         </div>
         </div>
@@ -58,6 +63,7 @@ export default function Home() {
 
       </div>
       </div>
+      <Faq />
     </section>
   )
 }

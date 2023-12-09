@@ -13,3 +13,7 @@ export const passionOne = Passion_One({
 export const AnimeAceBBbold = localFont({ src: 'anime_ace_bb/animeace2bb_tt/animeace2_bld.ttf'})
 export const AnimeAceBBreg = localFont({ src: 'anime_ace_bb/animeace2bb_tt/animeace2_reg.ttf'})
 export const AnimeAceBBital = localFont({ src: 'anime_ace_bb/animeace2bb_tt/animeace2_ital.ttf'})
+
+export const KosugiMaru = localFont({src : 'Kosugi_Maru/KosugiMaru-Regular.ttf'})
+
+export const Bangers = localFont({ src : 'Bangers/Bangers-Regular.ttf'})
