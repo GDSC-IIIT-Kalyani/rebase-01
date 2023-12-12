@@ -3,12 +3,12 @@ import Image from 'next/image'
 
 const faq = () => {
     return (
-        <section id="faq relative">
-            <div className="faq-heading text-[12rem] text-[#E82338] text-stroke-2 absolute top-[60rem] left-56">
+        <section id="faq" className="relative min-h-screen min-w-full">
+            <div className="faq-heading text-[12rem] text-[#E82338] text-stroke-2 absolute left-44">
                 <h1 className={Bangers.className} >FAQS</h1>
             </div>
 
-            <div className="Faq-ques absolute top-[80rem] left-56">
+            <div className="Faq-ques absolute top-60 left-48">
                 <ul  className="text-2xl leading-[3.5rem]">
                     <li className={AnimeAceBBbold.className}>WHO CAN JOIN? </li>
                     <li className={AnimeAceBBbold.className}>WHAT SHOULD BE THE <br /> TEAM SIZE? </li>
@@ -20,11 +20,11 @@ const faq = () => {
                 </ul>
             </div>
 
-            <div className="absolute top-[68rem] left-[43rem]">
+            <div className="absolute top-12 left-[40rem]">
                 <Image src="/faqpanda.svg" width={550} height={500} alt="panda" />
             </div>
 
-            <div className="faqdesbox absolute top-[74rem] right-[12rem]">
+            <div className="faqdesbox absolute top-36 right-60">
                 <div className="relative">
                     <Image src="/faqdesbox.svg" width={600} height={500} alt="des" />
                     <div className="text-white absolute top-8 left-24 flex">
@@ -34,8 +34,7 @@ const faq = () => {
             </div>
 
 
-
-            <div className="linkbox absolute top-[102rem] right-56">
+            <div className="linkbox absolute bottom-28 right-64">
                 <div className="relative">
                     <Image src="/linkboxfaq.svg" width={450} height={300} alt="linkbox" />
                     <div className="linkboxtext absolute top-16 left-12">
@@ -48,9 +47,9 @@ const faq = () => {
                         </div>
                     </div>
                 </div>
-
-
             </div>
+
+
         </section>
     )
 }
