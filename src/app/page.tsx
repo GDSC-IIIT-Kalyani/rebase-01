@@ -3,6 +3,8 @@ import Image from 'next/image';
 import Navbar from '@/app/navbar'
 import Faq from '@/app/faq'
 import {passionOne, JapaneseRobot, AnimeAceBBreg} from '@/app/fonts';
+import About from '@/app/about'
+import Footer from '@/app/footer'
 
 export default function Home() {
   return (
@@ -63,7 +65,9 @@ export default function Home() {
 
       </div>
       </div>
+      <About/>
       <Faq />
+      <Footer />
     </section>
-  )
-}
+
+)}
