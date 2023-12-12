@@ -1,4 +1,4 @@
-import { AnimeAceBBbold, KosugiMaru, Bangers } from "./fonts"
+import { AnimeAceBBbold, KosugiMaru, Bangers } from "../fonts"
 import Image from 'next/image'
 
 const faq = () => {

@@ -1,6 +1,6 @@
 
 import React from 'react'
-import { Bangers } from './fonts'
+import { Bangers } from '../fonts'
 import Image from 'next/image'
 
 const Timeline = () => {
