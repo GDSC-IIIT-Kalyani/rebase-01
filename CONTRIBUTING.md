@@ -31,7 +31,7 @@ Please use a meaningful branch name.
 Follow the existing code style of the project. If the project doesn't have a specific style guide, be consistent with the surrounding code.
 
 ## Code of Conduct
-Please note that this project is released with a [Contributor Code of Conduct](). By participating in this project, you agree to abide by its terms.
+Please note that this project is released with a [Contributor Code of Conduct](https://github.com/GDSC-IIIT-Kalyani/rebase-01/blob/master/code_of_conduct.md). By participating in this project, you agree to abide by its terms.
 
 ## License
 
