@@ -11,7 +11,7 @@
 </div>
 
 <div align="center">
-  <img height=240 src="" alt="Rebase logo">
+  <img height=240 src="../../public/logo.webp" alt="Rebase logo">
 </div>
 
 <br>
