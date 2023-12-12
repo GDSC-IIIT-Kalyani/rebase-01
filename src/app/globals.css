@@ -40,3 +40,8 @@ body {
 .Register-button{
   box-shadow: 3px 3px #DF2B2E;
 }
+
+.textStroke {
+  text-shadow: 8px 8px #000;
+  -webkit-text-stroke: 5px black;
+}

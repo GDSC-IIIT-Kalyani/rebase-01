@@ -4,6 +4,7 @@ import Navbar from '@/app/navbar'
 import Faq from '@/app/faq'
 import {passionOne, JapaneseRobot, AnimeAceBBreg} from '@/app/fonts';
 import About from '@/app/about'
+import Timeline from './timeline'
 import Footer from '@/app/footer'
 
 export default function Home() {
@@ -66,6 +67,7 @@ export default function Home() {
       </div>
       </div>
       <About/>
+      <Timeline />
       <Faq />
       <Footer />
     </section>
