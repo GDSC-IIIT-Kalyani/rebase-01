@@ -11,8 +11,8 @@ const Timeline = () => {
                 <div className="text-[10rem] text-[#E82338] absolute textStroke pl-[10rem] w-[60%] pt-[.4rem]">
                     <h1 className={bangers.className}>Timeline</h1>
                 </div>
-                <div className="comingSoon flex items-end justify-center h-[100vh] w-[100vw]" >
-                    <Image src="/comingSoon.svg" alt="Coming Soon" width={850} height={700} />
+                <div className="comingSoon flex items-end justify-center absolute top-8 left-[25rem]" >
+                    <Image src="/comingSoon.svg" alt="Coming Soon" width={1200} height={700} />
                 </div>
             </div>
 
