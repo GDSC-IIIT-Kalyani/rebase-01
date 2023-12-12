@@ -74,7 +74,7 @@ git push -u origin <your_branch_name>
 <h1 id="contribute">Contributing</h1>
 
 <p>
-   Thank you for your interest in contributing to our Repo! Pull requests are welcome. For fixing typos, please make a PR with your fixes. For other contributions, we suggest you to read our <a href="https://github.com/GDSC-IIIT-Kalyani/rebase-01/blob/master/contributing.md">contribution guidelines</a> to see how you can contribute to this project. We are happy for every contribution. 
+   Thank you for your interest in contributing to our Repo! Pull requests are welcome. For fixing typos, please make a PR with your fixes. For other contributions, we suggest you to read our <a href="https://github.com/GDSC-IIIT-Kalyani/rebase-01/blob/master/CONTRIBUTING.md">contribution guidelines</a> to see how you can contribute to this project. We are happy for every contribution. 
    <hr> 
 </p>
 
