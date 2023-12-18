@@ -1,8 +1,24 @@
+'use client'
 import '../globals.css'
 import Image from 'next/image';
 import {passionOne, JapaneseRobot, AnimeAceBBreg} from '@/app/fonts';
+import { useEffect } from 'react'
+
+
 
 const Landing = () => {
+
+    useEffect(() => {
+      const script = document.createElement('script');
+      script.src = 'https://apply.devfolio.co/v2/sdk.js';
+      script.async = true;
+      script.defer = true;
+      document.body.appendChild(script);
+      return () => {
+        document.body.removeChild(script);
+      }
+    }, []);
+
     return (
         <section className='landing'>
       
@@ -52,9 +68,15 @@ const Landing = () => {
         <div className='absolute bottom-32 left-[28rem]'>
         <div className='Register-button'>
           <div className='p-2 text-3xl font-extrabold w-72 h-16 text-center bg-[#f4e1b9] border-solid border-black border-4'>
-            <button className={AnimeAceBBreg.className}>
+            {/* <button className={AnimeAceBBreg.className}>
               Register
-            </button>
+            </button> */}
+            <div 
+            className="apply-button" 
+            data-hackathon-slug="rebase01" 
+            data-button-theme="light"
+            style={{ height: "44px", width: "312px" }}
+          ></div>
           </div>
         </div>
         </div>
