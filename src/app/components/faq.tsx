@@ -9,14 +9,16 @@ const faq = () => {
             </div>
 
             <div className="Faq-ques absolute top-60 left-48">
-                <ul  className="text-2xl leading-[3.5rem]">
-                    <li className={AnimeAceBBbold.className}>WHO CAN JOIN? </li>
-                    <li className={AnimeAceBBbold.className}>WHAT SHOULD BE THE <br /> TEAM SIZE? </li>
-                    <li className={AnimeAceBBbold.className}>HOW TO REGISTER? </li>
-                    <li className={AnimeAceBBbold.className}>PARTICIPATION FEES?</li>
-                    <li className={AnimeAceBBbold.className}>HOW CAN I BE A <br /> MENTOR?</li>
-                    <li className={AnimeAceBBbold.className}>WHAT DO I DO IN THIS <br /> PROGRAM?</li>
-                    <li className={AnimeAceBBbold.className}>VENUE/PLATFORM?</li>
+                <ul  className="text-md leading-[2.5rem]">
+                    <li className={AnimeAceBBbold.className}>HOW DO I REGISTER? </li>
+                    <li className={AnimeAceBBbold.className}>WHO CAN PARTICIPATE? </li>
+                    <li className={AnimeAceBBbold.className}>HOW MANY TEAM MEMBERS <br /> DO I NEED? </li>
+                    <li className={AnimeAceBBbold.className}>WILL THE HACKATHON <br /> BE IN PERSON OR ONLINE? </li>
+                    <li className={AnimeAceBBbold.className}>HOW MUCH IS THE <br /> PARTICIPATION FEES?</li>
+                    <li className={AnimeAceBBbold.className}>WHAT ARE THE <br /> PREREQUISITES TO <br /> PARTICIPATE IN <br /> REBASE{"<"}01{">"}</li>
+                    <li className={AnimeAceBBbold.className}>I AM A HIGHSCHOOL STUDENT, <br /> CAN I JOIN?</li>
+                    <li className={AnimeAceBBbold.className} >HOW TO GET SELECTED?</li>
+                    <li className={AnimeAceBBbold.className} >IS IT FOR BEGINNERS?</li>
                 </ul>
             </div>
 
