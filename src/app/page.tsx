@@ -6,6 +6,7 @@ import About from '@/app/components/about'
 import Timeline from './components/timeline'
 import Footer from '@/app/components/footer'
 
+
 export default function Home() {
   return (
     <>
