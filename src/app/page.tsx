@@ -5,7 +5,8 @@ import Landing from '@/app/components/landing'
 import About from '@/app/components/about'
 import Timeline from './components/timeline'
 import Footer from '@/app/components/footer'
-
+import Tracks from './components/tracks'
+import Prizes from './components/prizes'
 
 export default function Home() {
   return (
@@ -14,6 +15,8 @@ export default function Home() {
       <Landing />
       <About />
       <Timeline />
+      <Tracks />
+      <Prizes />
       <Faq />
       <Footer />
     </>
