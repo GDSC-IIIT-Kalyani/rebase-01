@@ -18,8 +18,6 @@ export default function Home() {
       <Timeline />
       <Tracks />
       <Prizes />
-      <Tracks />
-      <Prizes />
       <Sponsors />
       <Faq />
       <Footer />
