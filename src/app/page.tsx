@@ -7,6 +7,7 @@ import Timeline from './components/timeline'
 import Footer from '@/app/components/footer'
 import Tracks from './components/tracks'
 import Prizes from './components/prizes'
+import Sponsors from './components/sponsors'
 
 export default function Home() {
   return (
@@ -17,6 +18,9 @@ export default function Home() {
       <Timeline />
       <Tracks />
       <Prizes />
+      <Tracks />
+      <Prizes />
+      <Sponsors />
       <Faq />
       <Footer />
     </>
