@@ -5,10 +5,10 @@ import { Bangers, JapaneseRobot, KosugiMaru } from '../fonts';
 export default function About() {
   return (
     <>
-      <div className="bg-[#F4E1B9] min-h-screen">
+      <div className="bg-[#F4E1B9] mt-[-6%] min-h-screen">
         <div className='min-w-screen pl-[13%] pt-2 '>
           <div className='h-40 w-[34%] relative z-0 translate-y-[18rem] translate-x-[4rem] mt-[-16rem] border-t-[5px] border-l-[5px] border-black' ></div>
-          <div className="faq-heading text-[12rem] relative z-10 text-[#E82338] text-stroke-2 translate">
+          <div className="faq-heading text-[12rem] relative z-10 text-[#E82338] text-stroke-2 pl-[8rem] translate-y-[6rem]">
             <h1 className={Bangers.className} >ABOUT</h1>
           </div>
           <div className="flex flex-row">

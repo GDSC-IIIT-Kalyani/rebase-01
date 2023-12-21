@@ -1,0 +1,9 @@
+.landing_page {
+    height: fit-content;
+    transform: translateY(-4%);
+}
+
+.image {
+    width: 50%;
+    height: 50%;
+}
