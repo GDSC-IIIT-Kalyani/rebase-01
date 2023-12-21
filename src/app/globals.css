@@ -46,3 +46,17 @@ body {
   text-shadow: 8px 8px #000;
   -webkit-text-stroke: 5px black;
 }
+
+nav{
+  position: relative;
+}
+
+nav::after{
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: -10px;
+  right: 10px;
+  bottom: -10px;
+  border: 4px solid black;
+}
