@@ -10,17 +10,14 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build:
-
+  # Single deploy job since we're just deploying
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [18.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
     steps:
-    - name: Checkout
+      - name: Checkout
         uses: actions/checkout@v4
       - name: Set up Node
         uses: actions/setup-node@v3
