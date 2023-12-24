@@ -1,0 +1,20 @@
+            - name: Vite Github Pages Deployer
+  # You may pin to the exact commit or the version.
+  # uses: skywarth/vite-github-pages-deployer@b3605fe88b6949cd7095af46764c243e1805cf49
+  uses: skywarth/vite-github-pages-deployer@v1.3.0
+  with:
+    # Public base path string for vite, this affects the routing, history and asset links. Make sure to provide appropriately since Github Pages stores your app in a directory under a subdomain.
+    public_base_path: # optional, default is 
+    # Which folder do you want your Github Page to use as root directory. Usually it is your build output directory such as ./dist 
+    build_path: # optional, default is ./dist
+    # Node env that will be used for the installation of dependencies. It is imperative you use an environment that has 'vite' as dependency. Commonly, that is 'dev'.
+    install_phase_node_env: # optional, default is dev
+    # Node env that will be used for build phase.
+    build_phase_node_env: # optional, default is production
+    # Your preference of package manager: 'npm' and 'yarn' are possible values.
+    package_manager: # optional, default is npm
+    # Desired name for the Deployment environment. It is also the exposed artifact name which contains the build output (dist).
+    artifact_name: # optional, default is github-pages
+    # Controls the debug mode, boolean, true is for on. When turned on, it'll output certain information on certain steps. Mainly used for development, but use it as you please to inspect your env and variables.
+    debug_mode: # optional, default is false
+          
