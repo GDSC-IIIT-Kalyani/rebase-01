@@ -37,6 +37,12 @@ body {
   text-shadow: -15px 15px #000;
 }
 
+@media (max-width: 640px) {
+  .hero-heading {
+    text-shadow: -8px 8px #000;
+  }
+}
+
 /* #E32735 */
 .Register-button {
   box-shadow: 3px 3px #DF2B2E;
