@@ -1,110 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 /*---------------------------- fonts -----------------*/
 
 /* Anime Ace */
 @font-face {
-    font-family: 'Anime Ace';
-    src: url('/fonts/anime_ace_bb/animeace2bb_tt/animeace2_bld.ttf')format('truetype');
-    font-weight: bold;
-    font-style: normal;
+  font-family: 'Anime Ace';
+  src: url('/fonts/anime_ace_bb/animeace2bb_tt/animeace2_bld.ttf')
+    format('truetype');
+  font-weight: bold;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Anime Ace';
-    src: url('/fonts/anime_ace_bb/animeace2bb_tt/animeace2_ital.ttf')format('truetype');
-    font-weight: lighter;
-    font-style: italic;
+  font-family: 'Anime Ace';
+  src: url('/fonts/anime_ace_bb/animeace2bb_tt/animeace2_ital.ttf')
+    format('truetype');
+  font-weight: lighter;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: 'Anime Ace';
-    src: url('/fonts/anime_ace_bb/animeace2bb_tt/animeace2_reg.ttf')format('truetype');
-    font-weight: lighter;
-    font-style: normal;
+  font-family: 'Anime Ace';
+  src: url('/fonts/anime_ace_bb/animeace2bb_tt/animeace2_reg.ttf')
+    format('truetype');
+  font-weight: lighter;
+  font-style: normal;
 }
 
 /* Bangers */
 @font-face {
-    font-family: 'Bangers';
-    src: url(/fonts/Bangers/Bangers-Regular.ttf)format('truetype');
+  font-family: 'Bangers';
+  src: url(/fonts/Bangers/Bangers-Regular.ttf) format('truetype');
 }
 
 /* Japanese robot */
 @font-face {
-    font-family: 'Japanese Robot';
-    src: url(/fonts/japanese-robot/JapaneseRobot.ttf)format('truetype');
-    font-style: normal;
+  font-family: 'Japanese Robot';
+  src: url(/fonts/japanese-robot/JapaneseRobot.ttf) format('truetype');
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Japanese Robot';
-    src: url('/fonts/japanese-robot/JapaneseRobotItalic.ttf')format('truetype');
-    font-style: italic;
+  font-family: 'Japanese Robot';
+  src: url('/fonts/japanese-robot/JapaneseRobotItalic.ttf') format('truetype');
+  font-style: italic;
 }
 
 /* Kosugi Maru */
 @font-face {
-    font-family: 'Kosugi Maru';
-    src: url(/fonts/Kosugi_Maru/KosugiMaru-Regular.ttf)format('truetype');
+  font-family: 'Kosugi Maru';
+  src: url(/fonts/Kosugi_Maru/KosugiMaru-Regular.ttf) format('truetype');
 }
 
 /* ----------------------------------- fonts end ---------------------------------------- */
 
-
 /* write vannila css below */
-nav{
-    /* position: relative; */
-  }
-  
-  nav::after{
-    content: '';
-    /* position: absolute;
+nav {
+  /* position: relative; */
+}
+
+nav::after {
+  content: '';
+  /* position: absolute;
     top: 10%;
     left: -1%;
     right: 1%;
     bottom: 0%; */
-    border: 0.188rem solid black;
-  }
+  border: 0.188rem solid black;
+}
 
 nav ul li a {
-    font-family: 'Anime Ace';
-    font-weight: bold;
-    font-style: normal;
+  font-family: 'Anime Ace';
+  font-weight: bold;
+  font-style: normal;
 }
 body {
-    background-color: #F4E1B9;
-    position: relative;
+  background-color: #f4e1b9;
+  position: relative;
 }
 
 .stack {
-    display: grid;
+  display: grid;
 }
 
 .head {
-    color: #E82338;
-    font-family: 'Bangers';
-    font-size: 10vw;
-    -webkit-text-stroke-width: 0.26vw;
-    -webkit-text-stroke-color: black;
-    text-shadow: 0.4vw 0.33vw 0px black;
-    text-align: start;
-    padding-left: 10vw;
-    z-index: 1;
+  color: #e82338;
+  font-family: 'Bangers';
+  font-size: 10vw;
+  -webkit-text-stroke-width: 0.26vw;
+  -webkit-text-stroke-color: black;
+  text-shadow: 0.4vw 0.33vw 0px black;
+  text-align: start;
+  padding-left: 10vw;
+  z-index: 1;
 }
 
-.imgDiv{
-    height:75vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.imgDiv {
+  height: 75vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-img{
-   height: 100%;
-   width: auto;
-   align-self: center;
+img {
+  height: 100%;
+  width: auto;
+  align-self: center;
+}
+
+.rebase-head {
+  font-family: 'Japanese Robot';
+}
+
+.heading {
+  -webkit-text-stroke: 5px black;
+  text-shadow: -15px 15px #000;
+}
+
+.hero-vol{
+    font-family: 'Passion One', sans-serif;
+    font-weight: bold;
 }
