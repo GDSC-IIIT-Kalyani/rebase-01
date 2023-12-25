@@ -3,3 +3,37 @@
 @tailwind utilities;
 
 /* write vannila css below */
+body {
+    background-color: #F4E1B9;
+    position: relative;
+}
+
+.stack {
+    display: grid;
+}
+
+.head {
+    color: #E82338;
+    font-family: 'Bangers';
+    font-size: 10vw;
+    -webkit-text-stroke-width: 0.26vw;
+    -webkit-text-stroke-color: black;
+    text-shadow: 0.4vw 0.33vw 0px black;
+    text-align: start;
+    padding-left: 10vw;
+    z-index: 1;
+}
+
+.imgDiv{
+    height:75vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+   height: 100%;
+   width: auto;
+   align-self: center;
+}
