@@ -2,7 +2,78 @@
 @tailwind components;
 @tailwind utilities;
 
+/*---------------------------- fonts -----------------*/
+
+/* Anime Ace */
+@font-face {
+    font-family: 'Anime Ace';
+    src: url('/fonts/anime_ace_bb/animeace2bb_tt/animeace2_bld.ttf')format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Anime Ace';
+    src: url('/fonts/anime_ace_bb/animeace2bb_tt/animeace2_ital.ttf')format('truetype');
+    font-weight: lighter;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Anime Ace';
+    src: url('/fonts/anime_ace_bb/animeace2bb_tt/animeace2_reg.ttf')format('truetype');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+/* Bangers */
+@font-face {
+    font-family: 'Bangers';
+    src: url(/fonts/Bangers/Bangers-Regular.ttf)format('truetype');
+}
+
+/* Japanese robot */
+@font-face {
+    font-family: 'Japanese Robot';
+    src: url(/fonts/japanese-robot/JapaneseRobot.ttf)format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Japanese Robot';
+    src: url('/fonts/japanese-robot/JapaneseRobotItalic.ttf')format('truetype');
+    font-style: italic;
+}
+
+/* Kosugi Maru */
+@font-face {
+    font-family: 'Kosugi Maru';
+    src: url(/fonts/Kosugi_Maru/KosugiMaru-Regular.ttf)format('truetype');
+}
+
+/* ----------------------------------- fonts end ---------------------------------------- */
+
+
 /* write vannila css below */
+nav{
+    /* position: relative; */
+  }
+  
+  nav::after{
+    content: '';
+    /* position: absolute;
+    top: 10%;
+    left: -1%;
+    right: 1%;
+    bottom: 0%; */
+    border: 0.188rem solid black;
+  }
+
+nav ul li a {
+    font-family: 'Anime Ace';
+    font-weight: bold;
+    font-style: normal;
+}
 body {
     background-color: #F4E1B9;
     position: relative;
