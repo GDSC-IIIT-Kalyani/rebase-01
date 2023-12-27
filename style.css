@@ -109,6 +109,7 @@ img{
    align-self: center;
 }
 
+
 html {
     font-size: 16px;
 }
@@ -349,3 +350,361 @@ body, .hero_heading, .tracks-window, .info-window, .rectangle, .body-text, .imag
 }
 
 
+=======
+/* ---------------------------------------------- ABOUT PAGE BEGINS HERE ---------------------------------------------- */
+#about-text {
+    font-family: 'Bangers', sans-serif;
+    color: #e82338;
+    text-shadow: 5px 5px black;
+    -webkit-text-stroke: 4px black;
+    font-size: 7rem;
+    position: absolute;
+    left: 17%;
+    width: 13%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    top: 62px;
+    z-index: 1;
+}
+
+#zero-one {
+    font-family: 'Japanese Robot', sans-serif;
+    color: #e82338;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    position: relative;
+    font-size: 3rem;
+    top: 19px;
+    left: 79%;
+    -webkit-text-stroke: 4px black;
+    width: 6%;
+}
+
+#main-paragraph {
+    font-family: 'Kosugi Maru', sans-serif;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 25%;
+    color: white;
+    z-index: 1;
+    position: relative;
+    top: 200px;
+    left: 19%;
+    line-height: 1.5;
+}
+
+#images {
+    display: flex;
+    flex-direction: row;
+    left: 14%;
+    position: relative;
+    width: 38%;
+    top: -382px;
+}
+
+#GreenBG, #Group39 {
+    width: 100%;
+}
+
+#Group39 {
+    position: relative;
+    left: -16%;
+    top: 3rem;
+}
+
+#about {
+    width: 97vw;
+    position: relative;
+    height: 46vw;
+}
+
+@media (max-width: 1362px) {
+    #about-text {
+        font-size: 6rem;
+        left: 18%;
+        top: 62px;
+    }
+
+    #main-paragraph {
+        top: 164px;
+    }
+
+    #images {
+        top: -412px;
+    }
+}
+
+@media (max-width: 1293px) {
+    #about-text {
+        font-size: 5.5rem;
+    }
+
+    #main-paragraph {
+        font-size: 0.8rem;
+    }
+
+    #images {
+        top: -283px;
+    }
+}
+
+@media screen and (max-width: 1239px) {
+    #images {
+        top: -302px;
+    }
+}
+
+@media (max-width: 1167px) {
+    #about-text {
+        font-size: 5rem;
+    }
+
+    #zero-one {
+        font-size: 2.5rem;
+    }
+
+    #main-paragraph {
+        top: 144px;
+    }
+}
+
+@media (max-width: 1095px) {
+    #about-text {
+        font-size: 4.5rem;
+        top: 49px;
+    }
+
+    #zero-one {
+        font-size: 2.2rem;
+    }
+
+    #main-paragraph {
+        top: 124px;
+    }
+
+    #images {
+        top: -332px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #about-text {
+        font-size: 4rem;
+        top: 49px;
+    }
+
+    #zero-one {
+        font-size: 2rem;
+    }
+
+    #main-paragraph {
+        top: 104px;
+    }
+
+    #images {
+        top: -347px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    #about-text {
+        font-size: 3.5rem;
+        top: 49px;
+    }
+
+    #zero-one {
+        font-size: 1.8rem;
+    }
+
+    #main-paragraph {
+        top: 109px;
+        font-size: 0.7rem;
+    }
+
+    #images {
+        top: -276px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #about-text {
+        font-size: 3rem;
+        top: 49px;
+    }
+
+    #zero-one {
+        font-size: 1.6rem;
+    }
+
+    #main-paragraph {
+        top: 114px;
+        font-size: 0.6rem;
+    }
+
+    #images {
+        top: -220px;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    #about-text {
+        top: 60px;
+    }
+}
+
+#GreenBGMobile, #MobileComp {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    #images {
+        display: none;
+    }
+
+    #GreenBGMobile {
+        display: block;
+        width: 100%;
+        left: -5%;
+        position: relative;
+    }
+
+    #MobileComp {
+        display: block;
+        width: 100%;
+        position: relative;
+        left: 5%;
+        top: -45px;
+    }
+
+    #mobile-images {
+        position: relative;
+        top: -100px;
+        width: 44%;
+        left: 31%;
+    }
+
+    #about-text {
+        -webkit-text-stroke: 2px black;
+    }
+
+    #zero-one {
+        top: 65px;
+        -webkit-text-stroke: 2px black;
+    }
+
+    #main-paragraph {
+        top: 149px;
+        left: 37%;
+    }
+
+    #about {
+        height: 104vw;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #mobile-images {
+        top: -100px;
+    }
+
+    #main-paragraph {
+        top: 136px;
+        font-size: 0.55rem;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    #mobile-images {
+        top: -100px;
+        width: 55%;
+        left: 27%;
+    }
+
+    #main-paragraph {
+        top: 152px;
+        font-size: 0.7rem;
+        width: 40%;
+        left: 32%;
+    }
+    
+}
+
+@media screen and (max-width: 581px) {
+    #mobile-images {
+        top: -123px;
+        width: 60%;
+        left: 25%;
+    }
+
+    #main-paragraph {
+        top: 152px;
+        font-size: 0.7rem;
+        width: 40%;
+        left: 30%;
+    }
+}
+
+@media screen and (max-width: 569px) {
+    #mobile-images {
+        top: -112px;
+    }
+
+    #main-paragraph {
+        top: 163px;
+        left: 33%;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    #zero-one {
+        top: 77px;
+    }
+
+    #main-paragraph {
+        top: 136px;
+        left: 30%;
+        width: 45%;
+    }
+
+    #mobile-images {
+        top: -128px;
+    }
+}
+
+@media screen and (max-width: 482px) {
+    #mobile-images {
+        top: -79px;
+    }
+
+    #main-paragraph {
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    #mobile-images {
+        top: -94px;
+    }
+}
+
+@media screen and (max-width: 413px) {
+    #mobile-images {
+        top: -52px;
+    }
+
+    #main-paragraph {
+        font-size: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    #main-paragraph {
+        font-size : 0.4rem;
+        top: 141px;
+    }
+
+    #mobile-images {
+        top: -4px;
+    }
+}
+/* ---------------------------------------------- ABOUT PAGE ENDS HERE ---------------------------------------------- */
