@@ -1,468 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 /*---------------------------- fonts -----------------*/
 
 /* Anime Ace */
 @font-face {
-    font-family: 'Anime Ace';
-    src: url('/fonts/anime_ace_bb/animeace2bb_tt/animeace2_bld.ttf')format('truetype');
-    font-weight: bold;
-    font-style: normal;
+  font-family: 'Anime Ace';
+  src: url('/fonts/anime_ace_bb/animeace2bb_tt/animeace2_bld.ttf')
+    format('truetype');
+  font-weight: bold;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Anime Ace';
-    src: url('/fonts/anime_ace_bb/animeace2bb_tt/animeace2_ital.ttf')format('truetype');
-    font-weight: lighter;
-    font-style: italic;
+  font-family: 'Anime Ace';
+  src: url('/fonts/anime_ace_bb/animeace2bb_tt/animeace2_ital.ttf')
+    format('truetype');
+  font-weight: lighter;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: 'Anime Ace';
-    src: url('/fonts/anime_ace_bb/animeace2bb_tt/animeace2_reg.ttf')format('truetype');
-    font-weight: lighter;
-    font-style: normal;
+  font-family: 'Anime Ace';
+  src: url('/fonts/anime_ace_bb/animeace2bb_tt/animeace2_reg.ttf')
+    format('truetype');
+  font-weight: lighter;
+  font-style: normal;
 }
 
 /* Bangers */
 @font-face {
-    font-family: 'Bangers';
-    src: url(/fonts/Bangers/Bangers-Regular.ttf)format('truetype');
+  font-family: 'Bangers';
+  src: url(/fonts/Bangers/Bangers-Regular.ttf) format('truetype');
 }
 
 /* Japanese robot */
 @font-face {
-    font-family: 'Japanese Robot';
-    src: url(/fonts/japanese-robot/JapaneseRobot.ttf)format('truetype');
-    font-style: normal;
+  font-family: 'Japanese Robot';
+  src: url(/fonts/japanese-robot/JapaneseRobot.ttf) format('truetype');
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Japanese Robot';
-    src: url('/fonts/japanese-robot/JapaneseRobotItalic.ttf')format('truetype');
-    font-style: italic;
+  font-family: 'Japanese Robot';
+  src: url('/fonts/japanese-robot/JapaneseRobotItalic.ttf') format('truetype');
+  font-style: italic;
 }
 
 /* Kosugi Maru */
 @font-face {
-    font-family: 'Kosugi Maru';
-    src: url(/fonts/Kosugi_Maru/KosugiMaru-Regular.ttf)format('truetype');
+  font-family: 'Kosugi Maru';
+  src: url(/fonts/Kosugi_Maru/KosugiMaru-Regular.ttf) format('truetype');
 }
 
 /* ----------------------------------- fonts end ---------------------------------------- */
 
-
 /* write vannila css below */
-nav{
-    /* position: relative; */
-  }
-  
-  nav::after{
-    content: '';
-    /* position: absolute;
+nav {
+  /* position: relative; */
+}
+
+nav::after {
+  content: '';
+  /* position: absolute;
     top: 10%;
     left: -1%;
     right: 1%;
     bottom: 0%; */
-    border: 0.188rem solid black;
-  }
+  border: 0.188rem solid black;
+}
 
 nav ul li a {
-    font-family: 'Anime Ace';
-    font-weight: bold;
-    font-style: normal;
+  font-family: 'Anime Ace';
+  font-weight: bold;
+  font-style: normal;
 }
 body {
-    background-color: #F4E1B9;
-    position: relative;
+  background-color: #f4e1b9;
+  position: relative;
 }
 
 .stack {
-    display: grid;
+  display: grid;
 }
 
 .head {
-    color: #E82338;
-    font-family: 'Bangers';
-    font-size: 10vw;
-    -webkit-text-stroke-width: 0.26vw;
-    -webkit-text-stroke-color: black;
-    text-shadow: 0.4vw 0.33vw 0px black;
-    text-align: start;
-    padding-left: 10vw;
-    z-index: 1;
+  color: #e82338;
+  font-family: 'Bangers';
+  font-size: 10vw;
+  -webkit-text-stroke-width: 0.26vw;
+  -webkit-text-stroke-color: black;
+  text-shadow: 0.4vw 0.33vw 0px black;
+  text-align: start;
+  padding-left: 10vw;
+  z-index: 1;
 }
 
-.imgDiv{
-    height:75vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.imgDiv {
+  height: 75vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-img{
-   height: 100%;
-   width: auto;
-   align-self: center;
+img {
+  height: 100%;
+  width: auto;
+  align-self: center;
 }
 
-/* ---------------------------------------------- ABOUT PAGE BEGINS HERE ---------------------------------------------- */
-#about-text {
-    font-family: 'Bangers', sans-serif;
-    color: #e82338;
-    text-shadow: 5px 5px black;
-    -webkit-text-stroke: 4px black;
-    font-size: 7rem;
-    position: absolute;
-    left: 17%;
-    width: 13%;
-    margin-top: 0%;
-    margin-bottom: 0%;
-    top: 62px;
-    z-index: 1;
+.rebase-head {
+  font-family: 'Japanese Robot';
 }
 
-#zero-one {
-    font-family: 'Japanese Robot', sans-serif;
-    color: #e82338;
-    margin-top: 0%;
-    margin-bottom: 0%;
-    position: relative;
-    font-size: 3rem;
-    top: 19px;
-    left: 79%;
-    -webkit-text-stroke: 4px black;
-    width: 6%;
+.heading {
+  -webkit-text-stroke: 5px black;
+  text-shadow: -15px 15px #000;
 }
 
-#main-paragraph {
-    font-family: 'Kosugi Maru', sans-serif;
-    margin-top: 0%;
-    margin-bottom: 0%;
-    width: 25%;
-    color: white;
-    z-index: 1;
-    position: relative;
-    top: 200px;
-    left: 19%;
-    line-height: 1.5;
+.hero-vol{
+    font-family: 'Passion One', sans-serif;
+    font-weight: bold;
 }
-
-#images {
-    display: flex;
-    flex-direction: row;
-    left: 14%;
-    position: relative;
-    width: 38%;
-    top: -382px;
-}
-
-#GreenBG, #Group39 {
-    width: 100%;
-}
-
-#Group39 {
-    position: relative;
-    left: -16%;
-    top: 3rem;
-}
-
-#about {
-    width: 97vw;
-    position: relative;
-    height: 46vw;
-}
-
-@media (max-width: 1362px) {
-    #about-text {
-        font-size: 6rem;
-        left: 18%;
-        top: 62px;
-    }
-
-    #main-paragraph {
-        top: 164px;
-    }
-
-    #images {
-        top: -412px;
-    }
-}
-
-@media (max-width: 1293px) {
-    #about-text {
-        font-size: 5.5rem;
-    }
-
-    #main-paragraph {
-        font-size: 0.8rem;
-    }
-
-    #images {
-        top: -283px;
-    }
-}
-
-@media screen and (max-width: 1239px) {
-    #images {
-        top: -302px;
-    }
-}
-
-@media (max-width: 1167px) {
-    #about-text {
-        font-size: 5rem;
-    }
-
-    #zero-one {
-        font-size: 2.5rem;
-    }
-
-    #main-paragraph {
-        top: 144px;
-    }
-}
-
-@media (max-width: 1095px) {
-    #about-text {
-        font-size: 4.5rem;
-        top: 49px;
-    }
-
-    #zero-one {
-        font-size: 2.2rem;
-    }
-
-    #main-paragraph {
-        top: 124px;
-    }
-
-    #images {
-        top: -332px;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    #about-text {
-        font-size: 4rem;
-        top: 49px;
-    }
-
-    #zero-one {
-        font-size: 2rem;
-    }
-
-    #main-paragraph {
-        top: 104px;
-    }
-
-    #images {
-        top: -347px;
-    }
-}
-
-@media screen and (max-width: 960px) {
-    #about-text {
-        font-size: 3.5rem;
-        top: 49px;
-    }
-
-    #zero-one {
-        font-size: 1.8rem;
-    }
-
-    #main-paragraph {
-        top: 109px;
-        font-size: 0.7rem;
-    }
-
-    #images {
-        top: -276px;
-    }
-}
-
-@media screen and (max-width: 900px) {
-    #about-text {
-        font-size: 3rem;
-        top: 49px;
-    }
-
-    #zero-one {
-        font-size: 1.6rem;
-    }
-
-    #main-paragraph {
-        top: 114px;
-        font-size: 0.6rem;
-    }
-
-    #images {
-        top: -220px;
-    }
-}
-
-@media screen and (max-width: 870px) {
-    #about-text {
-        top: 60px;
-    }
-}
-
-#GreenBGMobile, #MobileComp {
-    display: none;
-}
-
-@media screen and (max-width: 768px) {
-    #images {
-        display: none;
-    }
-
-    #GreenBGMobile {
-        display: block;
-        width: 100%;
-        left: -5%;
-        position: relative;
-    }
-
-    #MobileComp {
-        display: block;
-        width: 100%;
-        position: relative;
-        left: 5%;
-        top: -45px;
-    }
-
-    #mobile-images {
-        position: relative;
-        top: -100px;
-        width: 44%;
-        left: 31%;
-    }
-
-    #about-text {
-        -webkit-text-stroke: 2px black;
-    }
-
-    #zero-one {
-        top: 65px;
-        -webkit-text-stroke: 2px black;
-    }
-
-    #main-paragraph {
-        top: 149px;
-        left: 37%;
-    }
-
-    #about {
-        height: 104vw;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    #mobile-images {
-        top: -100px;
-    }
-
-    #main-paragraph {
-        top: 136px;
-        font-size: 0.55rem;
-    }
-}
-
-@media screen and (max-width: 630px) {
-    #mobile-images {
-        top: -100px;
-        width: 55%;
-        left: 27%;
-    }
-
-    #main-paragraph {
-        top: 152px;
-        font-size: 0.7rem;
-        width: 40%;
-        left: 32%;
-    }
-    
-}
-
-@media screen and (max-width: 581px) {
-    #mobile-images {
-        top: -123px;
-        width: 60%;
-        left: 25%;
-    }
-
-    #main-paragraph {
-        top: 152px;
-        font-size: 0.7rem;
-        width: 40%;
-        left: 30%;
-    }
-}
-
-@media screen and (max-width: 569px) {
-    #mobile-images {
-        top: -112px;
-    }
-
-    #main-paragraph {
-        top: 163px;
-        left: 33%;
-    }
-}
-
-@media screen and (max-width: 530px) {
-    #zero-one {
-        top: 77px;
-    }
-
-    #main-paragraph {
-        top: 136px;
-        left: 30%;
-        width: 45%;
-    }
-
-    #mobile-images {
-        top: -128px;
-    }
-}
-
-@media screen and (max-width: 482px) {
-    #mobile-images {
-        top: -79px;
-    }
-
-    #main-paragraph {
-        font-size: 0.6rem;
-    }
-}
-
-@media screen and (max-width: 430px) {
-    #mobile-images {
-        top: -94px;
-    }
-}
-
-@media screen and (max-width: 413px) {
-    #mobile-images {
-        top: -52px;
-    }
-
-    #main-paragraph {
-        font-size: 0.5rem;
-    }
-}
-
-@media screen and (max-width: 360px) {
-    #main-paragraph {
-        font-size : 0.4rem;
-        top: 141px;
-    }
-
-    #mobile-images {
-        top: -4px;
-    }
-}
-/* ---------------------------------------------- ABOUT PAGE ENDS HERE ---------------------------------------------- */
