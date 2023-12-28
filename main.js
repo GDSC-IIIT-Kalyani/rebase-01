@@ -1,3 +1,10 @@
+// Initialization for ES Users
+import { Tab, Collapse, Carousel, initTE } from 'tw-elements';
+
+initTE({ Collapse });
+initTE({ Tab });
+initTE({ Carousel });
+
 // Tracks js
 document.addEventListener("DOMContentLoaded", function () {
     const bodyText = document.querySelector(".body-text");

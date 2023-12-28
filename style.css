@@ -95,6 +95,7 @@ body {
   -webkit-text-stroke-color: black;
   text-shadow: 0.4vw 0.33vw 0px black;
   text-align: start;
+  padding: 0 10%;
   padding-left: 10vw;
   z-index: 1;
 }
@@ -111,6 +112,25 @@ img {
   height: 100%;
   width: auto;
   align-self: center;
+}
+
+.faqMobileText {
+  box-shadow: 5px 5px black;
+}
+
+.animate-oscillate {
+  animation: oscillate infinite 1s;
+}
+
+@keyframes oscillate {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
 }
 
 .rebase-head {
