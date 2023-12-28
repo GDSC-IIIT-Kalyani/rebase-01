@@ -675,6 +675,12 @@ body, .hero_heading, .tracks-window, .info-window, .rectangle, .body-text, .imag
   }
 }
 
+@media screen and (max-width: 662px) {
+  #about {
+    height: 107vw;
+  }
+}
+
 @media screen and (max-width: 630px) {
   #mobile-images {
       top: -100px;
@@ -689,6 +695,15 @@ body, .hero_heading, .tracks-window, .info-window, .rectangle, .body-text, .imag
       left: 32%;
   }
   
+  #about {
+    height: 132vw;
+  }
+}
+
+@media screen and (max-width: 598px) {
+  #about {
+    height: 142vw;
+  }
 }
 
 @media screen and (max-width: 581px) {
@@ -740,6 +755,12 @@ body, .hero_heading, .tracks-window, .info-window, .rectangle, .body-text, .imag
 
   #main-paragraph {
       font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 461px) {
+  #about {
+    height: 146vw;
   }
 }
 
