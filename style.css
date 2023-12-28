@@ -478,6 +478,7 @@ body, .hero_heading, .tracks-window, .info-window, .rectangle, .body-text, .imag
   width: 97vw;
   position: relative;
   height: 46vw;
+  left: -20%;
 }
 
 @media (max-width: 1362px) {
