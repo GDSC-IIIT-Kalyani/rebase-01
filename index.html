@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
       rel="stylesheet"
     />
+    <script src="./main.js"></script>
     <title>Rebase <01></title>
   </head>
   <body class="bg-[#f4e1b9] w-[80%] lg:w-[70%] m-auto">
@@ -108,7 +109,6 @@
       <div>
           <h3 class="page_no">03.</h3>
       </div>
-      <script src="tracks.js"></script>
 
   </div>
 
@@ -182,9 +182,9 @@
     >
       <div class="stack">
         <div class="head">PRIZES</div>
-        <!-- <div class="imgDiv">
+        <div class="imgDiv">
           <img src="public/comingSoon.svg" />
-        </div> -->
+        </div>
       </div>
     </section>
     <section
@@ -208,6 +208,7 @@
               class="group relative flex items-center w-full rounded-none border-0 py-2 xl:py-4 text-left text-lg lg:text-3xl 2xl:text-5xl text-black  [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none"
               type="button"
               data-te-collapse-init
+              data-te-collapse-collapsed
               data-te-target="#flush-collapseOne"
               aria-expanded="false"
               aria-controls="flush-collapseOne"
@@ -222,9 +223,8 @@
           </h2>
           <div
             id="flush-collapseOne"
-            class="faqMobileText !visible font-kosugi text-xs lg:text-base 2xl:text-2xl text-white bg-[#48727E] border-2 border-black ml-5"
+            class="faqMobileText !visible hidden font-kosugi text-xs lg:text-base 2xl:text-2xl text-white bg-[#48727E] border-2 border-black ml-5"
             data-te-collapse-item
-            data-te-collapse-show
             aria-labelledby="flush-headingOne"
             data-te-parent="#accordionFlushExample"
           >
@@ -242,6 +242,7 @@
               class="group relative flex items-center w-full rounded-none border-0 py-2 xl:py-4 text-left text-lg lg:text-3xl 2xl:text-5xl text-black  [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none"
               type="button"
               data-te-collapse-init
+              data-te-collapse-collapsed
               data-te-target="#flush-collapseTwo"
               aria-expanded="false"
               aria-controls="flush-collapseTwo"
@@ -256,9 +257,8 @@
           </h2>
           <div
             id="flush-collapseTwo"
-            class="faqMobileText !visible font-kosugi text-xs lg:text-base 2xl:text-2xl text-white bg-[#48727E] border-2 border-black ml-5"
-            data-te-collapse-item
-            data-te-collapse-show
+            class="faqMobileText !visible hidden font-kosugi text-xs lg:text-base 2xl:text-2xl text-white bg-[#48727E] border-2 border-black ml-5"
+            data-te-collapse-item 
             aria-labelledby="flush-headingTwo"
             data-te-parent="#accordionFlushExample"
           >
@@ -281,6 +281,6 @@
     >
       FOOTER
     </section>
-    <script type="module" src="main.js"></script>
+    <script type="module" src="index.js"></script>
   </body>
 </html>
