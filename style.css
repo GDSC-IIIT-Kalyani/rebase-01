@@ -419,7 +419,7 @@ body, .hero_heading, .tracks-window, .info-window, .rectangle, .body-text, .imag
 }
 
 
-/* ---------------------------------------- ABOUT SECTION BEGINS HERE --------------------------------------------- */
+/* ---------------------------------------- ABOUT SECTION BEGINS HERE - By Iman --------------------------------------------- */
 #about-text {
   font-family: 'Bangers', sans-serif;
   color: #e82338;
@@ -449,7 +449,7 @@ body, .hero_heading, .tracks-window, .info-window, .rectangle, .body-text, .imag
 }
 
 #main-paragraph {
-  font-family: 'Kosugi Maru', sans-serif;
+  font-family: 'Roboto Mono', sans-serif;
   margin-top: 0%;
   margin-bottom: 0%;
   width: 25%;
@@ -459,6 +459,7 @@ body, .hero_heading, .tracks-window, .info-window, .rectangle, .body-text, .imag
   top: 200px;
   left: 19%;
   line-height: 1.5;
+  font-size: 0.9rem;
 }
 
 #images {
@@ -484,6 +485,7 @@ body, .hero_heading, .tracks-window, .info-window, .rectangle, .body-text, .imag
   width: 97vw;
   position: relative;
   height: 46vw;
+  left: -20%;
 }
 
 @media (max-width: 1362px) {
@@ -508,7 +510,7 @@ body, .hero_heading, .tracks-window, .info-window, .rectangle, .body-text, .imag
   }
 
   #main-paragraph {
-      font-size: 0.8rem;
+      font-size: 0.7rem;
   }
 
   #images {
@@ -567,10 +569,15 @@ body, .hero_heading, .tracks-window, .info-window, .rectangle, .body-text, .imag
 
   #main-paragraph {
       top: 104px;
+      font-size: 0.74rem;
   }
 
   #images {
       top: -347px;
+  }
+
+  #about {
+      left: -10%;
   }
 }
 
@@ -586,7 +593,7 @@ body, .hero_heading, .tracks-window, .info-window, .rectangle, .body-text, .imag
 
   #main-paragraph {
       top: 109px;
-      font-size: 0.7rem;
+      font-size: 0.64rem;
   }
 
   #images {
@@ -606,7 +613,7 @@ body, .hero_heading, .tracks-window, .info-window, .rectangle, .body-text, .imag
 
   #main-paragraph {
       top: 114px;
-      font-size: 0.6rem;
+      font-size: 0.53rem;
   }
 
   #images {
@@ -677,7 +684,7 @@ body, .hero_heading, .tracks-window, .info-window, .rectangle, .body-text, .imag
 
   #main-paragraph {
       top: 136px;
-      font-size: 0.55rem;
+      font-size: 0.5rem;
   }
 }
 
@@ -696,7 +703,7 @@ body, .hero_heading, .tracks-window, .info-window, .rectangle, .body-text, .imag
 
   #main-paragraph {
       top: 152px;
-      font-size: 0.7rem;
+      font-size: 0.64rem;
       width: 40%;
       left: 32%;
   }
@@ -721,7 +728,7 @@ body, .hero_heading, .tracks-window, .info-window, .rectangle, .body-text, .imag
 
   #main-paragraph {
       top: 152px;
-      font-size: 0.7rem;
+      font-size: 0.6rem;
       width: 40%;
       left: 30%;
   }
@@ -760,7 +767,7 @@ body, .hero_heading, .tracks-window, .info-window, .rectangle, .body-text, .imag
   }
 
   #main-paragraph {
-      font-size: 0.6rem;
+      font-size: 0.53rem;
   }
 }
 
@@ -782,13 +789,13 @@ body, .hero_heading, .tracks-window, .info-window, .rectangle, .body-text, .imag
   }
 
   #main-paragraph {
-      font-size: 0.5rem;
+      font-size: 0.45rem;
   }
 }
 
 @media screen and (max-width: 360px) {
   #main-paragraph {
-      font-size : 0.4rem;
+      font-size : 0.34rem;
       top: 141px;
   }
 
