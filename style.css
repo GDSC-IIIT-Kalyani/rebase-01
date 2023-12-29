@@ -61,17 +61,11 @@
 /* ----------------------------------- fonts end ---------------------------------------- */
 
 /* write vannila css below */
-nav {
-  /* position: relative; */
-}
+
+/* ---------------------------------------- NAVBAR -------------------------------------- */
 
 nav::after {
   content: '';
-  /* position: absolute;
-    top: 10%;
-    left: -1%;
-    right: 1%;
-    bottom: 0%; */
   border: 0.188rem solid black;
 }
 
@@ -80,6 +74,19 @@ nav ul li a {
   font-weight: bold;
   font-style: normal;
 }
+
+.navlist {
+  z-index: 20;
+}
+
+.navlist a{
+  transition: 0.5s;
+}
+
+.navlist a:hover{
+  color: white;
+}
+
 body {
   background-color: #f4e1b9;
   position: relative;
