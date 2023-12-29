@@ -16,21 +16,24 @@
     <title>Rebase <01></title>
   </head>
   <body class="bg-[#f4e1b9] w-[80%] lg:w-[70%] m-auto">
+    
+    <!-- Navbar and logo -->
     <div class="flex justify-center  w-full">
-      <!-- border-solid border-2 border-black -->
-      <div class="2xl:w-44 md:w-32 xl:w-32">
+      <!-- logo -->
+      <div class="w-[15%]">
         <a href="#"><img class="shrink-0" src="/public/logo.webp" alt="logo" /></a>
       </div>
 
-      <div class="flex justify-center p-2">
-        <nav class="relative after:absolute after:top-[10%] after:left-[-1%] after:right-[1%] after:bottom-[0%] shrink-0 ">
+      <!-- navbar -->
+      <div class="p-2">
+        <nav class="relative after:absolute after:top-[10%] after:left-[-1%] after:right-[1%] after:bottom-[-10%] shrink-0 ">
           <ul class="flex 2xl:gap-12 xl:gap-12 lg:gap-4 gap-4  2xl:text-lg xl:text-md lg:text-sm md:text-xs font-bold 2xl:py-6 md:py-4 2xl:px-8 md:px-6 xl:px-8 bg-[#de533c]">
-            <li class="z-20" ><a href="#">ABOUT</a></li>
-            <li class="z-20" ><a href="#">SCHEDULE</a></li>
-            <li class="z-20" ><a href="#">TRACKS</a></li>
-            <li class="z-20" ><a href="#">PRIZES</a></li>
-            <li class="z-20" ><a href="#">SPONSORS</a></li>
-            <li class="z-20" ><a href="#">FAQS</a></li>
+            <li class="navlist" ><a href="#about">ABOUT</a></li>
+            <li class="navlist" ><a href="#schedule">SCHEDULE</a></li>
+            <li class="navlist" ><a href="#tracks">TRACKS</a></li>
+            <li class="navlist" ><a href="#prizes">PRIZES</a></li>
+            <li class="navlist" ><a href="#sponsors">SPONSORS</a></li>
+            <li class="navlist" ><a href="#faqs">FAQS</a></li>
           </ul>
         </nav>
       </div>
@@ -94,12 +97,14 @@
     </div>
     <!-- About section ends here -->
     <section
+      id="schedule"
       class="h-screen w-full border-2 border-black grid place-items-center"
     >
       TIMELINE
     </section>
     <section
-      class="h-screen w-full border-2 border-black grid place-items-center"
+      id="tracks"
+    class="h-screen w-full border-2 border-black grid place-items-center"
     >
     <div class="header">
       <div>
@@ -177,7 +182,7 @@
       </div>
   </div>
     </section>
-    <section class="h-screen w-full border-2 border-black grid place-items-center">
+    <section id="prizes" class="h-screen w-full border-2 border-black grid place-items-center">
       <div class="stack">
         <div class="head">PRIZES</div>
         <div class="imgDiv">
@@ -186,11 +191,13 @@
       </div>
     </section>
     <section
+      id="sponsors"
       class="h-screen w-full border-2 border-black grid place-items-center"
     >
       SPONSORS
     </section>
     <section
+      id="faqs"
       class="h-screen w-full border-2 border-black grid place-items-center"
     >
       FAQS
