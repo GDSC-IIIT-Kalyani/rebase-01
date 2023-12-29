@@ -109,7 +109,7 @@ nav ul li a {
     font-weight: bold;
 }
 
-/* Prizes section */
+/* --------------------- PRIZES SECTION BEGINING------------------------------- */
 .stack {
   display: grid;
 }
@@ -117,21 +117,22 @@ nav ul li a {
 .head {
   color: #e82338;
   font-family: 'Bangers';
-  font-size: 10vw;
+  font-size: 8vw;
   -webkit-text-stroke-width: 0.26vw;
   -webkit-text-stroke-color: black;
   text-shadow: 0.4vw 0.33vw 0px black;
   text-align: start;
-  padding-left: 10vw;
+  margin: 0rem 0rem 0rem 0rem;
   z-index: 1;
 }
 
 .imgDiv {
-  height: 75vh;
-  width: 100vw;
+  height: 85%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: -4%;
 }
 
 img {
@@ -139,6 +140,7 @@ img {
   width: auto;
   align-self: center;
 }
+/* --------------------- PRIZES SECTION ENDING ------------------------------- */
 
 /* Tracks css */
 .hero_heading {
@@ -295,10 +297,11 @@ body, .hero_heading, .tracks-window, .info-window, .rectangle, .body-text, .imag
     margin: -10rem 0rem 0rem 20rem;
   }
   .info-window {
+    margin: -27rem 0rem 0rem -5rem;
     height: 30.0625rem;
   }
   .tracks-window {
-    margin: -19rem 0rem 0rem -23rem;
+    margin: -17rem 0rem 0rem -23rem;
     height: 24.1875rem;
     z-index: 3;
   }
@@ -323,13 +326,17 @@ body, .hero_heading, .tracks-window, .info-window, .rectangle, .body-text, .imag
 @media (max-width: 780px){
   .hero_heading {
     font-size: 4rem;
-    margin: -10rem 0rem 0rem -16rem;
+    margin: -10rem 0rem 0rem -18rem;
     text-shadow: 0.13rem 0.2rem 0 #000;
     letter-spacing: 0.2rem;
 }
 .page_no{
   font-size: 32px;
   margin: -10rem 0rem 0rem 14rem;
+}
+.info-window {
+  height: 27.0625rem;
+  margin: -29rem 0rem 0rem -5rem;
 }
   .tracks-window {
     margin: -12rem 0rem 0rem -19rem;
@@ -357,7 +364,7 @@ body, .hero_heading, .tracks-window, .info-window, .rectangle, .body-text, .imag
   .body-text{
     font-size: 15px;
     width:280px;
-    margin: -24rem 0rem 0rem 3rem;
+    margin: -22.5rem 0rem 0rem 3rem;
 
   }
 
@@ -374,31 +381,31 @@ body, .hero_heading, .tracks-window, .info-window, .rectangle, .body-text, .imag
   }
   .tracks-window {
       height: 17.1875rem;
-      margin: -30rem 0rem 0rem -12rem;
+      margin: -28rem 0rem 0rem -12rem;
   }
   .info-window {
-      height: 22.0625rem;
-      margin: -12rem 0rem 0rem -7rem;
+      height: 20.5rem;
+      margin: -10rem 0rem 0rem -7rem;
   }
   /* .image-window{
       padding: 28rem 0rem 0rem 49rem;
   } */
   .track-rectangle1{
       height: 3.56rem;
-      margin: -15.9rem 0rem 0rem -0.67rem;
+      margin: -15.9rem 0rem 0rem -0.60rem;
   }
   .track-rectangle2{
       height: 3.56rem;
-      margin: -0.1rem 0rem 0rem -0.67rem;
+      margin: -0.1rem 0rem 0rem -0.60rem;
   }
   .track-rectangle3{
       height: 3.56rem;
-      margin: -0.1rem 0rem 0rem -0.67rem;
+      margin: -0.1rem 0rem 0rem -0.60rem;
   }
   .body-text {
-      font-size: 13px;
-      width: 250px;
-      margin: -19rem 0rem 0rem 2rem;
+      font-size: 12px;
+      width: 230px;
+      margin: -17rem 0rem 0rem 2rem;
   }
   #track-txt{
       font-family: 'Press Start 2P';
