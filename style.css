@@ -413,7 +413,7 @@ body, .hero_heading, .tracks-window, .info-window, .rectangle, .body-text, .imag
 }
 
 
-/* ---------------------------------------- ABOUT SECTION BEGINS HERE --------------------------------------------- */
+/* ---------------------------------------- ABOUT SECTION BEGINS HERE - By Iman --------------------------------------------- */
 #about-text {
   font-family: 'Bangers', sans-serif;
   color: #e82338;
@@ -443,7 +443,7 @@ body, .hero_heading, .tracks-window, .info-window, .rectangle, .body-text, .imag
 }
 
 #main-paragraph {
-  font-family: 'Kosugi Maru', sans-serif;
+  font-family: 'Roboto Mono', sans-serif;
   margin-top: 0%;
   margin-bottom: 0%;
   width: 25%;
