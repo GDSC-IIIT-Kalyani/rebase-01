@@ -80,6 +80,7 @@ nav ul li a {
   font-weight: bold;
   font-style: normal;
 }
+/* --------------------- PRIZES SECTION BEGINING------------------------------- */
 body {
   background-color: #f4e1b9;
   position: relative;
@@ -92,21 +93,22 @@ body {
 .head {
   color: #e82338;
   font-family: 'Bangers';
-  font-size: 10vw;
+  font-size: 8vw;
   -webkit-text-stroke-width: 0.26vw;
   -webkit-text-stroke-color: black;
   text-shadow: 0.4vw 0.33vw 0px black;
   text-align: start;
-  padding-left: 10vw;
+  margin: 0rem 0rem 0rem 0rem;
   z-index: 1;
 }
 
 .imgDiv {
-  height: 75vh;
-  width: 100vw;
+  height: 85%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: -4%;
 }
 
 img {
@@ -114,6 +116,7 @@ img {
   width: auto;
   align-self: center;
 }
+/* --------------------- PRIZES SECTION ENDING ------------------------------- */
 
 .rebase-head {
   font-family: 'Japanese Robot';
