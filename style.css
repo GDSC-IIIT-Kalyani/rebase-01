@@ -55,7 +55,7 @@
 /* Kosugi Maru */
 @font-face {
   font-family: 'Kosugi Maru';
-  src: url(/fonts/Kosugi_Maru/KosugiMaru-Regular.ttf) format('truetype');
+  src: url('/fonts/Kosugi_Maru/KosugiMaru-Regular.ttf') format('truetype');
 }
 
 /* ----------------------------------- fonts end ---------------------------------------- */
@@ -804,4 +804,7 @@ body, .hero_heading, .tracks-window, .info-window, .rectangle, .body-text, .imag
   }
 }
 /* ---------------------------------------- ABOUT SECTION ENDS HERE --------------------------------------------- */
+
+
+
 
