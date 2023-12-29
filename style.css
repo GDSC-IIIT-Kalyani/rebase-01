@@ -87,11 +87,29 @@ nav ul li a {
   color: white;
 }
 
-body {
-  background-color: #f4e1b9;
-  position: relative;
+/* navbar ends */
+
+/* Hero Text Items */
+.rebase-head {
+  font-family: 'Japanese Robot';
 }
 
+.heading {
+  -webkit-text-stroke: 0.3rem black;
+  text-shadow: -0.6rem 0.6rem black,-1.2rem 1.2rem #e32735;
+}
+
+.head-one{
+  -webkit-text-stroke: 0.3rem black;
+  text-shadow: -0.6rem 0.6rem black;
+}
+
+.hero-vol{
+    font-family: 'Passion One', sans-serif;
+    font-weight: bold;
+}
+
+/* Prizes section */
 .stack {
   display: grid;
 }
@@ -122,21 +140,6 @@ img {
   align-self: center;
 }
 
-.rebase-head {
-  font-family: 'Japanese Robot';
-}
-
-.heading {
-  -webkit-text-stroke: 5px black;
-  text-shadow: -15px 15px #000;
-}
-
-.hero-vol{
-    font-family: 'Passion One', sans-serif;
-    font-weight: bold;
-}
-
-
 /* Tracks css */
 .hero_heading {
   position: absolute;
@@ -159,10 +162,6 @@ img {
   margin: -10rem 0rem 0rem 26rem;
   font-size: 40px;
   -webkit-text-stroke: 3px#000;
-}
-
-body {
-  background-color: #F4E1B9;
 }
 
 .tracks-window {
