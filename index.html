@@ -12,25 +12,29 @@
       rel="stylesheet"
     />
     <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Kosugi+Maru&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     <script src="./main.js"></script>
     <title>Rebase <01></title>
   </head>
   <body class="bg-[#f4e1b9] w-[80%] lg:w-[70%] m-auto">
+    
+    <!-- Navbar and logo -->
     <div class="flex justify-center  w-full">
-      <!-- border-solid border-2 border-black -->
-      <div class="2xl:w-44 sm:w-24 md:w-32 xl:w-32">
+      <!-- logo -->
+      <div class="w-[15%]">
         <a href="#"><img class="shrink-0" src="/public/logo.webp" alt="logo" /></a>
       </div>
 
-      <div class="flex justify-center p-2">
-        <nav class="relative after:absolute after:top-[10%] after:left-[-1%] after:right-[1%] after:bottom-[0%] shrink-0 ">
-          <ul class="flex 2xl:gap-12 xl:gap-12 lg:gap-4 gap-4  2xl:text-lg xl:text-md lg:text-sm md:text-xs sm:text-[0.6rem] font-bold 2xl:py-6 md:py-4 sm:py-3 2xl:px-8 md:px-6 sm:px-4 xl:px-8 bg-[#de533c]">
-            <li class="z-20" ><a href="#">ABOUT</a></li>
-            <li class="z-20" ><a href="#">SCHEDULE</a></li>
-            <li class="z-20" ><a href="#">TRACKS</a></li>
-            <li class="z-20" ><a href="#">PRIZES</a></li>
-            <li class="z-20" ><a href="#">SPONSORS</a></li>
-            <li class="z-20" ><a href="#">FAQS</a></li>
+      <!-- navbar -->
+      <div class="p-2">
+        <nav class="relative after:absolute after:top-[10%] after:left-[-1%] after:right-[1%] after:bottom-[-10%] shrink-0 ">
+          <ul class="flex 2xl:gap-12 xl:gap-12 lg:gap-4 gap-4  2xl:text-lg xl:text-md lg:text-sm md:text-xs font-bold 2xl:py-6 md:py-4 2xl:px-8 md:px-6 xl:px-8 bg-[#de533c]">
+            <li class="navlist" ><a href="#about">ABOUT</a></li>
+            <li class="navlist" ><a href="#schedule">SCHEDULE</a></li>
+            <li class="navlist" ><a href="#tracks">TRACKS</a></li>
+            <li class="navlist" ><a href="#prizes">PRIZES</a></li>
+            <li class="navlist" ><a href="#sponsors">SPONSORS</a></li>
+            <li class="navlist" ><a href="#faqs">FAQS</a></li>
           </ul>
         </nav>
       </div>
@@ -39,38 +43,37 @@
 
     <section id="home" class="h-screen w-full">
       <div class="textpart">
-        <div class="head-vol flex sm:gap-8 md:gap-8 lg:gap-8 xl:gap-8 2xl:gap-8">
+        <div class="head-vol flex md:gap-8 lg:gap-8 xl:gap-8 2xl:gap-8">
           
-          <div class='rebase-head relative text-[#e32735] sm:text-[5rem] md:text-[6rem] lg:text-[7rem] xl:text-[9rem] 2xl:text-[12rem]'>
-            <h1>Rebase</h1>
-          <div class='absolute heading -top-6 left-6 text-[#f4e1b9]'>
-            <h1>Rebase</h1>
-          </div>
+          <div class="rebase-head heading">
+            <h1 class="md:text-[6.5rem] lg:text-[8rem] xl:text-10rem 2xl:text-[12rem] text-[#f4e1b9]">REBASE</h1>
           </div>
 
             <div class="block relative">
-              <div class='hero-vol sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl 2xl:translate-y-24 xl:translate-y-[4.5rem] lg:translate-y-12 md:translate-y-8 sm:translate-y-8'>
+              <div class='hero-vol md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl 2xl:translate-y-24 xl:translate-y-[4.5rem] lg:translate-y-12 md:translate-y-8'>
                 <h3 class="">
                   VOLUME
                 </h3>
               </div>
-              <div class="z-50 2xl:text-[18rem] xl:text-[14rem] lg:text-[11rem] md:text-[9rem] sm:text-[7rem] heading absolute xl:-left-36 lg:-left-28 md:-left-24 sm:-left-16">
+              <div class="z-50 2xl:text-[18rem] xl:text-[13rem] lg:text-[10rem] md:text-[8rem] head-one absolute xl:-left-28 lg:-left-20 md:-left-20">
                 <h1 class="rebase-head text-[#E82338]">&lt;01&gt;</h1>
               </div>
             </div>
         </div>
       </div>
-      <div class="relative 2xl:-translate-y-32 sm:-translate-y-16 lg:-translate-y-20 xl:-translate-y-24">
+
+      <!-- Images and socials -->
+      <div class="relative 2xl:-translate-y-28 lg:-translate-y-16 xl:-translate-y-16 md:-translate-y-12">
         <img class="m-auto w-full" src="/public/landing.png" alt="landing">
 
-        <div class="absolute top-24">
+        <div class="absolute md:top-12 md:left-4 2xl:top-28 2xl:left-12">
           <div class='mx-auto'>
             <ul class='block m-auto'>
-              <li class=""><a href="https://gdsc.bio.link/"><img src="/public/gdschero.svg" alt="gdsc"></a></li>
-              <li class="my-6" ><a href="https://discord.gg/tcaxPN6CNs"><img src="/public/discord.svg" alt=""></a></li>
-              <li><a href="https://twitter.com/gdsciiitkalyani"><img src="/public/x.svg" alt=""></a></li>
-              <li><a href="https://www.youtube.com/channel/UCvRPKamvUtnQhij5y1MF11A"><img src="/public/ythero.svg" alt=""></a></li>
-              <li><a href="https://instagram.com/gdsciiitkalyani"><img src="/public/instahero.svg" alt=""></a></li>
+              <li class=""><a href="https://gdsc.bio.link/"><img class="md:w-16" src="/public/gdschero.svg" alt="gdsc"></a></li>
+              <li class="md:my-3" ><a href="https://discord.gg/tcaxPN6CNs"><img class="md:w-10" src="/public/discord.svg" alt=""></a></li>
+              <li class="md:my-4"><a href="https://twitter.com/gdsciiitkalyani"><img class="md:w-7" src="/public/x.svg" alt=""></a></li>
+              <li class="md:my-4"><a href="https://www.youtube.com/channel/UCvRPKamvUtnQhij5y1MF11A"><img class="md:w-10" src="/public/ythero.svg" alt=""></a></li>
+              <li class="md:my-4"><a href="https://instagram.com/gdsciiitkalyani"><img class="md:w-10" src="/public/instahero.svg" alt=""></a></li>
             </ul>
           </div>
         </div>
@@ -78,7 +81,7 @@
 
     </section>
 
-    <!-- About section begins here -->
+    <!-- About section begins here - By Iman-->
     <div id="about">
       <p id="about-text">About</p>
       <p id="zero-one">01.</p>
@@ -94,12 +97,14 @@
     </div>
     <!-- About section ends here -->
     <section
+      id="schedule"
       class="h-screen w-full border-2 border-black grid place-items-center"
     >
       TIMELINE
     </section>
     <section
-      class="h-screen w-full border-2 border-black grid place-items-center"
+      id="tracks"
+    class="h-screen w-full border-2 border-black grid place-items-center"
     >
     <div class="header">
       <div>
@@ -177,7 +182,7 @@
       </div>
   </div>
     </section>
-    <section class="h-screen w-full border-2 border-black grid place-items-center">
+    <section id="prizes" class="h-screen w-full border-2 border-black grid place-items-center">
       <div class="stack">
         <div class="head">PRIZES</div>
         <div class="imgDiv">
@@ -186,11 +191,13 @@
       </div>
     </section>
     <section
+      id="sponsors"
       class="h-screen w-full border-2 border-black grid place-items-center"
     >
       SPONSORS
     </section>
     <section
+      id="faqs"
       class="h-screen w-full border-2 border-black grid place-items-center"
     >
       FAQS

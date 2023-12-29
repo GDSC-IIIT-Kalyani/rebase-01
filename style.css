@@ -61,17 +61,11 @@
 /* ----------------------------------- fonts end ---------------------------------------- */
 
 /* write vannila css below */
-nav {
-  /* position: relative; */
-}
+
+/* ---------------------------------------- NAVBAR -------------------------------------- */
 
 nav::after {
   content: '';
-  /* position: absolute;
-    top: 10%;
-    left: -1%;
-    right: 1%;
-    bottom: 0%; */
   border: 0.188rem solid black;
 }
 
@@ -80,12 +74,42 @@ nav ul li a {
   font-weight: bold;
   font-style: normal;
 }
-/* --------------------- PRIZES SECTION BEGINING------------------------------- */
-body {
-  background-color: #f4e1b9;
-  position: relative;
+
+.navlist {
+  z-index: 20;
 }
 
+.navlist a{
+  transition: 0.5s;
+}
+
+.navlist a:hover{
+  color: white;
+}
+
+/* navbar ends */
+
+/* Hero Text Items */
+.rebase-head {
+  font-family: 'Japanese Robot';
+}
+
+.heading {
+  -webkit-text-stroke: 0.3rem black;
+  text-shadow: -0.6rem 0.6rem black,-1.2rem 1.2rem #e32735;
+}
+
+.head-one{
+  -webkit-text-stroke: 0.3rem black;
+  text-shadow: -0.6rem 0.6rem black;
+}
+
+.hero-vol{
+    font-family: 'Passion One', sans-serif;
+    font-weight: bold;
+}
+
+/* --------------------- PRIZES SECTION BEGINING------------------------------- */
 .stack {
   display: grid;
 }
@@ -118,21 +142,6 @@ img {
 }
 /* --------------------- PRIZES SECTION ENDING ------------------------------- */
 
-.rebase-head {
-  font-family: 'Japanese Robot';
-}
-
-.heading {
-  -webkit-text-stroke: 5px black;
-  text-shadow: -15px 15px #000;
-}
-
-.hero-vol{
-    font-family: 'Passion One', sans-serif;
-    font-weight: bold;
-}
-
-
 /* Tracks css */
 .hero_heading {
   position: absolute;
@@ -155,10 +164,6 @@ img {
   margin: -10rem 0rem 0rem 26rem;
   font-size: 40px;
   -webkit-text-stroke: 3px#000;
-}
-
-body {
-  background-color: #F4E1B9;
 }
 
 .tracks-window {
@@ -416,7 +421,7 @@ body, .hero_heading, .tracks-window, .info-window, .rectangle, .body-text, .imag
 }
 
 
-/* ---------------------------------------- ABOUT SECTION BEGINS HERE --------------------------------------------- */
+/* ---------------------------------------- ABOUT SECTION BEGINS HERE - By Iman --------------------------------------------- */
 #about-text {
   font-family: 'Bangers', sans-serif;
   color: #e82338;
@@ -446,7 +451,7 @@ body, .hero_heading, .tracks-window, .info-window, .rectangle, .body-text, .imag
 }
 
 #main-paragraph {
-  font-family: 'Kosugi Maru', sans-serif;
+  font-family: 'Roboto Mono', sans-serif;
   margin-top: 0%;
   margin-bottom: 0%;
   width: 25%;
@@ -456,6 +461,7 @@ body, .hero_heading, .tracks-window, .info-window, .rectangle, .body-text, .imag
   top: 200px;
   left: 19%;
   line-height: 1.5;
+  font-size: 0.9rem;
 }
 
 #images {
@@ -481,6 +487,7 @@ body, .hero_heading, .tracks-window, .info-window, .rectangle, .body-text, .imag
   width: 97vw;
   position: relative;
   height: 46vw;
+  left: -20%;
 }
 
 @media (max-width: 1362px) {
@@ -505,7 +512,7 @@ body, .hero_heading, .tracks-window, .info-window, .rectangle, .body-text, .imag
   }
 
   #main-paragraph {
-      font-size: 0.8rem;
+      font-size: 0.7rem;
   }
 
   #images {
@@ -564,10 +571,15 @@ body, .hero_heading, .tracks-window, .info-window, .rectangle, .body-text, .imag
 
   #main-paragraph {
       top: 104px;
+      font-size: 0.74rem;
   }
 
   #images {
       top: -347px;
+  }
+
+  #about {
+      left: -10%;
   }
 }
 
@@ -583,7 +595,7 @@ body, .hero_heading, .tracks-window, .info-window, .rectangle, .body-text, .imag
 
   #main-paragraph {
       top: 109px;
-      font-size: 0.7rem;
+      font-size: 0.64rem;
   }
 
   #images {
@@ -603,7 +615,7 @@ body, .hero_heading, .tracks-window, .info-window, .rectangle, .body-text, .imag
 
   #main-paragraph {
       top: 114px;
-      font-size: 0.6rem;
+      font-size: 0.53rem;
   }
 
   #images {
@@ -674,7 +686,7 @@ body, .hero_heading, .tracks-window, .info-window, .rectangle, .body-text, .imag
 
   #main-paragraph {
       top: 136px;
-      font-size: 0.55rem;
+      font-size: 0.5rem;
   }
 }
 
@@ -693,7 +705,7 @@ body, .hero_heading, .tracks-window, .info-window, .rectangle, .body-text, .imag
 
   #main-paragraph {
       top: 152px;
-      font-size: 0.7rem;
+      font-size: 0.64rem;
       width: 40%;
       left: 32%;
   }
@@ -718,7 +730,7 @@ body, .hero_heading, .tracks-window, .info-window, .rectangle, .body-text, .imag
 
   #main-paragraph {
       top: 152px;
-      font-size: 0.7rem;
+      font-size: 0.6rem;
       width: 40%;
       left: 30%;
   }
@@ -757,7 +769,7 @@ body, .hero_heading, .tracks-window, .info-window, .rectangle, .body-text, .imag
   }
 
   #main-paragraph {
-      font-size: 0.6rem;
+      font-size: 0.53rem;
   }
 }
 
@@ -779,13 +791,13 @@ body, .hero_heading, .tracks-window, .info-window, .rectangle, .body-text, .imag
   }
 
   #main-paragraph {
-      font-size: 0.5rem;
+      font-size: 0.45rem;
   }
 }
 
 @media screen and (max-width: 360px) {
   #main-paragraph {
-      font-size : 0.4rem;
+      font-size : 0.34rem;
       top: 141px;
   }
 
