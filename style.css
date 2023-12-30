@@ -120,10 +120,20 @@ nav ul li a {
   font-size: 8vw;
   -webkit-text-stroke-width: 0.26vw;
   -webkit-text-stroke-color: black;
-  text-shadow: 0.4vw 0.33vw 0px black;
+  text-shadow: 0.35vw 0.25vw 0px black;
   text-align: start;
-  margin: 0rem 0rem 0rem 0rem;
+  letter-spacing: 0.3vw;
+  margin: 0rem 0rem 0rem 3rem;
   z-index: 1;
+}
+.prizes_page_no {
+  position: absolute;
+  text-align: end;
+  color: #E82338;
+  font-family: "Japanese Robot", sans-serif;
+  margin: 3vh 10vw 0 60vw;
+  font-size: 2.6vw;
+  -webkit-text-stroke: 0.195vw #000;
 }
 
 .imgDiv {
@@ -133,12 +143,38 @@ nav ul li a {
   justify-content: center;
   align-items: center;
   margin-top: -4%;
+  margin-left: 4vw;
 }
 
 img {
   height: 100%;
   width: auto;
   align-self: center;
+}
+
+@media screen and (max-width: 805px) {
+  .prizes_page_no {
+    color: #E82338;
+    font-family: "Japanese Robot", sans-serif;
+    margin: 3vh 10vw 0 70vw;
+    font-size: 3vw;
+    -webkit-text-stroke: 0.2.3vw #000;
+  }
+  .head {
+    text-align: start;
+    margin: 0rem 0rem 0rem 1rem;
+  }
+  .img{
+    width: 100%;
+  }
+  .imgDiv {
+  height: 100%;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  }
 }
 /* --------------------- PRIZES SECTION ENDING ------------------------------- */
 
