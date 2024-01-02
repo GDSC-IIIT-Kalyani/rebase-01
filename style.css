@@ -178,6 +178,34 @@ img {
 }
 /* --------------------- PRIZES SECTION ENDING ------------------------------- */
 
+
+/*----------------------TIMELINE BEGINNING------------------------------------*/
+
+.actual-heading{
+  position: absolute;
+  color: #E82338;
+  text-shadow: 0.21875rem 0.30625rem 0 #000;
+  font-family: Bangers;
+  font-size: 7rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.3rem;
+  -webkit-text-stroke: 0.178571rem #000;
+  margin: -11rem 0rem 0rem -28rem;
+}
+
+.page{
+  position: absolute;
+  color: #E82338;
+  font-family: "Japanese Robot", sans-serif;
+  margin: -10rem 0rem 0rem 26rem;
+  font-size: 40px;
+  -webkit-text-stroke: 3px#000;
+}
+/*----------------------TIMELINE ENDING---------------------------------------*/
+
+
 /* Tracks css */
 .hero_heading {
   position: absolute;
