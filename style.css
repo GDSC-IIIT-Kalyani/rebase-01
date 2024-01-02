@@ -192,17 +192,83 @@ img {
   line-height: normal;
   letter-spacing: 0.3rem;
   -webkit-text-stroke: 0.178571rem #000;
-  margin: -11rem 0rem 0rem -28rem;
+  margin: 2.2rem 2.5rem 0rem -35rem;
 }
 
 .page{
   position: absolute;
   color: #E82338;
   font-family: "Japanese Robot", sans-serif;
-  margin: -10rem 0rem 0rem 26rem;
+  margin: 3.2rem 0rem 0rem 26rem;
   font-size: 40px;
   -webkit-text-stroke: 3px#000;
 }
+
+
+
+.dark-rect {
+  margin-left: 0.9375rem; /* 15px / 16px = 0.9375rem */
+  position: relative;
+  margin: 6rem;
+}
+
+.border-rect {
+  z-index: 100;
+  position: absolute;
+  bottom: -0.975rem; /* -14px / 16px = -0.875rem */
+  left: -0.975rem; /* -13px / 16px = -0.8125rem */
+
+}
+
+.dashed-line {
+  z-index: 1000;
+  position: absolute;
+  bottom: 13.4375rem; /* 295px / 16px = 18.4375rem */
+  left: 8.625rem; /* 170px / 16px = 10.625rem */
+}
+
+.left-arrow {
+  position: absolute;
+  left: 1.625rem; /* 10px / 16px = 0.625rem */
+  bottom: 11.875rem; /* 270px / 16px = 16.875rem */
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 5000;
+}
+
+.right-arrow {
+  position: absolute;
+  right: 2.75rem; /* 100px / 16px = 6.25rem */
+  bottom: 11.875rem; /* 270px / 16px = 16.875rem */
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 5000;
+}
+
+.timeline-1, .timeline-2, .timeline-3, .timeline-4, .timeline-5 {
+  position: absolute;
+  bottom: 9.375rem; /* 230px / 16px = 14.375rem */
+  z-index: 2000;
+}
+
+.dash{
+  width:50rem;
+}
+
+.timeline-1 {
+  left: 12.375rem; /* 230px / 16px = 14.375rem */
+}
+
+.timeline-2 {
+  left: 28.125rem; /* 450px / 16px = 28.125rem */
+}
+
+.timeline-3 {
+  left: 43.875rem; /* 570px / 16px = 35.625rem */
+}
+
 /*----------------------TIMELINE ENDING---------------------------------------*/
 
 
