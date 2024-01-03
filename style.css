@@ -55,7 +55,7 @@
 /* Kosugi Maru */
 @font-face {
   font-family: 'Kosugi Maru';
-  src: url(/fonts/Kosugi_Maru/KosugiMaru-Regular.ttf) format('truetype');
+  src: url('/fonts/Kosugi_Maru/KosugiMaru-Regular.ttf') format('truetype');
 }
 
 /* ----------------------------------- fonts end ---------------------------------------- */
@@ -87,11 +87,29 @@ nav ul li a {
   color: white;
 }
 
-body {
-  background-color: #f4e1b9;
-  position: relative;
+/* navbar ends */
+
+/* Hero Text Items */
+.rebase-head {
+  font-family: 'Japanese Robot';
 }
 
+.heading {
+  -webkit-text-stroke: 0.3rem black;
+  text-shadow: -0.6rem 0.6rem black,-1.2rem 1.2rem #e32735;
+}
+
+.head-one{
+  -webkit-text-stroke: 0.3rem black;
+  text-shadow: -0.6rem 0.6rem black;
+}
+
+.hero-vol{
+    font-family: 'Passion One', sans-serif;
+    font-weight: bold;
+}
+
+/* --------------------- PRIZES SECTION BEGINING------------------------------- */
 .stack {
   display: grid;
 }
@@ -99,21 +117,33 @@ body {
 .head {
   color: #e82338;
   font-family: 'Bangers';
-  font-size: 10vw;
+  font-size: 8vw;
   -webkit-text-stroke-width: 0.26vw;
   -webkit-text-stroke-color: black;
-  text-shadow: 0.4vw 0.33vw 0px black;
+  text-shadow: 0.35vw 0.25vw 0px black;
   text-align: start;
-  padding-left: 10vw;
+  letter-spacing: 0.3vw;
+  margin: 0rem 0rem 0rem 3rem;
   z-index: 1;
+}
+.prizes_page_no {
+  position: absolute;
+  text-align: end;
+  color: #E82338;
+  font-family: "Japanese Robot", sans-serif;
+  margin: 3vh 10vw 0 60vw;
+  font-size: 2.6vw;
+  -webkit-text-stroke: 0.195vw #000;
 }
 
 .imgDiv {
-  height: 75vh;
-  width: 100vw;
+  height: 85%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: -4%;
+  margin-left: 4vw;
 }
 
 img {
@@ -122,19 +152,124 @@ img {
   align-self: center;
 }
 
-.rebase-head {
-  font-family: 'Japanese Robot';
+@media screen and (max-width: 805px) {
+  .prizes_page_no {
+    color: #E82338;
+    font-family: "Japanese Robot", sans-serif;
+    margin: 3vh 10vw 0 70vw;
+    font-size: 3vw;
+    -webkit-text-stroke: 0.2.3vw #000;
+  }
+  .head {
+    text-align: start;
+    margin: 0rem 0rem 0rem 1rem;
+  }
+  .img{
+    width: 100%;
+  }
+  .imgDiv {
+  height: 100%;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  }
+}
+/* --------------------- PRIZES SECTION ENDING ------------------------------- */
+
+
+/*----------------------TIMELINE BEGINNING------------------------------------*/
+
+.actual-heading{
+  position: absolute;
+  color: #E82338;
+  text-shadow: 0.21875rem 0.30625rem 0 #000;
+  font-family: Bangers;
+  font-size: 7rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.3rem;
+  -webkit-text-stroke: 0.178571rem #000;
+  margin: 2.2rem 2.5rem 0rem -35rem;
 }
 
-.heading {
-  -webkit-text-stroke: 5px black;
-  text-shadow: -15px 15px #000;
+.page{
+  position: absolute;
+  color: #E82338;
+  font-family: "Japanese Robot", sans-serif;
+  margin: 3.2rem 0rem 0rem 26rem;
+  font-size: 40px;
+  -webkit-text-stroke: 3px#000;
 }
 
-.hero-vol{
-    font-family: 'Passion One', sans-serif;
-    font-weight: bold;
+
+
+.dark-rect {
+  margin-left: 0.9375rem; /* 15px / 16px = 0.9375rem */
+  position: relative;
+  margin: 6rem;
 }
+
+.border-rect {
+  z-index: 100;
+  position: absolute;
+  bottom: -0.975rem; /* -14px / 16px = -0.875rem */
+  left: -0.975rem; /* -13px / 16px = -0.8125rem */
+
+}
+
+.dashed-line {
+  z-index: 1000;
+  position: absolute;
+  bottom: 13.4375rem; /* 295px / 16px = 18.4375rem */
+  left: 8.625rem; /* 170px / 16px = 10.625rem */
+}
+
+.left-arrow {
+  position: absolute;
+  left: 1.625rem; /* 10px / 16px = 0.625rem */
+  bottom: 11.875rem; /* 270px / 16px = 16.875rem */
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 5000;
+}
+
+.right-arrow {
+  position: absolute;
+  right: 2.75rem; /* 100px / 16px = 6.25rem */
+  bottom: 11.875rem; /* 270px / 16px = 16.875rem */
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 5000;
+}
+
+.timeline-1, .timeline-2, .timeline-3, .timeline-4, .timeline-5 {
+  position: absolute;
+  bottom: 9.375rem; /* 230px / 16px = 14.375rem */
+  z-index: 2000;
+}
+
+.dash{
+  width:50rem;
+}
+
+.timeline-1 {
+  left: 12.375rem; /* 230px / 16px = 14.375rem */
+}
+
+.timeline-2 {
+  left: 28.125rem; /* 450px / 16px = 28.125rem */
+}
+
+.timeline-3 {
+  left: 43.875rem; /* 570px / 16px = 35.625rem */
+}
+
+/*----------------------TIMELINE ENDING---------------------------------------*/
 
 
 /* Tracks css */
@@ -159,10 +294,6 @@ img {
   margin: -10rem 0rem 0rem 26rem;
   font-size: 40px;
   -webkit-text-stroke: 3px#000;
-}
-
-body {
-  background-color: #F4E1B9;
 }
 
 .tracks-window {
@@ -296,10 +427,11 @@ body, .hero_heading, .tracks-window, .info-window, .rectangle, .body-text, .imag
     margin: -10rem 0rem 0rem 20rem;
   }
   .info-window {
+    margin: -27rem 0rem 0rem -5rem;
     height: 30.0625rem;
   }
   .tracks-window {
-    margin: -19rem 0rem 0rem -23rem;
+    margin: -17rem 0rem 0rem -23rem;
     height: 24.1875rem;
     z-index: 3;
   }
@@ -324,13 +456,17 @@ body, .hero_heading, .tracks-window, .info-window, .rectangle, .body-text, .imag
 @media (max-width: 780px){
   .hero_heading {
     font-size: 4rem;
-    margin: -10rem 0rem 0rem -16rem;
+    margin: -10rem 0rem 0rem -18rem;
     text-shadow: 0.13rem 0.2rem 0 #000;
     letter-spacing: 0.2rem;
 }
 .page_no{
   font-size: 32px;
   margin: -10rem 0rem 0rem 14rem;
+}
+.info-window {
+  height: 27.0625rem;
+  margin: -29rem 0rem 0rem -5rem;
 }
   .tracks-window {
     margin: -12rem 0rem 0rem -19rem;
@@ -358,7 +494,7 @@ body, .hero_heading, .tracks-window, .info-window, .rectangle, .body-text, .imag
   .body-text{
     font-size: 15px;
     width:280px;
-    margin: -24rem 0rem 0rem 3rem;
+    margin: -22.5rem 0rem 0rem 3rem;
 
   }
 
@@ -375,31 +511,31 @@ body, .hero_heading, .tracks-window, .info-window, .rectangle, .body-text, .imag
   }
   .tracks-window {
       height: 17.1875rem;
-      margin: -30rem 0rem 0rem -12rem;
+      margin: -28rem 0rem 0rem -12rem;
   }
   .info-window {
-      height: 22.0625rem;
-      margin: -12rem 0rem 0rem -7rem;
+      height: 20.5rem;
+      margin: -10rem 0rem 0rem -7rem;
   }
   /* .image-window{
       padding: 28rem 0rem 0rem 49rem;
   } */
   .track-rectangle1{
       height: 3.56rem;
-      margin: -15.9rem 0rem 0rem -0.67rem;
+      margin: -15.9rem 0rem 0rem -0.60rem;
   }
   .track-rectangle2{
       height: 3.56rem;
-      margin: -0.1rem 0rem 0rem -0.67rem;
+      margin: -0.1rem 0rem 0rem -0.60rem;
   }
   .track-rectangle3{
       height: 3.56rem;
-      margin: -0.1rem 0rem 0rem -0.67rem;
+      margin: -0.1rem 0rem 0rem -0.60rem;
   }
   .body-text {
-      font-size: 13px;
-      width: 250px;
-      margin: -19rem 0rem 0rem 2rem;
+      font-size: 12px;
+      width: 230px;
+      margin: -17rem 0rem 0rem 2rem;
   }
   #track-txt{
       font-family: 'Press Start 2P';
@@ -806,3 +942,516 @@ body, .hero_heading, .tracks-window, .info-window, .rectangle, .body-text, .imag
 }
 /* ---------------------------------------- ABOUT SECTION ENDS HERE --------------------------------------------- */
 
+
+
+/* ---------------------------------------- SPONSORS SECTION STARTS HERE --------------------------------------------- */
+@font-face {
+  font-family: AnimeAce2BB;
+  src: url("fonts/anime_ace_bb/animeace2bb_ot/AnimeAce20BbBold-2Av.ttf");
+}
+
+body {
+  background-color: #F4E1B9;
+}
+.sponsor-heading {
+  color: #E82338;
+
+  text-shadow: 0.33vw 0.46vw 0 #000;
+  font-family: Bangers, monospace;
+  font-size: 10vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.7vw;
+  position: relative;
+  top: 0vw;
+  right: 45vw;
+}
+
+.rectangle {
+  width: 56.93vw; /*854 182*/
+  height: 12.13vw;
+  flex-shrink: 0;
+  border: 0.6vw solid #000;
+  background: #0F283F;
+  z-index: -1;
+}
+.star-one {
+  width: 4.53vw;
+  height: 6.86vw;
+  flex-shrink:0;
+  fill: #FFF;
+  stroke-width: 0.13vw;
+  stroke: #000;
+  position:relative;
+  bottom: 4.5vw;
+}
+.star-two {
+  width: 2.13vw;
+  height: 3.26vw;
+  flex-shrink: 0;
+  fill: #FFF;
+  stroke-width: 0.13vw;
+  stroke: #000;
+  position:relative;
+  top:3vw;
+  left: 15vw;
+
+}
+.star-three {
+  width: 3.4vw;
+  height: 5.2vw;
+  flex-shrink: 0;
+  fill: #FFF;
+  stroke-width: 0.13vw;
+  stroke: #000;
+  position: relative;
+  bottom: 3.5vw;
+  left: 14vw;
+}
+
+.star-four {
+  width: 2.2vw;
+  height: 3.33vw;
+  flex-shrink: 0;
+  fill: #FFF;
+  stroke-width: 0.13vw;
+  stroke: #000;
+  position:relative;
+  top: 4vw;
+  left: 35vw;
+
+}
+.star-five {
+  width: 2.2vw;
+  height: 3.33vw;
+  flex-shrink: 0;
+  fill: #FFF;
+  stroke-width: 0.13vw;
+  stroke: #000;
+  position:relative;
+  bottom: 3vw;
+  left: 2vw;
+
+}
+.star-six {
+  width: 2.6vw;
+  height: 3.93vw;
+  flex-shrink: 0;
+  fill: #FFF;
+  stroke-width: 0.13vw;
+  stroke: #000;
+  position:relative;
+  bottom: 3vw;
+  left: 45vw;
+
+}
+.star-seven {
+  width:2.13vw;
+  height: 3.26vw;
+  flex-shrink: 0;
+  fill: #FFF;
+  stroke-width: 0.13vw;
+  stroke: #000;
+  position: relative;
+  bottom: 2vw;
+  left: 3.5vw;
+
+}
+.star-eight {
+  width: 3.4vw;
+  height: 5.2vw;
+  flex-shrink: 0;
+  fill: #FFF;
+  stroke-width: 0.13vw;
+  stroke: #000;
+  position:relative;
+  top: 4.5vw;
+  left: 35vw;
+}
+.sponsor-type {
+  color: #000;
+  font-family: 'Anime Ace';
+  font-size: 1.66vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  z-index: 3;
+}
+
+.rectangle-plat {
+  width: 16.46vw;
+  height: 4.34vw;
+  flex-shrink: 0;
+  border: 0.2vw solid #000;
+  background: #59A3BC;
+  position: relative;
+  bottom: 6.5vw;
+  left: 53.5vw;
+}
+
+.rectangle-diam {
+  width: 16.63vw;
+  height: 4.35vw;
+  flex-shrink: 0;
+  border: 0.2vw solid #000;
+  background: #FA8C7D;
+  position: relative;
+  bottom: 6.5vw;
+  right: 12vw;
+}
+
+.rectangle-gold {
+  width: 12.26vw;
+  height: 3.94vw;
+  flex-shrink: 0;
+  border:0.2vw solid #000;
+  background: #FFAD00;
+  position: relative;
+  bottom: 4.5vw;
+  left: 53.5vw;
+
+}
+
+.rectangle-silv {
+  width: 12.81vw;
+  height: 4.11vw;
+  flex-shrink: 0;
+  border: 0.2vw solid #000;
+  background: #A4CF48;
+  position: relative;
+  bottom: 4.5vw;
+  right: 9vw;
+
+}
+
+.shadow-rect-plat{
+  width: 16.46vw;
+  height: 4.25vw;
+  flex-shrink: 0;
+  border: 0.2vw solid #000;
+  position: relative;
+  bottom: 0.6vw;
+  right: 0.6vw;
+  z-index:3;
+}
+.shadow-rect-diam{
+  width: 16.63vw;
+  height: 4.35vw;
+  flex-shrink: 0;
+  border: 0.2vw solid #000;
+  position: relative;
+  bottom: 0.6vw;
+  right: 0.6vw;
+  z-index:3;
+}
+
+.shadow-rect-gold{
+  width: 12.26vw;
+  height: 3.94vw;
+  flex-shrink: 0;
+  border: 0.2vw solid #000;
+  position: relative;
+  bottom: 0.6vw;
+  right: 0.6vw;
+  z-index:3;
+}
+.shadow-rect-silv{
+  width: 12.81vw;
+  height: 4.11vw;
+  flex-shrink: 0;
+  border: 0.2vw solid #000;
+  position: relative;
+  bottom: 0.6vw;
+  right: 0.6vw;
+  z-index:3;
+}
+.saturn {
+  width: 12.46vw;
+  height: 11.83vw;
+  flex-shrink: 0;
+  position:relative;
+  bottom: 8vw;
+  left: 55vw;
+  z-index: 0;
+}
+
+.moon{
+  width: 9.58vw;
+  height: 9.2vw;
+  transform: rotate(-0.923deg);
+  flex-shrink: 0;
+  position: relative;
+  bottom: 8vw;
+  left: 55vw;
+  z-index:0;
+}
+/*----media query----*/
+
+@media (max-width: 1600px){
+  .star-one {
+    max-width: 4.53vw;
+
+  }
+  .star-two {
+    max-width: 2.13vw;
+  }
+  .star-three{
+    max-width: 3.4vw;
+  }
+  .star-four{
+    max-width: 2.2vw;
+  }
+  .star-five{
+    max-width: 2.2vw;
+  }
+  .star-six{
+    max-width: 2.6vw;
+  }
+  .star-seven{
+    max-width: 2.13vw;
+  }
+  .star-eight{
+    max-width: 3.4vw;
+  }
+  .rectangle{
+    max-width: 56.93vw;
+  }
+  .rectangle-diam{
+    max-width: 16.63vw;
+  }
+  .rectangle-gold{
+    max-width: 12.26vw;
+  }
+  .rectangle-plat{
+    max-width: 16.46vw;
+  }
+  .rectangle-silv{
+    max-width: 12.81vw;
+  }
+  .sponsor-heading{
+    width: 1vw;
+  }
+  .sponsor-type{
+    width: 1vw;
+  }
+  .shadow-rect-diam{
+    max-width: 16.63vw;
+  }
+  .shadow-rect-gold{
+    max-width: 12.26vw;
+  }
+  .shadow-rect-plat{
+    max-width: 16.46vw;
+  }
+  .shadow-rect-silv{
+    max-width: 12.81vw;
+  }
+  .saturn{
+    max-width: 12.46vw;
+  }
+  .moon{
+    max-width: 9.58vw;
+  }
+}
+
+@media (max-width: 1200px){
+  .star-one {
+    max-width: 4.53vw;
+
+  }
+  .star-two {
+    max-width: 2.13vw;
+  }
+  .star-three{
+    max-width: 3.4vw;
+  }
+  .star-four{
+    max-width: 2.2vw;
+  }
+  .star-five{
+    max-width: 2.2vw;
+  }
+  .star-six{
+    max-width: 2.6vw;
+  }
+  .star-seven{
+    max-width: 2.13vw;
+  }
+  .star-eight{
+    max-width: 3.4vw;
+  }
+  .rectangle{
+    max-width: 56.93vw;
+  }
+  .rectangle-diam{
+    max-width: 16.63vw;
+  }
+  .rectangle-gold{
+    max-width: 12.26vw;
+  }
+  .rectangle-plat{
+    max-width: 16.46vw;
+  }
+  .rectangle-silv{
+    max-width: 12.81vw;
+  }
+  .sponsor-heading{
+    width: 1vw;
+  }
+  .sponsor-type{
+    width: 1vw;
+  }
+  .shadow-rect-diam{
+    max-width: 16.63vw;
+  }
+  .shadow-rect-gold{
+    max-width: 12.26vw;
+  }
+  .shadow-rect-plat{
+    max-width: 16.46vw;
+  }
+  .shadow-rect-silv{
+    max-width: 12.81vw;
+  }
+  .saturn{
+    max-width: 12.46vw;
+  }
+  .moon{
+    max-width: 9.58vw;
+  }
+}
+
+@media (max-width: 768px){
+  .star-one {
+    max-width: 4.53vw;
+
+  }
+  .star-two {
+    max-width: 2.13vw;
+  }
+  .star-three{
+    max-width: 3.4vw;
+  }
+  .star-four{
+    max-width: 2.2vw;
+  }
+  .star-five{
+    max-width: 2.2vw;
+  }
+  .star-six{
+    max-width: 2.6vw;
+  }
+  .star-seven{
+    max-width: 2.13vw;
+  }
+  .star-eight{
+    max-width: 3.4vw;
+  }
+  .rectangle{
+    max-width: 56.93vw;
+  }
+  .rectangle-diam{
+    max-width: 16.63vw;
+  }
+  .rectangle-gold{
+    max-width: 12.26vw;
+  }
+  .rectangle-plat{
+    max-width: 16.46vw;
+  }
+  .rectangle-silv{
+    max-width: 12.81vw;
+  }
+  .sponsor-heading{
+    width: 1vw;
+  }
+  .sponsor-type{
+    width: 1vw;
+  }
+  .shadow-rect-diam{
+    max-width: 16.63vw;
+  }
+  .shadow-rect-gold{
+    max-width: 12.26vw;
+  }
+  .shadow-rect-plat{
+    max-width: 16.46vw;
+  }
+  .shadow-rect-silv{
+    max-width: 12.81vw;
+  }
+  .saturn{
+    max-width: 12.46vw;
+  }
+  .moon{
+    max-width: 9.58vw;
+  }
+}
+
+@media (max-width: 320px){
+  .star-one {
+    max-width: 4.53vw;
+
+  }
+  .star-two {
+    max-width: 2.13vw;
+  }
+  .star-three{
+    max-width: 3.4vw;
+  }
+  .star-four{
+    max-width: 2.2vw;
+  }
+  .star-five{
+    max-width: 2.2vw;
+  }
+  .star-six{
+    max-width: 2.6vw;
+  }
+  .star-seven{
+    max-width: 2.13vw;
+  }
+  .star-eight{
+    max-width: 3.4vw;
+  }
+  .rectangle{
+    max-width: 56.93vw;
+  }
+  .rectangle-diam{
+    max-width: 16.63vw;
+  }
+  .rectangle-gold{
+    max-width: 12.26vw;
+  }
+  .rectangle-plat{
+    max-width: 16.46vw;
+  }
+  .rectangle-silv{
+    max-width: 12.81vw;
+  }
+  .sponsor-heading{
+    width: 1vw;
+  }
+  .sponsor-type{
+    width: 1vw;
+  }
+  .shadow-rect-diam{
+    max-width: 16.63vw;
+  }
+  .shadow-rect-gold{
+    max-width: 12.26vw;
+  }
+  .shadow-rect-plat{
+    max-width: 16.46vw;
+  }
+  .shadow-rect-silv{
+    max-width: 12.81vw;
+  }
+  .saturn{
+    max-width: 12.46vw;
+  }
+  .moon{
+    max-width: 9.58vw;
+  }
+}
