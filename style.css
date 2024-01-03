@@ -944,4 +944,514 @@ body, .hero_heading, .tracks-window, .info-window, .rectangle, .body-text, .imag
 
 
 
+/* ---------------------------------------- SPONSORS SECTION STARTS HERE --------------------------------------------- */
+@font-face {
+  font-family: AnimeAce2BB;
+  src: url("fonts/anime_ace_bb/animeace2bb_ot/AnimeAce20BbBold-2Av.ttf");
+}
 
+body {
+  background-color: #F4E1B9;
+}
+.sponsor-heading {
+  color: #E82338;
+
+  text-shadow: 0.33vw 0.46vw 0 #000;
+  font-family: Bangers, monospace;
+  font-size: 10vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.7vw;
+  position: relative;
+  top: 0vw;
+  right: 45vw;
+}
+
+.rectangle {
+  width: 56.93vw; /*854 182*/
+  height: 12.13vw;
+  flex-shrink: 0;
+  border: 0.6vw solid #000;
+  background: #0F283F;
+  z-index: -1;
+}
+.star-one {
+  width: 4.53vw;
+  height: 6.86vw;
+  flex-shrink:0;
+  fill: #FFF;
+  stroke-width: 0.13vw;
+  stroke: #000;
+  position:relative;
+  bottom: 4.5vw;
+}
+.star-two {
+  width: 2.13vw;
+  height: 3.26vw;
+  flex-shrink: 0;
+  fill: #FFF;
+  stroke-width: 0.13vw;
+  stroke: #000;
+  position:relative;
+  top:3vw;
+  left: 15vw;
+
+}
+.star-three {
+  width: 3.4vw;
+  height: 5.2vw;
+  flex-shrink: 0;
+  fill: #FFF;
+  stroke-width: 0.13vw;
+  stroke: #000;
+  position: relative;
+  bottom: 3.5vw;
+  left: 14vw;
+}
+
+.star-four {
+  width: 2.2vw;
+  height: 3.33vw;
+  flex-shrink: 0;
+  fill: #FFF;
+  stroke-width: 0.13vw;
+  stroke: #000;
+  position:relative;
+  top: 4vw;
+  left: 35vw;
+
+}
+.star-five {
+  width: 2.2vw;
+  height: 3.33vw;
+  flex-shrink: 0;
+  fill: #FFF;
+  stroke-width: 0.13vw;
+  stroke: #000;
+  position:relative;
+  bottom: 3vw;
+  left: 2vw;
+
+}
+.star-six {
+  width: 2.6vw;
+  height: 3.93vw;
+  flex-shrink: 0;
+  fill: #FFF;
+  stroke-width: 0.13vw;
+  stroke: #000;
+  position:relative;
+  bottom: 3vw;
+  left: 45vw;
+
+}
+.star-seven {
+  width:2.13vw;
+  height: 3.26vw;
+  flex-shrink: 0;
+  fill: #FFF;
+  stroke-width: 0.13vw;
+  stroke: #000;
+  position: relative;
+  bottom: 2vw;
+  left: 3.5vw;
+
+}
+.star-eight {
+  width: 3.4vw;
+  height: 5.2vw;
+  flex-shrink: 0;
+  fill: #FFF;
+  stroke-width: 0.13vw;
+  stroke: #000;
+  position:relative;
+  top: 4.5vw;
+  left: 35vw;
+}
+.sponsor-type {
+  color: #000;
+  font-family: 'Anime Ace';
+  font-size: 1.66vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  z-index: 3;
+}
+
+.rectangle-plat {
+  width: 16.46vw;
+  height: 4.34vw;
+  flex-shrink: 0;
+  border: 0.2vw solid #000;
+  background: #59A3BC;
+  position: relative;
+  bottom: 6.5vw;
+  left: 53.5vw;
+}
+
+.rectangle-diam {
+  width: 16.63vw;
+  height: 4.35vw;
+  flex-shrink: 0;
+  border: 0.2vw solid #000;
+  background: #FA8C7D;
+  position: relative;
+  bottom: 6.5vw;
+  right: 12vw;
+}
+
+.rectangle-gold {
+  width: 12.26vw;
+  height: 3.94vw;
+  flex-shrink: 0;
+  border:0.2vw solid #000;
+  background: #FFAD00;
+  position: relative;
+  bottom: 4.5vw;
+  left: 53.5vw;
+
+}
+
+.rectangle-silv {
+  width: 12.81vw;
+  height: 4.11vw;
+  flex-shrink: 0;
+  border: 0.2vw solid #000;
+  background: #A4CF48;
+  position: relative;
+  bottom: 4.5vw;
+  right: 9vw;
+
+}
+
+.shadow-rect-plat{
+  width: 16.46vw;
+  height: 4.25vw;
+  flex-shrink: 0;
+  border: 0.2vw solid #000;
+  position: relative;
+  bottom: 0.6vw;
+  right: 0.6vw;
+  z-index:3;
+}
+.shadow-rect-diam{
+  width: 16.63vw;
+  height: 4.35vw;
+  flex-shrink: 0;
+  border: 0.2vw solid #000;
+  position: relative;
+  bottom: 0.6vw;
+  right: 0.6vw;
+  z-index:3;
+}
+
+.shadow-rect-gold{
+  width: 12.26vw;
+  height: 3.94vw;
+  flex-shrink: 0;
+  border: 0.2vw solid #000;
+  position: relative;
+  bottom: 0.6vw;
+  right: 0.6vw;
+  z-index:3;
+}
+.shadow-rect-silv{
+  width: 12.81vw;
+  height: 4.11vw;
+  flex-shrink: 0;
+  border: 0.2vw solid #000;
+  position: relative;
+  bottom: 0.6vw;
+  right: 0.6vw;
+  z-index:3;
+}
+.saturn {
+  width: 12.46vw;
+  height: 11.83vw;
+  flex-shrink: 0;
+  position:relative;
+  bottom: 8vw;
+  left: 55vw;
+  z-index: 0;
+}
+
+.moon{
+  width: 9.58vw;
+  height: 9.2vw;
+  transform: rotate(-0.923deg);
+  flex-shrink: 0;
+  position: relative;
+  bottom: 8vw;
+  left: 55vw;
+  z-index:0;
+}
+/*----media query----*/
+
+@media (max-width: 1600px){
+  .star-one {
+    max-width: 4.53vw;
+
+  }
+  .star-two {
+    max-width: 2.13vw;
+  }
+  .star-three{
+    max-width: 3.4vw;
+  }
+  .star-four{
+    max-width: 2.2vw;
+  }
+  .star-five{
+    max-width: 2.2vw;
+  }
+  .star-six{
+    max-width: 2.6vw;
+  }
+  .star-seven{
+    max-width: 2.13vw;
+  }
+  .star-eight{
+    max-width: 3.4vw;
+  }
+  .rectangle{
+    max-width: 56.93vw;
+  }
+  .rectangle-diam{
+    max-width: 16.63vw;
+  }
+  .rectangle-gold{
+    max-width: 12.26vw;
+  }
+  .rectangle-plat{
+    max-width: 16.46vw;
+  }
+  .rectangle-silv{
+    max-width: 12.81vw;
+  }
+  .sponsor-heading{
+    width: 1vw;
+  }
+  .sponsor-type{
+    width: 1vw;
+  }
+  .shadow-rect-diam{
+    max-width: 16.63vw;
+  }
+  .shadow-rect-gold{
+    max-width: 12.26vw;
+  }
+  .shadow-rect-plat{
+    max-width: 16.46vw;
+  }
+  .shadow-rect-silv{
+    max-width: 12.81vw;
+  }
+  .saturn{
+    max-width: 12.46vw;
+  }
+  .moon{
+    max-width: 9.58vw;
+  }
+}
+
+@media (max-width: 1200px){
+  .star-one {
+    max-width: 4.53vw;
+
+  }
+  .star-two {
+    max-width: 2.13vw;
+  }
+  .star-three{
+    max-width: 3.4vw;
+  }
+  .star-four{
+    max-width: 2.2vw;
+  }
+  .star-five{
+    max-width: 2.2vw;
+  }
+  .star-six{
+    max-width: 2.6vw;
+  }
+  .star-seven{
+    max-width: 2.13vw;
+  }
+  .star-eight{
+    max-width: 3.4vw;
+  }
+  .rectangle{
+    max-width: 56.93vw;
+  }
+  .rectangle-diam{
+    max-width: 16.63vw;
+  }
+  .rectangle-gold{
+    max-width: 12.26vw;
+  }
+  .rectangle-plat{
+    max-width: 16.46vw;
+  }
+  .rectangle-silv{
+    max-width: 12.81vw;
+  }
+  .sponsor-heading{
+    width: 1vw;
+  }
+  .sponsor-type{
+    width: 1vw;
+  }
+  .shadow-rect-diam{
+    max-width: 16.63vw;
+  }
+  .shadow-rect-gold{
+    max-width: 12.26vw;
+  }
+  .shadow-rect-plat{
+    max-width: 16.46vw;
+  }
+  .shadow-rect-silv{
+    max-width: 12.81vw;
+  }
+  .saturn{
+    max-width: 12.46vw;
+  }
+  .moon{
+    max-width: 9.58vw;
+  }
+}
+
+@media (max-width: 768px){
+  .star-one {
+    max-width: 4.53vw;
+
+  }
+  .star-two {
+    max-width: 2.13vw;
+  }
+  .star-three{
+    max-width: 3.4vw;
+  }
+  .star-four{
+    max-width: 2.2vw;
+  }
+  .star-five{
+    max-width: 2.2vw;
+  }
+  .star-six{
+    max-width: 2.6vw;
+  }
+  .star-seven{
+    max-width: 2.13vw;
+  }
+  .star-eight{
+    max-width: 3.4vw;
+  }
+  .rectangle{
+    max-width: 56.93vw;
+  }
+  .rectangle-diam{
+    max-width: 16.63vw;
+  }
+  .rectangle-gold{
+    max-width: 12.26vw;
+  }
+  .rectangle-plat{
+    max-width: 16.46vw;
+  }
+  .rectangle-silv{
+    max-width: 12.81vw;
+  }
+  .sponsor-heading{
+    width: 1vw;
+  }
+  .sponsor-type{
+    width: 1vw;
+  }
+  .shadow-rect-diam{
+    max-width: 16.63vw;
+  }
+  .shadow-rect-gold{
+    max-width: 12.26vw;
+  }
+  .shadow-rect-plat{
+    max-width: 16.46vw;
+  }
+  .shadow-rect-silv{
+    max-width: 12.81vw;
+  }
+  .saturn{
+    max-width: 12.46vw;
+  }
+  .moon{
+    max-width: 9.58vw;
+  }
+}
+
+@media (max-width: 320px){
+  .star-one {
+    max-width: 4.53vw;
+
+  }
+  .star-two {
+    max-width: 2.13vw;
+  }
+  .star-three{
+    max-width: 3.4vw;
+  }
+  .star-four{
+    max-width: 2.2vw;
+  }
+  .star-five{
+    max-width: 2.2vw;
+  }
+  .star-six{
+    max-width: 2.6vw;
+  }
+  .star-seven{
+    max-width: 2.13vw;
+  }
+  .star-eight{
+    max-width: 3.4vw;
+  }
+  .rectangle{
+    max-width: 56.93vw;
+  }
+  .rectangle-diam{
+    max-width: 16.63vw;
+  }
+  .rectangle-gold{
+    max-width: 12.26vw;
+  }
+  .rectangle-plat{
+    max-width: 16.46vw;
+  }
+  .rectangle-silv{
+    max-width: 12.81vw;
+  }
+  .sponsor-heading{
+    width: 1vw;
+  }
+  .sponsor-type{
+    width: 1vw;
+  }
+  .shadow-rect-diam{
+    max-width: 16.63vw;
+  }
+  .shadow-rect-gold{
+    max-width: 12.26vw;
+  }
+  .shadow-rect-plat{
+    max-width: 16.46vw;
+  }
+  .shadow-rect-silv{
+    max-width: 12.81vw;
+  }
+  .saturn{
+    max-width: 12.46vw;
+  }
+  .moon{
+    max-width: 9.58vw;
+  }
+}
