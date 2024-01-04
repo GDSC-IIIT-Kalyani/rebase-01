@@ -74,6 +74,15 @@ nav ul li a {
   font-weight: bold;
   font-style: normal;
 }
+.fonto{
+  font-family: 'Anime Ace';
+  font-weight: bold;
+  font-style: normal;
+
+}
+.kosigu{
+  font-family: 'Kosugi Maru';
+}
 
 .navlist {
   z-index: 20;
@@ -86,6 +95,30 @@ nav ul li a {
 .navlist a:hover{
   color: white;
 }
+
+
+.dropdown_item-1 {
+  transform-origin: top center;
+  animation: slideRight 700ms ;
+}
+
+
+@keyframes slideRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+
+
+
 
 /* navbar ends */
 
