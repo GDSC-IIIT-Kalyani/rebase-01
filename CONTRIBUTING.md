@@ -18,19 +18,26 @@ If you have an idea for a new feature, please open a GitHub issue with a clear t
 2. Create a new branch for your feature or bug fix:
    ```bash
    git checkout -b feature-branch
-Please use a meaningful branch name.
+   Please use a meaningful branch name.
+   ```
 3. Make your changes and ensure your code follows the project's coding standards.
+
 - Write clear commit messages.
 - Test your changes thoroughly.
 - Push your branch to your fork:
+
 ```bash
    git push origin feature-branch
 ```
+
 4. Open a pull request with a clear title and description.
+
 ## Code Style
+
 Follow the existing code style of the project. If the project doesn't have a specific style guide, be consistent with the surrounding code.
 
 ## Code of Conduct
+
 Please note that this project is released with a [Contributor Code of Conduct](https://github.com/GDSC-IIIT-Kalyani/rebase-01/blob/master/code_of_conduct.md). By participating in this project, you agree to abide by its terms.
 
 ## License
@@ -38,4 +45,3 @@ Please note that this project is released with a [Contributor Code of Conduct](h
 By contributing to this project, you agree that your contributions will be licensed under the [MIT License](https://github.com/GDSC-IIIT-Kalyani/rebase-01/blob/master/LICENSE).
 
 Thank you for your contribution!
-
