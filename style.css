@@ -641,10 +641,6 @@ body, .hero_heading, .tracks-window, .info-window, .rectangle, .body-text, .imag
   top: -382px;
 }
 
-#GreenBG, #Group39 {
-  width: 100%;
-}
-
 #Group39 {
   position: relative;
   left: -16%;
@@ -656,6 +652,62 @@ body, .hero_heading, .tracks-window, .info-window, .rectangle, .body-text, .imag
   position: relative;
   height: 46vw;
   left: -20%;
+}
+
+@media screen and (min-width: 1985px) {
+  #zero-one {
+    left: 76%;
+  }
+}
+@media screen and (min-width: 1961px) {
+  #main-paragraph {
+    top: 15rem;
+    font-size: 1.1rem;
+  }
+
+  #images {
+    top: -28rem;
+  }
+}
+
+@media screen and (min-width: 1955px) and (max-width: 1984px) {
+  #zero-one {
+    left: 77%;
+  }
+}
+
+@media screen and (min-width: 1917px) and (max-width: 1954px) {
+  #zero-one {
+    left: 78%;
+  }
+}
+
+@media screen and (min-width: 1782px) and (max-width: 1960px) {
+  #main-paragraph {
+    top: 15rem;
+    font-size: 1.1rem;
+  }
+
+  #images {
+    top: -29rem;
+  }
+}
+
+@media screen and (min-width: 1704px) and (max-width: 1781px) {
+  #images {
+    top: -26rem;
+  }
+
+  #main-paragraph {
+    top: 14rem;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1603px) and (max-width: 1703px) {
+  #images {
+    top: -22rem;
+  }
 }
 
 @media (max-width: 1362px) {
