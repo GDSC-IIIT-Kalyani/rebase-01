@@ -5,483 +5,830 @@
     <link rel="icon" type="image/webp" href="/logo.webp" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
       rel="stylesheet"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Kosugi+Maru&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&family=Kosugi+Maru&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
     <script src="./main.js"></script>
     <title>Rebase <01></title>
-      
-    
   </head>
-  
-  <body class="bg-[#f4e1b9]  ">
-    
-   <div class="w-[80%] lg:w-[70%] m-auto ">
-       
+
+  <body class="bg-[#f4e1b9]">
+
+   <!-- div for paper effect. -->
+   <div class="w-full fixed   h-[100%] z-[10000] bg-repeat " style="pointer-events: none;">
+    <img src='public/Paper.png' alt="" class=" w-screen object-cover bg-repeat">
+  </div>
  
-    <!-- Navbar and logo -->
-    <div class="flex justify-center  w-full">
-      <!-- logo -->
-      <div class="w-[15%] hidden md:block">
-        <a href="#"><img class="shrink-0" src="/public/logo.webp" alt="logo" /></a>
-      </div>
-
-      <!-- navbar -->
-    <div class="w-screen flex  pt-4   md:justify-end justify-between mx-auto md:pt-1 md:hidden">
-
-        <div class="flex flex-row md:hidden">
-
-          <img src="public/logo.webp" alt="" srcset="" class="extrasmall:h-[4rem] extrasmall:w-[4rem] sm:h-[4rem] sm:w-[4rem] md:w-[4.5rem] md:h-[4.5rem]">
-          <div class="border-[0.001rem] h-[7rem] bg-black border-black m-2 mr-7 extrasmall:h-[3rem] extrasmall:mr-3 sm:h-[4rem] sm:mr-4 md:h-[3rem]"></div>
-          <img src="public/gdschero.svg" alt="" srcset="" class="w-[9rem] h-[4rem] extrasmall:h-[4rem] extrasmall:w-[4rem] extrasmall:mt-1 sm:h-[4rem] sm:w-[4rem] sm:mt-1 md:w-[4.5rem] md:h-[4.5rem]">
-       </div>
         
-        <div class="md:hidden flex items-center">
-          <button  type="button" class= " mobile-menu-button  inline-flex items-center p-2 w-14 h-14 justify-center text-sm  md:hidden  " aria-controls="navbar-default" aria-expanded="false">
-            <svg width="30" height="28" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="2" width="28" height="7" fill="#DE533C" fill-opacity="0.56"/>
-              <rect x="2" y="10" width="28" height="6" fill="#DE533C" fill-opacity="0.56"/>
-              <rect x="2" y="19" width="28" height="7" fill="#DE533C" fill-opacity="0.56"/>
-              <rect x="0.5" y="3.54346" width="24.5652" height="5.08696" stroke="black"/>
-              <rect x="0.5" y="13.2826" width="24.5652" height="5.08696" stroke="black"/>
-              <rect x="0.5" y="22.413" width="24.5652" height="5.08696" stroke="black"/>
-              </svg>
-         </button>
-       </div>   
           
-    </div>
-    
-
-
-
 
       
-     
-  
 
-
-
-
-
-      <div class=" hidden md:block p-2">
-        <nav class="relative after:absolute after:top-[10%] after:left-[-1%] after:right-[1%] after:bottom-[-10%] shrink-0 ">
-          <ul class="flex 2xl:gap-12 xl:gap-12 lg:gap-4 gap-4  2xl:text-lg xl:text-md lg:text-sm md:text-xs font-bold 2xl:py-6 md:py-4 2xl:px-8 md:px-6 xl:px-8 bg-[#de533c]">
-            <li class="navlist" ><a href="#about">ABOUT</a></li>
-            <li class="navlist" ><a href="#schedule">SCHEDULE</a></li>
-            <li class="navlist" ><a href="#tracks">TRACKS</a></li>
-            <li class="navlist" ><a href="#prizes">PRIZES</a></li>
-            <li class="navlist" ><a href="#sponsors">SPONSORS</a></li>
-            <li class="navlist" ><a href="#faqs">FAQS</a></li>
-          </ul>
-        </nav>
-      </div>
-
-    </div>
-    
-      <div class="dropdown_item-1 bg-[#48727E]  sm:w-72 extrasmall:right-[14vw]  border-4 border-black shadow-[5px_5px_0px_0px_rgba(0,0,0)] hidden mt-1 mobile-menu   sm:right-[5.2rem] absolute    z-[100] md:hidden">
-        <div class=" divide-[#F4E1B9]  divide-y-2 divide-solid flex flex-col w-64 p-4 gap-y-2">
-          <div class="text-white  fonto p-2 hover:text-gray-400 hover:text-xl hover:font-bold "><a href="#">ABOUT</a></div>
-          <div class="text-white  fonto p-2  hover:text-gray-400 hover:text-xl hover:font-bold "><a href="#">SCHEDULE</a></div>
-          <div class="text-white  fonto p-2  hover:text-gray-400 hover:text-xl hover:font-bold "><a href="#">TRACKS</a></div>
-          <div class="text-white  fonto p-2  hover:text-gray-400 hover:text-xl hover:font-bold "><a href="#">PRIZES</a></div>
-          <div class="text-white  fonto p-2  hover:text-gray-400 hover:text-xl hover:font-bold "><a href="#">SPONSORS</a></div>
-          <div class="text-white  fonto p-2  hover:text-gray-400 hover:text-xl hover:font-bold"><a href="#">FAQS</a></div>
-          
-      
+    <div class="w-[80%] lg:w-[70%] m-auto ">
+      <!-- Navbar and logo -->
+      <div class="flex justify-center w-full">
+        <!-- logo -->
+        <div class="w-[15%] hidden md:block">
+          <a href="#"
+            ><img class="shrink-0" src="/public/logo.webp" alt="logo"
+          /></a>
         </div>
-      </div>
-    
-    <script>
-      const btn = document.querySelector("button.mobile-menu-button");
-      const menu = document.querySelector(".mobile-menu");
-  
-      btn.addEventListener("click", () => {
-         menu.classList.toggle("hidden");
-      });
-   </script>
 
-    <section id="home" class="h-screen w-full">
-      <div class="textpart">
-        <div class="head-vol flex md:gap-8 lg:gap-8 xl:gap-8 2xl:gap-8">
-          
-          <div class="rebase-head heading">
-            <h1 class="md:text-[6.5rem] lg:text-[8rem] xl:text-10rem 2xl:text-[12rem] text-[#f4e1b9]">REBASE</h1>
+        <!-- navbar -->
+        <div
+          class="w-screen flex pt-4 md:justify-end justify-between mx-auto md:pt-1 sm:hidden  "
+        >
+          <div class="flex flex-row md:hidden">
+            <img
+              src="public/logo.webp"
+              alt=""
+              srcset=""
+              class="extrasmall:h-[4rem] extrasmall:w-[4rem] sm:h-[4rem] sm:w-[4rem] md:w-[4.5rem] md:h-[4.5rem]"
+            />
+            <div
+              class="border-[0.001rem] h-[7rem] bg-black border-black m-2 mr-7 extrasmall:h-[3rem] extrasmall:mr-3 sm:h-[4rem] sm:mr-4 md:h-[3rem]"
+            ></div>
+            <img
+              src="public/gdschero.svg"
+              alt=""
+              srcset=""
+              class="w-[9rem] h-[4rem] extrasmall:h-[4rem] extrasmall:w-[4rem] extrasmall:mt-1 sm:h-[4rem] sm:w-[4rem] sm:mt-1 md:w-[4.5rem] md:h-[4.5rem]"
+            />
           </div>
 
+          <div class="sm:hidden flex items-center">
+            <button
+              type="button"
+              class="mobile-menu-button inline-flex items-center p-2 w-14 h-14 justify-center text-sm md:hidden"
+              aria-controls="navbar-default"
+              aria-expanded="false"
+            >
+              <svg
+                width="30"
+                height="28"
+                viewBox="0 0 30 28"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="2"
+                  width="28"
+                  height="7"
+                  fill="#DE533C"
+                  fill-opacity="0.56"
+                />
+                <rect
+                  x="2"
+                  y="10"
+                  width="28"
+                  height="6"
+                  fill="#DE533C"
+                  fill-opacity="0.56"
+                />
+                <rect
+                  x="2"
+                  y="19"
+                  width="28"
+                  height="7"
+                  fill="#DE533C"
+                  fill-opacity="0.56"
+                />
+                <rect
+                  x="0.5"
+                  y="3.54346"
+                  width="24.5652"
+                  height="5.08696"
+                  stroke="black"
+                />
+                <rect
+                  x="0.5"
+                  y="13.2826"
+                  width="24.5652"
+                  height="5.08696"
+                  stroke="black"
+                />
+                <rect
+                  x="0.5"
+                  y="22.413"
+                  width="24.5652"
+                  height="5.08696"
+                  stroke="black"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="hidden sm:block p-2 ">
+          <nav
+            class="relative after:absolute after:top-[10%] after:left-[-1%] after:right-[1%] after:bottom-[-10%] shrink-0"
+          >
+            <ul
+              class="flex 2xl:gap-12 xl:gap-12 lg:gap-4 gap-4 2xl:text-lg xl:text-md lg:text-sm md:text-xs font-bold 2xl:py-6 md:py-4 2xl:px-8 md:px-6 xl:px-8 bg-[#de533c]"
+            >
+              <li class="navlist"><a href="#about">ABOUT</a></li>
+              <li class="navlist"><a href="#schedule">SCHEDULE</a></li>
+              <li class="navlist"><a href="#tracks">TRACKS</a></li>
+              <li class="navlist"><a href="#prizes">PRIZES</a></li>
+              <li class="navlist"><a href="#sponsors">SPONSORS</a></li>
+              <li class="navlist"><a href="#faqs">FAQS</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div
+        class="dropdown_item-1 bg-[#48727E] sm:w-72 extrasmall:right-[14vw] border-4 border-black shadow-[5px_5px_0px_0px_rgba(0,0,0)] hidden mt-1 mobile-menu sm:right-[5.2rem] absolute z-[100] sm:hidden"
+      >
+        <div
+          class="divide-[#F4E1B9] divide-y-2 divide-solid flex flex-col w-64 p-4 gap-y-2"
+        >
+          <div
+            class="text-white fonto p-2 hover:text-gray-400 hover:text-xl hover:font-bold"
+          >
+            <a href="#about">ABOUT</a>
+          </div>
+          <div
+            class="text-white fonto p-2 hover:text-gray-400 hover:text-xl hover:font-bold"
+          >
+            <a href="#schedule">SCHEDULE</a>
+          </div>
+          <div
+            class="text-white fonto p-2 hover:text-gray-400 hover:text-xl hover:font-bold"
+          >
+            <a href="#tracks">TRACKS</a>
+          </div>
+          <div
+            class="text-white fonto p-2 hover:text-gray-400 hover:text-xl hover:font-bold"
+          >
+            <a href="#prizes">PRIZES</a>
+          </div>
+          <div
+            class="text-white fonto p-2 hover:text-gray-400 hover:text-xl hover:font-bold"
+          >
+            <a href="#sponsors">SPONSORS</a>
+          </div>
+          <div
+            class="text-white fonto p-2 hover:text-gray-400 hover:text-xl hover:font-bold"
+          >
+            <a href="#faqs">FAQS</a>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        const btn = document.querySelector('button.mobile-menu-button');
+        const menu = document.querySelector('.mobile-menu');
+
+        btn.addEventListener('click', () => {
+          menu.classList.toggle('hidden');
+        });
+      </script>
+
+      <section id="home" class="h-screen w-full">
+        <div class="textpart">
+          <div class="head-vol flex md:gap-8 lg:gap-8 xl:gap-8 2xl:gap-8">
+            <div class="rebase-head heading">
+              <h1
+                class="md:text-[6.5rem] lg:text-[8rem] xl:text-10rem 2xl:text-[12rem] text-[#f4e1b9]"
+              >
+                REBASE
+              </h1>
+            </div>
+
             <div class="block relative">
-              <div class='hero-vol md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl 2xl:translate-y-24 xl:translate-y-[4.5rem] lg:translate-y-12 md:translate-y-8'>
-                <h3 class="">
-                  VOLUME
-                </h3>
+              <div
+                class="hero-vol md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl 2xl:translate-y-24 xl:translate-y-[4.5rem] lg:translate-y-12 md:translate-y-8"
+              >
+                <h3 class="">VOLUME</h3>
               </div>
-              <div class="z-50 2xl:text-[18rem] xl:text-[13rem] lg:text-[10rem] md:text-[8rem] head-one absolute xl:-left-28 lg:-left-20 md:-left-20">
+              <div
+                class="z-50 2xl:text-[18rem] xl:text-[13rem] lg:text-[10rem] md:text-[8rem] head-one absolute xl:-left-28 lg:-left-20 md:-left-20"
+              >
                 <h1 class="rebase-head text-[#E82338]">&lt;01&gt;</h1>
               </div>
             </div>
-        </div>
-      </div>
-
-      <!-- Images and socials -->
-      <div class="relative 2xl:-translate-y-28 lg:-translate-y-16 xl:-translate-y-16 md:-translate-y-12">
-        <img class="m-auto w-full" src="/public/landing.png" alt="landing">
-
-        <div class="absolute md:top-12 md:left-4 2xl:top-28 2xl:left-12">
-          <div class='mx-auto'>
-            <ul class='block m-auto'>
-              <li class=""><a href="https://gdsc.bio.link/"><img class="md:w-16" src="/public/gdschero.svg" alt="gdsc"></a></li>
-              <li class="md:my-3" ><a href="https://discord.gg/tcaxPN6CNs"><img class="md:w-10" src="/public/discord.svg" alt=""></a></li>
-              <li class="md:my-4"><a href="https://twitter.com/gdsciiitkalyani"><img class="md:w-7" src="/public/x.svg" alt=""></a></li>
-              <li class="md:my-4"><a href="https://www.youtube.com/channel/UCvRPKamvUtnQhij5y1MF11A"><img class="md:w-10" src="/public/ythero.svg" alt=""></a></li>
-              <li class="md:my-4"><a href="https://instagram.com/gdsciiitkalyani"><img class="md:w-10" src="/public/instahero.svg" alt=""></a></li>
-            </ul>
           </div>
         </div>
-      </div>
 
-    </section>
+        <!-- Images and socials -->
+        <div
+          class="relative 2xl:-translate-y-28 lg:-translate-y-16 xl:-translate-y-16 md:-translate-y-12"
+        >
+          <img class="m-auto w-full" src="/public/landing.png" alt="landing" />
 
-    <!-- About section begins here - By Iman-->
-    <div id="about">
-      <p id="about-text">About</p>
-      <p id="zero-one">01.</p>
-      <p id="main-paragraph">Unleash your creativity and be part of Rebase&lt;01&gt;, a month-long online hackathon extravaganza! Compete across various categories, showcasing your skills, creativity, and teamwork alongside peers who share your passion. This is your chance to challenge yourself, learn new skills, and create remarkable projects that can make a real difference. Don't miss this unparalleled opportunity to rebase your talent and elevate your skills to a new level. Step into Rebase&lt;01&gt;—where creativity has no bounds.</p>
-      <div id="images">
-          <img src="public/Group 243.svg" alt="GreenBG" id="GreenBG">
-          <img id="Group39" src="public/Group 39.svg" alt="Comp Pic">
-      </div>
-      <div id="mobile-images">
-          <img id="GreenBGMobile" src="public/Group 28.svg" alt="GreenBGMobile">
-          <img src="public/Group 244.svg" alt="Mobile Comp" id="MobileComp">
-      </div>
-    </div>
-    <!-- About section ends here -->
-
-
-    <!--Timeline begins here-->
-    <section
-      id="schedule"
-      class=" w-full border-2 border-black grid place-items-center"
-    >
-
-    <div class="header">
-
-      <div>
-        <h1 class="actual-heading">TIMELINE</h1>
-      </div>
-  
-      <div>
-        <h3 class="page">02.</h3>
-      </div>
-
-    </div>
-
-    <div class="dark-rect">
-        
-      <div class="border-rect">
-          <img class="rect2" src="public/Rectangle 35.png" alt="">
-      </div>
-
-      <div class="dashed-line">
-          <img class="dash" src="public/Vector 204.png" alt="">
-      </div>
-
-      <div>
-          <button class="left-arrow"><img class="arrow_1" src="public/_.png" alt=""></button>
-      </div>
-
-      <div>
-          <button class="right-arrow"><img class="arrow_2" src="public/_ (1).png" alt=""></button>
-      </div>
-
-      <div class="timeline-1">
-          <img class="moon-1" src="public/Group 219.png" alt="">
-      </div>
-
-      <div class="timeline-2">
-          <img class="moon-2" src="public/Group 222.png" alt="">
-      </div>
-
-      <div class="timeline-3">
-          <img class="moon-3" src="public/Group 223.png" alt="">
-      </div>
-      
-      <img class="rect1" src="public/Rectangle 34.png" alt="">
-    </div>
-
-    </section>
-    <!--Timeline ends here-->
-
-    <section
-      id="tracks"
-    class="h-screen w-full border-2 border-black grid place-items-center"
-    >
-    <div class="header">
-      <div>
-          <h1 class='hero_heading'>TRACKS</h1>
-      </div>
-      <div>
-          <h3 class="page_no">03.</h3>
-      </div>
-
-    </div>
-
-  <div class="windows">
-      <div class='info-window'>
-          <svg width="577" height="639" viewBox="0 0 577 639" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="548" y="46" width="19" height="585" stroke="black" stroke-width="2"/>
-              <path d="M2.5 2.5H574.5V636.5H2.5V2.5Z" stroke="black" stroke-width="5"/>
-              <path d="M9 46H548V631H9V46Z" fill="#193248" stroke="black" stroke-width="2"/>
-              <path d="M8 7H568V41H8V7Z" fill="black"/>
-              <path d="M555 310.5H562V307.5H555V310.5ZM555 315.5H562V312.5H555V315.5ZM555 321H562V318H555V321ZM546.5 246.5H569.5V368.5H546.5V246.5Z" fill="#F4E1B9" stroke="black" stroke-width="3"/>
-              <path d="M504 32H525.5M541.5 16.5L559 32M559 16.5L541.5 32M498 11H530.5V37.5H498V11ZM536 11H564.5V37.5H536V11Z" stroke="#F4E1B9" stroke-width="2"/>
-              <path d="M28.75 30.75V17.25H24.25V15H37.75V17.25H33.25V30.75H28.75ZM46.75 21.75H49V24H46.75V30.75H42.25V19.5H46.75V21.75ZM55.75 19.5V21.75H49V19.5H55.75ZM60.25 30.75V28.5H58V26.25H60.25V24H69.25V21.75H60.25V19.5H71.5V21.75H73.75V30.75H60.25ZM62.5 28.5H69.25V26.25H62.5V28.5ZM78.25 30.75V28.5H76V21.75H78.25V19.5H91.75V21.75H80.5V28.5H91.75V30.75H78.25ZM94 30.75V15H98.5V24H103V21.75H105.25V19.5H109.75V21.75H107.5V24H105.25V26.25H107.5V28.5H109.75V30.75H105.25V28.5H103V26.25H98.5V30.75H94ZM112 30.75V28.5H123.25V26.25H114.25V24H112V21.75H114.25V19.5H125.5V21.75H116.5V24H125.5V26.25H127.75V28.5H125.5V30.75H112ZM134.5 30.75V26.25H139V30.75H134.5ZM154.75 30.75V21.75H150.25V19.5H154.75V15H159.25V19.5H163.75V21.75H159.25V30.75H154.75ZM166 30.75V28.5H168.25V26.25H170.5V24H168.25V21.75H166V19.5H170.5V21.75H172.75V24H175V21.75H177.25V19.5H181.75V21.75H179.5V24H177.25V26.25H179.5V28.5H181.75V30.75H177.25V28.5H175V26.25H172.75V28.5H170.5V30.75H166ZM190.75 30.75V21.75H186.25V19.5H190.75V15H195.25V19.5H199.75V21.75H195.25V30.75H190.75Z" fill="#F4E1B9"/>
-              </svg>
-              <div class="body-text">
-                  <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h5>
-              </div>
-      </div>
-      <div class='tracks-window'>
-          <svg width="451" height="569" viewBox="0 0 451 569" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M2.5 2.5H448.5V566.5H2.5V2.5Z" fill="#F4E1B9" stroke="black" stroke-width="5"/>
-              <path d="M422 44H441V560.5H422V44Z" fill="#F4E1B9" stroke="black" stroke-width="2"/>
-              <path d="M9 44H422V560.5H9V44Z" fill="#193248" stroke="black" stroke-width="2"/>
-              <rect x="9" y="7" width="434" height="34" fill="black"/>
-              <path d="M438.5 11H410V37.5H438.5V11Z" stroke="#F4E1B9" stroke-width="2"/>
-              <path d="M422.452 26.9922V26.7301C422.452 26.0057 422.511 25.4283 422.631 24.9979C422.754 24.5675 422.933 24.2223 423.168 23.9624C423.402 23.6982 423.688 23.4574 424.024 23.2401C424.293 23.0696 424.531 22.897 424.74 22.7223C424.953 22.5433 425.121 22.3516 425.245 22.147C425.369 21.9425 425.43 21.7102 425.43 21.4503C425.43 21.1989 425.371 20.9773 425.251 20.7855C425.132 20.5937 424.968 20.4467 424.759 20.3445C424.555 20.2379 424.327 20.1847 424.075 20.1847C423.824 20.1847 423.587 20.2422 423.366 20.3572C423.148 20.4723 422.969 20.6364 422.829 20.8494C422.692 21.0582 422.622 21.3118 422.618 21.6101H419.678C419.69 20.7152 419.897 19.9822 420.298 19.4112C420.702 18.8402 421.237 18.4183 421.902 18.1456C422.567 17.8686 423.3 17.7301 424.101 17.7301C424.979 17.7301 425.759 17.8665 426.44 18.1392C427.126 18.4119 427.665 18.8146 428.058 19.3473C428.45 19.88 428.646 20.532 428.646 21.3033C428.646 21.8104 428.56 22.2578 428.39 22.6456C428.219 23.0334 427.981 23.3764 427.674 23.6747C427.371 23.9687 427.016 24.2372 426.607 24.4801C426.287 24.6676 426.021 24.8636 425.808 25.0682C425.599 25.2727 425.441 25.5071 425.335 25.7713C425.228 26.0312 425.175 26.3509 425.175 26.7301V26.9922H422.452ZM423.864 31.1854C423.404 31.1854 423.01 31.0234 422.682 30.6996C422.358 30.3757 422.198 29.9837 422.202 29.5234C422.198 29.0717 422.358 28.6861 422.682 28.3665C423.01 28.0426 423.404 27.8807 423.864 27.8807C424.303 27.8807 424.689 28.0426 425.021 28.3665C425.354 28.6861 425.522 29.0717 425.526 29.5234C425.522 29.8303 425.441 30.1094 425.283 30.3608C425.13 30.6122 424.928 30.8125 424.676 30.9616C424.429 31.1108 424.158 31.1854 423.864 31.1854Z" fill="#F4E1B9"/>
-          </svg>
-
-          <div class="track-options">
-              <div class="track-rectangles">
-                  <div class='track-rectangle1'>
-                      <svg viewBox="0 0 415 118" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <rect x="1" y="1" width="413" height="116" fill="#48727E" stroke="black" stroke-width="2"/>
-                      </svg> 
-                      <div id="track-txt" class="track1">
-                          <h5>TRACK 1</h5>
-                      </div>
-                      <button id="drop-down" class="button1">
-                          <h5>></h5>
-                      </button>
-                  </div>
-                  <div class='track-rectangle2'>
-                      <svg viewBox="0 0 415 118" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <rect x="1" y="1" width="413" height="116" fill="#48727E" stroke="black" stroke-width="2"/>
-                      </svg> 
-                      <div id="track-txt" class="track2">
-                          <h5>TRACK 2</h5>
-                      </div>
-                      <button id="drop-down" class="button2">
-                          <h5>></h5>
-                  </button>
-                  </div>
-                  <div class='track-rectangle3'>
-                      <svg viewBox="0 0 415 118" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <rect x="1" y="1" width="413" height="116" fill="#48727E" stroke="black" stroke-width="2"/>
-                      </svg> 
-                      <div id="track-txt" class="track3">
-                          <h5>TRACK 3</h5>
-                      </div>
-                      <button id="drop-down" class="button3">
-                          <h5>></h5>
-                      </button>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-    </section>
-    <section id="prizes" class="h-screen w-full border-2 border-black grid place-items-start">
-      <div class="stack">
-        <h1 class="head">PRIZES</h1>
-        <h3 class="prizes_page_no">04.</h3>
-        <div class="imgDiv">
-          <img src="public/comingSoon.svg">
-        </div>
-      </div>
-    </section>
-    <section
-    id="sponsors"
-    class="h-screen w-full border-2 border-black grid place-items-center">
-<h1  class="sponsor-heading">Sponsors</h1>
-<h6 style="font-family: Japanese Robot;
-                    font-size: 46px;
-                    font-weight: 400;
-                    line-height: 53px;
-                    letter-spacing: 0.08em;
-                    text-align: left;
-                    color: #E82338;
-                    -webkit-text-stroke: 3px#000;
-                    position: relative; bottom:8vw;left: 21vw;">05</h6>
-
-
-<!-- The big black rectangles -->
-<div class="rectangle"  style="position: relative;top:0vw;right:5vw;margin-top: 1.5vw;margin-bottom: 1vw;margin-left: 0vw;margin-right:23vw">
-
-    <img src="public/star.svg" class="star-one">
-    <img src="public/star.svg" class="star-two">
-    <div class="rectangle-plat">
-        <div class="shadow-rect-plat">
-        </div>
-    </div>
-    <p class="sponsor-type" style="width: 167.99px;
-                            height: 40.593px;
-                            flex-shrink: 0;
-                            font-family: Anime Ace 2.0 BB;
-
-                            position:relative;
-                            bottom: 10vw;
-                            left: 56vw;
-                            z-index:2;">PLATINUM</p>
-
-
-
-</div>
-<div class="rectangle"  style="position:relative; right:20vw;margin-top: 1.5vw;margin-bottom: 1vw;margin-left: 35vw;">
-    <img src="public/star.svg" class="star-three">
-    <img src="public/star.svg" class="star-four">
-    <div class="rectangle-diam">
-        <div class="shadow-rect-diam">
-            <img src="public/saturn.svg" class="saturn">
-        </div>
-    </div>
-    <p class="sponsor-type" style="color: #000;
-                             width: 167.99px;
-                            height: 40.593px;
-                            flex-shrink: 0;
-                    font-family: Anime Ace 2.0 BB;
-                    ;
-                    position:relative;
-                    bottom: 10vw;
-                    right: 10vw;
-                    z-index:2;">DIAMOND</p>
-
-
-
-</div>
-<div class="rectangle"  style="position: relative;bottom: 0vw; right:18vw; margin-top: 1.5vw;margin-bottom: 1vw;margin-left: 6.53vw">
-    <img src="public/star.svg" class="star-five">
-    <img src="public/star.svg" class="star-six">
-    <div class="rectangle-gold">
-        <div class="shadow-rect-gold">
-
-        </div>
-    </div>
-    <p class="sponsor-type" style="width: 101.157px;
-                           height: 36.784px;
-                           flex-shrink: 0;color: #000;
-                           font-family: AnimeAce2BB;
-
-                           position:relative;
-                           bottom: 8vw;
-                           left: 54.5vw;
-                           z-index:2;">GOLD</p>
-</div>
-<div class="rectangle"  style="position:relative; right: 20vw;margin-top: 1.5vw;margin-bottom: 1vw;margin-left: 35vw;">
-    <img src="public/star.svg" class="star-seven">
-    <img src="public/star.svg" class="star-eight">
-    <div class="rectangle-silv">
-        <div class="shadow-rect-silv">
-            <img src="public/moon.svg" class="moon">
-        </div>
-    </div>
-    <p class="sponsor-type" style="color: #000;
-                    font-family: Anime Ace 2.0 BB;
-
-                    position:relative;
-                    bottom: 8vw;
-                    right: 7vw;
-                    z-index:2;">SILVER</p>
-</div>
-</section>  
-    <section
-      id="faqs"
-      class="h-screen w-full border-2 border-black grid place-items-center"
-    >
-      FAQS
-    </section>
-
-  </div>  
-   
-
-
-    
-    <!-- Footer Section  --> 
-   
-    <img src="public/saturn.svg" alt="" srcset=""   class="absolute translate-x-15 -translate-y-20 h-44 w-64 extrasmall:h-28 extrasmall:w-28 extrasmall:-translate-y-14 sm:h-36 sm:w-36 sm:-translate-y-16 md:h-40 md:w-40 md:translate-x-2 md:-translate-y-20 lg:h-48 lg:w-48 lg:translate-x-4 z-50" >
-      <footer class="bg-[#0F283F] text-white sm:p-2 flex flex-col items-center  justify-center lg:justify-center font-['Kosugi Maru'] md:p-2 lg:p-4 -z-10">
-
-        
-        <div class="absolute w-full lg:mr-16 z-0 ">
-          <img src="public/starsfooter.svg" alt="" srcset="" class=" object-cover  extrasmall:h-[27.2rem]  lg:h-[22rem]  md:h-[22rem] sm:h-[37.8rem]  w-full opacity-30">
-          </div>
-        <div class="flex items-center lg:justify-center justify-center md:justify-evenly lg:gap-12 flex-shrink md:flex-row w-full pt-20 extrasmall:flex-col sm:flex-col extrasmall:p-8  z-20">
-        
-          
-        
-          <div class="flex flex-row">
-
-              <img src="public/rebase-logo-light2.svg" alt="" srcset="" class="w-[10rem] h-[8rem] extrasmall:h-[5rem] extrasmall:w-[5rem] sm:h-[7rem] sm:w-[7rem] md:w-[6rem] md:h-[6rem] lg:w-[7rem] lg:h-[7rem]">
-              <div class="border-[0.001rem] h-[7rem] bg-white m-2 mr-7 extrasmall:h-[4rem] extrasmall:mr-3 sm:h-[6rem] sm:mr-4 md:h-[4.5rem] lg:h-[7rem]"></div>
-              <img src="public/Group24.svg" alt="" srcset="" class="w-[9rem] h-[6rem] extrasmall:h-[4rem] extrasmall:w-[4rem] extrasmall:mt-1 sm:h-[6rem] sm:w-[6rem] sm:mt-1 md:w-[4.4rem] md:h-[4.4rem] lg:w-[6rem] lg:h-[6rem] ">
-          </div>
-           
-          
-
-          <div class="flex flex-col extrasmall:text-center  extrasmall:p-3 extrasmall:m-3 sm:text-center sm:p-6 sm:m-4 md:text-left md:p-0">
-            <h3 class="text-white mb-2 text-lg extrasmall:text-lg sm:text-2xl tracking-widest md:text-xl kosigu">RESOURCES:</h3>
-            <p class="text-white text-lg extrasmall:text-sm sm:text-xl  tracking-wide text-nowrap md:text-lg kosigu">Sponsorship Brochure</p>
-            <p class="text-white text-lg extrasmall:text-sm  sm:text-xl tracking-wide text-nowrap md:text-lg kosigu">Code Of Conduct</p>
-            <p class="text-white text-lg extrasmall:text-sm   sm:text-xl tracking-wide text-nowrap md:text-lg kosigu">Community Partners</p>
-            <p class="text-white text-lg extrasmall:text-sm   sm:text-xl   tracking-wide text-nowrap md:text-lg kosigu">Hackers guide</p>
-          </div>
-
-          <div class="text-center">
-            <h3 class="text-white mb-2  text-lg sm:text-2xl text-nowrap md:text-lg kosigu">Connect with us:</h3>
-            <div class="flex items-center justify-center space-x-4">
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <img src="public/Group21.png" alt="Discord" width={40} height={40} class="cursor-pointer" />
-              </a>
-              <a href="https://www.youtube.com/@gdsciiitkalyani" target="_blank" rel="noopener noreferrer">
-                <img src="public/youtube.svg" alt="YouTube" width={40} height={40} class="cursor-pointer" />
-              </a>
-              <a href="https://twitter.com/gdsciiitkalyani?lang=en" target="_blank" rel="noopener noreferrer">
-                <img src="public/x.svg" alt="X" width={40} height={40} class="cursor-pointer" />
-              </a>
-              <a href="https://www.instagram.com/gdsciiitkalyani/?hl=en" target="_blank" rel="noopener noreferrer">
-                <img src="public/instagram.svg" alt="Instagram" width={40} height={40} class="cursor-pointer" />
-              </a>
+          <div class="absolute md:top-12 md:left-4 2xl:top-28 2xl:left-12">
+            <div class="mx-auto">
+              <ul class="block m-auto">
+                <li class="">
+                  <a href="https://gdsc.bio.link/"
+                    ><img class="md:w-16" src="/public/gdschero.svg" alt="gdsc"
+                  /></a>
+                </li>
+                <li class="md:my-3">
+                  <a href="https://discord.gg/tcaxPN6CNs"
+                    ><img class="md:w-10" src="/public/discord.svg" alt=""
+                  /></a>
+                </li>
+                <li class="md:my-4">
+                  <a href="https://twitter.com/gdsciiitkalyani"
+                    ><img class="md:w-7" src="/public/x.svg" alt=""
+                  /></a>
+                </li>
+                <li class="md:my-4">
+                  <a
+                    href="https://www.youtube.com/channel/UCvRPKamvUtnQhij5y1MF11A"
+                    ><img class="md:w-10" src="/public/ythero.svg" alt=""
+                  /></a>
+                </li>
+                <li class="md:my-4">
+                  <a href="https://instagram.com/gdsciiitkalyani"
+                    ><img class="md:w-10" src="/public/instahero.svg" alt=""
+                  /></a>
+                </li>
+              </ul>
             </div>
           </div>
-          
-        
-          
         </div>
+      </section>
+
+
+      
+
+      <!-- About section begins here - By Iman-->
+      <div id="about">
+        <p id="about-text">About</p>
+        <p id="zero-one">01.</p>
+        <p id="main-paragraph">
+          Unleash your creativity and be part of Rebase&lt;01&gt;, a month-long
+          online hackathon extravaganza! Compete across various categories,
+          showcasing your skills, creativity, and teamwork alongside peers who
+          share your passion. This is your chance to challenge yourself, learn
+          new skills, and create remarkable projects that can make a real
+          difference. Don't miss this unparalleled opportunity to rebase your
+          talent and elevate your skills to a new level. Step into
+          Rebase&lt;01&gt;—where creativity has no bounds.
+        </p>
+        <div id="images">
+          <img src="public/Group 243.svg" alt="GreenBG" id="GreenBG" />
+          <img id="Group39" src="public/Group 39.svg" alt="Comp Pic" />
+        </div>
+        <div id="mobile-images">
+          <img
+            id="GreenBGMobile"
+            src="public/Group 28.svg"
+            alt="GreenBGMobile"
+          />
+          <img src="public/Group 244.svg" alt="Mobile Comp" id="MobileComp" />
+        </div>
+      </div>
+      <!-- About section ends here -->
+
 
        
-        <div class="text-white mt-7 m-6 text-lg extrasmall:text-center extrasmall:text-sm extrasmall:mt-3 tracking-widest text-nowrap kosigu">
-          &#169; GDSC IIIT Kalyani 2023
+
+      <!--Timeline begins here-->
+      <section
+        id="schedule"
+        class="w-full border-2 border-black grid place-items-center"
+      >
+        <div class="header">
+          <div>
+            <h1 class="actual-heading">TIMELINE</h1>
+          </div>
+
+          <div>
+            <h3 class="page">02.</h3>
+          </div>
         </div>
-        <img src="public/metroids.svg" alt="" class="right-0 absolute w-56 h-72 translate-y-10 extrasmall:w-28 extrasmall:h-36 sm:w-44 sm:h-56">
-        
-        
-        
-      </footer>
-    
- 
-      
-   
 
-      
-    
-     
-      
+        <div class="dark-rect">
+          <div class="border-rect">
+            <img class="rect2" src="public/Rectangle 35.png" alt="" />
+          </div>
 
+          <div class="dashed-line">
+            <img class="dash" src="public/Vector 204.png" alt="" />
+          </div>
 
-   
+          <div>
+            <button class="left-arrow">
+              <img class="arrow_1" src="public/_.png" alt="" />
+            </button>
+          </div>
+
+          <div>
+            <button class="right-arrow">
+              <img class="arrow_2" src="public/_ (1).png" alt="" />
+            </button>
+          </div>
+
+          <div class="timeline-1">
+            <img class="moon-1" src="public/Group 219.png" alt="" />
+          </div>
+
+          <div class="timeline-2">
+            <img class="moon-2" src="public/Group 222.png" alt="" />
+          </div>
+
+          <div class="timeline-3">
+            <img class="moon-3" src="public/Group 223.png" alt="" />
+          </div>
+
+          <img class="rect1" src="public/Rectangle 34.png" alt="" />
+        </div>
+      </section>
+      <!--Timeline ends here-->
+
+      <section
+        id="tracks"
+        class="h-screen w-full border-2 border-black grid place-items-center"
+      >
+        <div class="header">
+          <div>
+            <h1 class="hero_heading">TRACKS</h1>
+          </div>
+          <div>
+            <h3 class="page_no">03.</h3>
+          </div>
+        </div>
+
+        <div class="windows">
+          <div class="info-window">
+            <svg
+              width="577"
+              height="639"
+              viewBox="0 0 577 639"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="548"
+                y="46"
+                width="19"
+                height="585"
+                stroke="black"
+                stroke-width="2"
+              />
+              <path
+                d="M2.5 2.5H574.5V636.5H2.5V2.5Z"
+                stroke="black"
+                stroke-width="5"
+              />
+              <path
+                d="M9 46H548V631H9V46Z"
+                fill="#193248"
+                stroke="black"
+                stroke-width="2"
+              />
+              <path d="M8 7H568V41H8V7Z" fill="black" />
+              <path
+                d="M555 310.5H562V307.5H555V310.5ZM555 315.5H562V312.5H555V315.5ZM555 321H562V318H555V321ZM546.5 246.5H569.5V368.5H546.5V246.5Z"
+                fill="#F4E1B9"
+                stroke="black"
+                stroke-width="3"
+              />
+              <path
+                d="M504 32H525.5M541.5 16.5L559 32M559 16.5L541.5 32M498 11H530.5V37.5H498V11ZM536 11H564.5V37.5H536V11Z"
+                stroke="#F4E1B9"
+                stroke-width="2"
+              />
+              <path
+                d="M28.75 30.75V17.25H24.25V15H37.75V17.25H33.25V30.75H28.75ZM46.75 21.75H49V24H46.75V30.75H42.25V19.5H46.75V21.75ZM55.75 19.5V21.75H49V19.5H55.75ZM60.25 30.75V28.5H58V26.25H60.25V24H69.25V21.75H60.25V19.5H71.5V21.75H73.75V30.75H60.25ZM62.5 28.5H69.25V26.25H62.5V28.5ZM78.25 30.75V28.5H76V21.75H78.25V19.5H91.75V21.75H80.5V28.5H91.75V30.75H78.25ZM94 30.75V15H98.5V24H103V21.75H105.25V19.5H109.75V21.75H107.5V24H105.25V26.25H107.5V28.5H109.75V30.75H105.25V28.5H103V26.25H98.5V30.75H94ZM112 30.75V28.5H123.25V26.25H114.25V24H112V21.75H114.25V19.5H125.5V21.75H116.5V24H125.5V26.25H127.75V28.5H125.5V30.75H112ZM134.5 30.75V26.25H139V30.75H134.5ZM154.75 30.75V21.75H150.25V19.5H154.75V15H159.25V19.5H163.75V21.75H159.25V30.75H154.75ZM166 30.75V28.5H168.25V26.25H170.5V24H168.25V21.75H166V19.5H170.5V21.75H172.75V24H175V21.75H177.25V19.5H181.75V21.75H179.5V24H177.25V26.25H179.5V28.5H181.75V30.75H177.25V28.5H175V26.25H172.75V28.5H170.5V30.75H166ZM190.75 30.75V21.75H186.25V19.5H190.75V15H195.25V19.5H199.75V21.75H195.25V30.75H190.75Z"
+                fill="#F4E1B9"
+              />
+            </svg>
+            <div class="body-text">
+              <h5>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </h5>
+            </div>
+          </div>
+          <div class="tracks-window">
+            <svg
+              width="451"
+              height="569"
+              viewBox="0 0 451 569"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M2.5 2.5H448.5V566.5H2.5V2.5Z"
+                fill="#F4E1B9"
+                stroke="black"
+                stroke-width="5"
+              />
+              <path
+                d="M422 44H441V560.5H422V44Z"
+                fill="#F4E1B9"
+                stroke="black"
+                stroke-width="2"
+              />
+              <path
+                d="M9 44H422V560.5H9V44Z"
+                fill="#193248"
+                stroke="black"
+                stroke-width="2"
+              />
+              <rect x="9" y="7" width="434" height="34" fill="black" />
+              <path
+                d="M438.5 11H410V37.5H438.5V11Z"
+                stroke="#F4E1B9"
+                stroke-width="2"
+              />
+              <path
+                d="M422.452 26.9922V26.7301C422.452 26.0057 422.511 25.4283 422.631 24.9979C422.754 24.5675 422.933 24.2223 423.168 23.9624C423.402 23.6982 423.688 23.4574 424.024 23.2401C424.293 23.0696 424.531 22.897 424.74 22.7223C424.953 22.5433 425.121 22.3516 425.245 22.147C425.369 21.9425 425.43 21.7102 425.43 21.4503C425.43 21.1989 425.371 20.9773 425.251 20.7855C425.132 20.5937 424.968 20.4467 424.759 20.3445C424.555 20.2379 424.327 20.1847 424.075 20.1847C423.824 20.1847 423.587 20.2422 423.366 20.3572C423.148 20.4723 422.969 20.6364 422.829 20.8494C422.692 21.0582 422.622 21.3118 422.618 21.6101H419.678C419.69 20.7152 419.897 19.9822 420.298 19.4112C420.702 18.8402 421.237 18.4183 421.902 18.1456C422.567 17.8686 423.3 17.7301 424.101 17.7301C424.979 17.7301 425.759 17.8665 426.44 18.1392C427.126 18.4119 427.665 18.8146 428.058 19.3473C428.45 19.88 428.646 20.532 428.646 21.3033C428.646 21.8104 428.56 22.2578 428.39 22.6456C428.219 23.0334 427.981 23.3764 427.674 23.6747C427.371 23.9687 427.016 24.2372 426.607 24.4801C426.287 24.6676 426.021 24.8636 425.808 25.0682C425.599 25.2727 425.441 25.5071 425.335 25.7713C425.228 26.0312 425.175 26.3509 425.175 26.7301V26.9922H422.452ZM423.864 31.1854C423.404 31.1854 423.01 31.0234 422.682 30.6996C422.358 30.3757 422.198 29.9837 422.202 29.5234C422.198 29.0717 422.358 28.6861 422.682 28.3665C423.01 28.0426 423.404 27.8807 423.864 27.8807C424.303 27.8807 424.689 28.0426 425.021 28.3665C425.354 28.6861 425.522 29.0717 425.526 29.5234C425.522 29.8303 425.441 30.1094 425.283 30.3608C425.13 30.6122 424.928 30.8125 424.676 30.9616C424.429 31.1108 424.158 31.1854 423.864 31.1854Z"
+                fill="#F4E1B9"
+              />
+            </svg>
+
+            <div class="track-options">
+              <div class="track-rectangles">
+                <div class="track-rectangle1">
+                  <svg
+                    viewBox="0 0 415 118"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      x="1"
+                      y="1"
+                      width="413"
+                      height="116"
+                      fill="#48727E"
+                      stroke="black"
+                      stroke-width="2"
+                    />
+                  </svg>
+                  <div id="track-txt" class="track1">
+                    <h5>TRACK 1</h5>
+                  </div>
+                  <button id="drop-down" class="button1">
+                    <h5>></h5>
+                  </button>
+                </div>
+                <div class="track-rectangle2">
+                  <svg
+                    viewBox="0 0 415 118"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      x="1"
+                      y="1"
+                      width="413"
+                      height="116"
+                      fill="#48727E"
+                      stroke="black"
+                      stroke-width="2"
+                    />
+                  </svg>
+                  <div id="track-txt" class="track2">
+                    <h5>TRACK 2</h5>
+                  </div>
+                  <button id="drop-down" class="button2">
+                    <h5>></h5>
+                  </button>
+                </div>
+                <div class="track-rectangle3">
+                  <svg
+                    viewBox="0 0 415 118"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      x="1"
+                      y="1"
+                      width="413"
+                      height="116"
+                      fill="#48727E"
+                      stroke="black"
+                      stroke-width="2"
+                    />
+                  </svg>
+                  <div id="track-txt" class="track3">
+                    <h5>TRACK 3</h5>
+                  </div>
+                  <button id="drop-down" class="button3">
+                    <h5>></h5>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        id="prizes"
+        class="h-screen w-full border-2 border-black grid place-items-start"
+      >
+        <div class="stack">
+          <h1 class="head">PRIZES</h1>
+          <h3 class="prizes_page_no">04.</h3>
+          <div class="imgDiv">
+            <img src="public/comingSoon.svg" />
+          </div>
+        </div>
+      </section>
+      <section
+        id="sponsors"
+        class="h-screen w-full border-2 border-black grid place-items-center"
+      >
+        <h1 class="sponsor-heading">Sponsors</h1>
+
+        <!-- The big black rectangles -->
+        <div
+          class="rectangle"
+          style="
+            position: relative;
+            top: 0vw;
+            right: 5vw;
+            margin-top: 1.5vw;
+            margin-bottom: 1vw;
+            margin-left: 0vw;
+            margin-right: 23vw;
+          "
+        >
+          <img src="public/star.svg" class="star-one" />
+          <img src="public/star.svg" class="star-two" />
+          <div class="rectangle-plat">
+            <div class="shadow-rect-plat"></div>
+          </div>
+          <p
+            class="sponsor-type"
+            style="
+              width: 167.99px;
+              height: 40.593px;
+              flex-shrink: 0;
+              font-family: Anime Ace 2 BB;
+
+              position: relative;
+              bottom: 10vw;
+              left: 56vw;
+              z-index: 2;
+            "
+          >
+            PLATINUM
+          </p>
+        </div>
+        <div
+          class="rectangle"
+          style="
+            position: relative;
+            right: 20vw;
+            margin-top: 1.5vw;
+            margin-bottom: 1vw;
+            margin-left: 35vw;
+          "
+        >
+          <img src="public/star.svg" class="star-three" />
+          <img src="public/star.svg" class="star-four" />
+          <div class="rectangle-diam">
+            <div class="shadow-rect-diam">
+              <img src="public/saturn.svg" class="saturn" />
+            </div>
+          </div>
+          <p
+            class="sponsor-type"
+            style="
+              color: #000;
+              width: 167.99px;
+              height: 40.593px;
+              flex-shrink: 0;
+              font-family: Anime Ace 2 BB;
+              position: relative;
+              bottom: 10vw;
+              right: 10vw;
+              z-index: 2;
+            "
+          >
+            DIAMOND
+          </p>
+        </div>
+        <div
+          class="rectangle"
+          style="
+            position: relative;
+            bottom: 0vw;
+            right: 18vw;
+            margin-top: 1.5vw;
+            margin-bottom: 1vw;
+            margin-left: 6.53vw;
+          "
+        >
+          <img src="public/star.svg" class="star-five" />
+          <img src="public/star.svg" class="star-six" />
+          <div class="rectangle-gold">
+            <div class="shadow-rect-gold"></div>
+          </div>
+          <p
+            class="sponsor-type"
+            style="
+              width: 101.157px;
+              height: 36.784px;
+              flex-shrink: 0;
+              color: #000;
+              font-family: AnimeAce2BB;
+
+              position: relative;
+              bottom: 8vw;
+              left: 54.5vw;
+              z-index: 2;
+            "
+          >
+            GOLD
+          </p>
+        </div>
+        <div
+          class="rectangle"
+          style="
+            position: relative;
+            right: 20vw;
+            margin-top: 1.5vw;
+            margin-bottom: 1vw;
+            margin-left: 35vw;
+          "
+        >
+          <img src="public/star.svg" class="star-seven" />
+          <img src="public/star.svg" class="star-eight" />
+          <div class="rectangle-silv">
+            <div class="shadow-rect-silv">
+              <img src="public/moon.svg" class="moon" />
+            </div>
+          </div>
+          <p
+            class="sponsor-type"
+            style="
+              color: #000;
+              font-family: Anime Ace 2 BB;
+
+              position: relative;
+              bottom: 8vw;
+              right: 7vw;
+              z-index: 2;
+            "
+          >
+            SILVER
+          </p>
+        </div>
+      </section>
+      <section
+        id="faqs"
+        class="h-screen w-full border-2 border-black grid place-items-center"
+      >
+        FAQS
+      </section>
+    </div>
+
+    <!-- Footer Section  -->
+
+    <img
+      src="public/saturn.svg"
+      alt=""
+      srcset=""
+      class="absolute translate-x-15 -translate-y-20 h-44 w-64 extrasmall:h-28 extrasmall:w-28 extrasmall:-translate-y-14 sm:h-36 sm:w-36 sm:-translate-y-16 md:h-40 md:w-40 md:translate-x-2 md:-translate-y-20 lg:h-48 lg:w-48 lg:translate-x-4 z-50"
+    />
+    <footer
+      class="bg-[#0F283F] text-white sm:p-2 flex flex-col items-center justify-center lg:justify-center font-['Kosugi Maru'] md:p-2 lg:p-4 -z-10"
+    >
+      <div class="absolute w-full lg:mr-16 z-0">
+        <img
+          src="public/starsfooter.svg"
+          alt=""
+          srcset=""
+          class="object-cover extrasmall:h-[27.2rem] lg:h-[22rem] md:h-[22rem] sm:h-[37.8rem] w-full opacity-30"
+        />
+      </div>
+      <div
+        class="flex items-center lg:justify-center justify-center md:justify-evenly lg:gap-[3.5rem]  xl:gap-[4rem] 2xl:gap-[10rem] flex-shrink md:flex-row w-full pt-20 lg:pt-16  xl:pt-[3rem]  extrasmall:flex-col sm:flex-col extrasmall:p-8 z-20"
+      >
+        <div class="flex flex-row">
+          <img
+            src="public/rebase-logo-light2.svg"
+            alt=""
+            srcset=""
+            class="w-[10rem] h-[8rem]  extrasmall:w-[8rem]  sm:w-[10rem] md:w-[6rem] md:h-[6rem] lg:w-[10rem] lg:h-[7rem] xl:w-[12rem]"
+          />
+          <div
+            class="border-[0.001rem] h-[7rem] bg-white m-2 mr-7 extrasmall:h-[6rem] extrasmall:mr-2 sm:h-[7rem] sm:mr-4 md:h-[4.5rem] lg:h-[7rem]"
+          ></div>
+          <img
+            src="public/Group24.svg"
+            alt=""
+            srcset=""
+            class="w-[9rem] h-[6rem]  extrasmall:w-[8rem] extrasmall:h-[4.8rem] extrasmall:mt-1  sm:w-[8rem]  md:w-[4.4rem] md:h-[4.4rem] lg:w-[6rem] lg:h-[6rem] xl:w-[12rem]"
+          />
+        </div>
+
+        <div
+          class="flex flex-col extrasmall:text-center extrasmall:p-3 extrasmall:m-3 sm:text-center sm:p-6 sm:m-4 md:text-left md:p-0"
+        >
+          <h1
+            class="text-white mb-2 text-lg extrasmall:text-2xl sm:text-3xl tracking-widest md:text-2xl lg:text-3xl  xl:text-4xl kosigu"
+          >
+            RESOURCES:
+          </h1>
+          <p
+            class="text-white text-lg extrasmall:text-xl sm:text-2xl tracking-wider text-nowrap md:text-xl kosigu lg:text-2xl xl:text-3xl  pt-2"
+          >
+          <a href="#" class="hover:text-gray-500">Sponsorship Brochure</a>  
+          </p>
+          <p
+            class="text-white text-lg extrasmall:text-xl sm:text-2xl tracking-wider text-nowrap md:text-xl kosigu lg:text-2xl xl:text-3xl  pt-2"
+          >
+            <a href="#" class="hover:text-gray-500">Code Of Conduct</a>
+          </p>
+          <p
+            class="text-white text-lg extrasmall:text-xl sm:text-2xl tracking-wider text-nowrap md:text-xl kosigu lg:text-2xl xl:text-3xl pt-2 "
+          >
+            <a href="#" class="hover:text-gray-500">Community Partners</a>
+          </p>
+          <p
+            class="text-white text-lg extrasmall:text-xl sm:text-2xl tracking-wider text-nowrap md:text-xl kosigu lg:text-2xl xl:text-3xl pt-2 "
+          >
+          <a href="#" class="hover:text-gray-500">Hackers guide</a>
+          </p>
+        </div>
+
+        <div class="text-center">
+          <h3
+            class="text-white mb-2 text-lg sm:text-2xl text-nowrap md:text-xl lg:text-3xl kosigu extrasmall:text-xl xl:text-4xl   tracking-wider p-2"
+          >
+               Connect with us:
+          </h3>
+          <div class="flex items-center justify-center space-x-4">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <img
+                src="public/Group21.png"
+                alt="Discord"
+                class="cursor-pointer lg:h-[2.5rem] xl:h-[3.5rem] hover:scale-75"
+              />
+            </a>
+            <a
+              href="https://www.youtube.com/@gdsciiitkalyani"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="public/youtube.svg"
+                alt="YouTube"
+                class="cursor-pointer lg:h-[2.2rem] xl:h-[3.2rem] hover:scale-75"
+              />
+            </a>
+            <a
+              href="https://twitter.com/gdsciiitkalyani?lang=en"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="public/x.svg"
+                alt="X"
+                class="cursor-pointer lg:h-[2.5rem] xl:h-[3.5rem] hover:scale-75"
+              />
+            </a>
+            <a
+              href="https://www.instagram.com/gdsciiitkalyani/?hl=en"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="public/instagram.svg"
+                alt="Instagram"
+                class="cursor-pointer lg:h-[2.5rem] xl:h-[3.5rem] hover:scale-75"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="text-white mt-7 m-6 text-lg extrasmall:text-center extrasmall:text-xl extrasmall:mt-3 tracking-widest text-nowrap kosigu lg:text-3xl  xl:text-4xl md:text-xl sm:text-2xl"
+      >
+        &#169; GDSC IIIT Kalyani 2023
+      </div>
+      <img
+        src="public/metroids.svg"
+        alt=""
+        class="right-0 absolute w-56 h-72 translate-y-10 extrasmall:w-28 extrasmall:h-36 sm:w-44 sm:h-56 xl:h-80 xl:w-72"
+      />
+    </footer>
+  
   </body>
 </html>
