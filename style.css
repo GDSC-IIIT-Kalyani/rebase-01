@@ -157,7 +157,7 @@ nav ul li a {
   text-shadow: 0.35vw 0.25vw 0px black;
   text-align: start;
   letter-spacing: 0.3vw;
-  margin: 0rem 0rem 0rem 3rem;
+  /* margin: 0rem 0rem 0rem 3rem; */
   z-index: 1;
 }
 .prizes_page_no {
@@ -436,7 +436,7 @@ body,
 .rectangle,
 .body-text,
 .image-window {
-  transition: all 0.3s ease;
+  /* transition: all 0.3s ease; */
 }
 @media (max-width: 1300px) {
   .hero_heading {
