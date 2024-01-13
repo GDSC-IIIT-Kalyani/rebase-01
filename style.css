@@ -1529,3 +1529,27 @@ body {
     max-width: 9.58vw;
   }
 }
+
+/* FAQS */
+
+.faqMobileText {
+  box-shadow: 5px 5px black;
+  /* clip-path: polygon(10% 0, 100% 0, 100% 100%, 10% 100%, 10% 80%, 0 90%, 10% 60%); */
+  /* padding-left: 10%; */
+  /* transform: translateX(-10%); */
+}
+
+.animate-oscillate {
+  animation: oscillate infinite 1s;
+}
+
+@keyframes oscillate {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}

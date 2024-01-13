@@ -2,6 +2,10 @@
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
+    fontFamily: {
+      'bangers': ['Bangers'],
+      'kosugi': ['Kosugi\\ Maru'],
+    },
     extend: {
       screens: {
         extrasmall: { max: '639px' },
