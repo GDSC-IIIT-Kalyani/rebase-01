@@ -135,6 +135,14 @@ nav ul li a {
   font-weight: bold;
 }
 
+/* ------------------- Landing page -----------------------------------*/
+
+@media screen and (max-width: 639px){
+  #landingimg {
+    visibility: hidden;
+  }
+}
+
 /* --------------------- PRIZES SECTION BEGINING------------------------------- */
 .stack {
   display: grid;
