@@ -627,12 +627,38 @@ body,
     margin: -22.5rem 0rem 0rem 3rem;
   }
 }
-@media (max-width: 420px) {
-  .hero_heading {
-    font-size: 3rem;
-    -webkit-text-stroke: 0.1rem #000;
-    margin: -12rem 0rem 0rem -9rem;
+@media (max-width: 640px){
+  .mascot {
+    height: 14rem;
+    margin: 27rem 0rem 0rem 17rem;
 }
+  .hero_heading {
+    font-size: 4rem;
+    margin: -11rem 0rem 0rem -14.5rem;
+    text-shadow: 0.13rem 0.2rem 0 #000;
+    letter-spacing: 0.2rem;
+}
+  .page_no {
+    font-size: 32px;
+    margin: -10rem 0rem 0rem 11rem;
+  }
+  .info-window {
+    height: 24.0625rem;
+    margin: -34rem 0rem 0rem -7rem;
+  }
+  .body-text {
+    font-size: 14px;
+    width: 275px;
+    margin: -20.5rem 0rem 0rem 2.5rem;
+  }
+  .tracks-window {
+    margin: -11rem 0rem 0rem -15rem;
+    height: 20.1875rem;
+    z-index: 3;
+  }
+}
+@media (max-width: 420px) {
+
   .mascot {
     height: 10rem;
     margin: 0rem 0rem 0rem 11rem;
@@ -640,7 +666,7 @@ body,
   .hero_heading {
     font-size: 3rem;
     -webkit-text-stroke: 0.1rem #000;
-    margin: -12rem 0rem 0rem -15rem;
+    margin: -12rem 0rem 0rem -9.5rem;
  }
  .page_no {
   font-size: 1.8rem;
