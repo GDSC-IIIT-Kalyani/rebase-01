@@ -632,6 +632,14 @@ body,
     height: 14rem;
     margin: 27rem 0rem 0rem 17rem;
 }
+.star1 {
+  margin: -13rem 0rem 0rem -24rem;
+}
+.star3 {
+  position: absolute;
+  z-index: 6;
+  margin: 46rem 0rem 0rem 8rem;
+}
   .hero_heading {
     font-size: 4rem;
     margin: -11rem 0rem 0rem -14.5rem;
@@ -663,6 +671,18 @@ body,
     height: 10rem;
     margin: 0rem 0rem 0rem 11rem;
 }
+  .star1{
+    height: 3rem;
+    margin: -4rem 0rem 0rem 0rem;
+  }
+  .star2{
+    height: 5rem;
+    margin: -40rem 0rem 0rem 13rem;
+  }
+  .star3{
+    height: 4rem;
+    margin: 31rem 0rem 0rem -17rem;
+  }
   .hero_heading {
     font-size: 3rem;
     -webkit-text-stroke: 0.1rem #000;
