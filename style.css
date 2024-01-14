@@ -195,8 +195,9 @@ img {
     -webkit-text-stroke: 0.2.3vw #000;
   }
   .head {
+    font-size: 14vw;
     text-align: start;
-    margin: 0rem 0rem 0rem 1rem;
+    /* margin: 0rem 0rem 0rem 1rem; */
   }
   .img {
     width: 100%;
@@ -436,7 +437,7 @@ body,
 .rectangle,
 .body-text,
 .image-window {
-  /* transition: all 0.3s ease; */
+  transition: all 0.3s ease;
 }
 @media (max-width: 1300px) {
   .hero_heading {
