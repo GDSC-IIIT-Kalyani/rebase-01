@@ -145,15 +145,16 @@ nav ul li a {
   #landingimg, #socialcomp {
     visibility: hidden;
   }
-  #moblandimg{
-    visibility: visible;
-  }
 }
 
-/* #moblandimg{
-  visibility: hidden;
-} */
+.moblinks ul li a img{
+  cursor: pointer;
+  transition: 0.5s;
+}
 
+.moblinks ul li a img:hover{
+  transform: scale(1.2);
+}
 /* --------------------- PRIZES SECTION BEGINING------------------------------- */
 .stack {
   display: grid;

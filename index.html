@@ -130,12 +130,13 @@
           </div>
         </div>
 
+        <!-- navbar normal screens -->
         <div class="hidden sm:block p-2 ">
           <nav
             class="relative after:absolute after:top-[10%] after:left-[-1%] after:right-[1%] after:bottom-[-10%] shrink-0"
           >
             <ul
-              class="flex 2xl:gap-12 xl:gap-12 lg:gap-4 gap-4 2xl:text-lg xl:text-md lg:text-sm md:text-xs font-bold 2xl:py-6 md:py-4 2xl:px-8 md:px-6 xl:px-8 bg-[#de533c]"
+              class="flex 2xl:gap-12 xl:gap-12 lg:gap-4 gap-3 2xl:text-lg xl:text-md lg:text-sm md:text-xs sm:text-[0.65rem] font-bold 2xl:py-6 md:py-4 sm:py-3 sm:px-6 2xl:px-8 md:px-6 xl:px-8 bg-[#de533c]"
             >
               <li class="navlist"><a href="#about">ABOUT</a></li>
               <li class="navlist"><a href="#schedule">SCHEDULE</a></li>
@@ -146,6 +147,7 @@
             </ul>
           </nav>
         </div>
+        <!-- navbar normal screens -->
       </div>
 
       <div
@@ -199,30 +201,32 @@
       <!-- LANDING PAGE -->
       <section id="home" class="h-screen w-full">
         <!-- Hero text -->
-        <div>
-          <img src="/public/herotext.png" alt="">
+        <div class="z-50">
+          <img class="w-full"  src="/public/herotext.png" alt="">
         </div>
 
-        <!-- Images and socials -->
-        <div
-          class="relative 2xl:-translate-y-28 lg:-translate-y-16 xl:-translate-y-16 md:-translate-y-12"
-        >
-
-
-          <img id="landingimg" class="m-auto w-full" src="/public/landing.png" alt="landing" />
-          <img id="moblandimg" class="sm:hidden extrasmall:-translate-y-44 verysmall:-translate-y-24  mx-auto" src="/public/heroimgmob.png" alt="">
-
+        <!-- Images and socials mobile -->
+        <div class="sm:hidden">
+          <!-- mobile landing image -->
+          <img id="moblandimg" class="w-[85%] mx-auto" src="/public/heroimgmob.png" alt="">
           <!-- div for socials for mobile screen -->
-          <div class="">
-            <img id="moblandimg" class="sm:hidden extrasmall:-translate-y-44 verysmall:-translate-y-24 mx-auto" src="/public/socialmob.png" alt="">
-            <div class="">
-              <ul class="">
-                <li><a href="https://discord.gg/tcaxPN6CNs"><img class="w-12" src="/public/discord.svg" alt="discord"></a></li>
+          <div class="mobsocials relative">
+            <img id="moblanding" class=" w-[80%] sm:hidden mx-auto" src="/public/socialmob.png" alt="">
+            <div class="moblinks absolute inset-0 flex justify-center items-center">
+              <ul class="flex justify-center exsm:gap-1 verysmall:gap-3 extrasmall:gap-7">
+                <li><a href="https://discord.gg/tcaxPN6CNs"><img class="verysmall:w-[70%]" src="/public/discordhero.svg" alt=""></a></li>
+                <li><a href="https://twitter.com/gdsciiitkalyani"><img class="verysmall:w-[90%]" src="/public/x.svg" alt=""></a></li>
+                <li><a href="https://www.youtube.com/channel/UCvRPKamvUtnQhij5y1MF11A"><img class="verysmall:w-[80%]" src="/public/youtube.svg" alt=""></a></li>
+                <li><a href="https://instagram.com/gdsciiitkalyani"><img class="verysmall:w-[70%]" src="/public/instahero.svg" alt=""></a></li>
               </ul>
             </div>
           </div>
-          
+        </div>
 
+        <!-- images and socials -->
+        <!-- <div
+        class="2xl:-translate-y-28 lg:-translate-y-16 xl:-translate-y-16 md:-translate-y-12"
+        >
           <div id="socialcomp" class="absolute md:top-12 md:left-4 2xl:top-28 2xl:left-12">
             <div class="mx-auto">
               <ul class="block m-auto">
@@ -255,7 +259,7 @@
               </ul>
             </div>
           </div>
-        </div>
+        </div> -->
       </section>
 
 
