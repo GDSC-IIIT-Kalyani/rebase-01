@@ -157,7 +157,7 @@ nav ul li a {
   text-shadow: 0.35vw 0.25vw 0px black;
   text-align: start;
   letter-spacing: 0.3vw;
-  margin: 0rem 0rem 0rem 3rem;
+  /* margin: 0rem 0rem 0rem 3rem; */
   z-index: 1;
 }
 .prizes_page_no {
@@ -195,8 +195,9 @@ img {
     -webkit-text-stroke: 0.2.3vw #000;
   }
   .head {
+    font-size: 14vw;
     text-align: start;
-    margin: 0rem 0rem 0rem 1rem;
+    /* margin: 0rem 0rem 0rem 1rem; */
   }
   .img {
     width: 100%;
@@ -1527,5 +1528,29 @@ body {
   }
   .moon {
     max-width: 9.58vw;
+  }
+}
+
+/* FAQS */
+
+.faqMobileText {
+  box-shadow: 5px 5px black;
+  /* clip-path: polygon(10% 0, 100% 0, 100% 100%, 10% 100%, 10% 80%, 0 90%, 10% 60%); */
+  /* padding-left: 10%; */
+  /* transform: translateX(-10%); */
+}
+
+.animate-oscillate {
+  animation: oscillate infinite 1s;
+}
+
+@keyframes oscillate {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
   }
 }

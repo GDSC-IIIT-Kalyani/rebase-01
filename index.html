@@ -516,7 +516,7 @@
       </section>
       <section
         id="prizes"
-        class="h-screen w-full border-2 border-black grid place-items-start"
+        class="w-full grid place-items-start"
       >
         <div class="stack">
           <h1 class="head">PRIZES</h1>
@@ -526,154 +526,583 @@
           </div>
         </div>
       </section>
-      <section
-        id="sponsors"
-        class="h-screen w-full border-2 border-black grid place-items-center"
-      >
-        <h1 class="sponsor-heading">Sponsors</h1>
-
-        <!-- The big black rectangles -->
-        <div
-          class="rectangle"
-          style="
-            position: relative;
-            top: 0vw;
-            right: 5vw;
-            margin-top: 1.5vw;
-            margin-bottom: 1vw;
-            margin-left: 0vw;
-            margin-right: 23vw;
-          "
-        >
-          <img src="public/star.svg" class="star-one" />
-          <img src="public/star.svg" class="star-two" />
-          <div class="rectangle-plat">
-            <div class="shadow-rect-plat"></div>
-          </div>
-          <p
-            class="sponsor-type"
-            style="
-              width: 167.99px;
-              height: 40.593px;
-              flex-shrink: 0;
-              font-family: Anime Ace 2 BB;
-
-              position: relative;
-              bottom: 10vw;
-              left: 56vw;
-              z-index: 2;
-            "
-          >
-            PLATINUM
-          </p>
+      <section class="mb-5">
+        <div class="faq-heading head text-[#E82338] text-stroke-2 flex justify-between mb-12 md:mb-0">
+            <h1 class="head">Sponsors</h1>
+            <h1 class="head">05</h1>
         </div>
-        <div
-          class="rectangle"
-          style="
-            position: relative;
-            right: 20vw;
-            margin-top: 1.5vw;
-            margin-bottom: 1vw;
-            margin-left: 35vw;
-          "
-        >
-          <img src="public/star.svg" class="star-three" />
-          <img src="public/star.svg" class="star-four" />
-          <div class="rectangle-diam">
-            <div class="shadow-rect-diam">
-              <img src="public/saturn.svg" class="saturn" />
+        <div class="wrapper flex flex-col gap-16" >
+            <!-- <div class='flex relative bg-[#0F283F] h-48 w-[60%] border-black border-8'>
+                <div class='sponsor-tier bg-[#59A3BC] w-48 h-12 absolute top-1/2 -right-40 outline-black outline-4 outline-offset-4 border-4 border-black outline grid place-items-center' style={AnimeAceBBbold.style}>PLATINUM</div>
+            </div> -->
+            <div class='flex flex-col sm:flex-row justify-around items-center relative bg-[#0F283F] h-48 w-[80%] xl:w-[70%] border-black border-8'>
+                <a href="https://devfolio.co">
+                    <img src='/Devfolio.png' alt='DEVFOLIO LOGO' class="w-32 md:w-40 2xl:w-48"></img>
+                </a>
+                <a href="https://polygon.xyz">
+                    <img src='/Polygon.png' alt='POLYGON LOGO' class="w-32 md:w-40 2xl:w-48"></img>
+                </a>
+                <div class='sponsor-tier bg-[#FA8C7D] w-40 h-12 xl:w-48 xl:h-16 absolute -top-8 right-[40%] sm:right-[55%] md:top-1/2 md:-right-36 border-[3px] border-black'>
+                  <div class="w-[105%] md:w-[110%] h-[110%] absolute border-black border-[3px] right-1 bottom-1 md:right-2 md:bottom-2 grid place-items-center font-anime font-bold text-sm xl:text-lg pt-2 pl-2">DIAMOND</div>
+                </div>
             </div>
-          </div>
-          <p
-            class="sponsor-type"
-            style="
-              color: #000;
-              width: 167.99px;
-              height: 40.593px;
-              flex-shrink: 0;
-              font-family: Anime Ace 2 BB;
-              position: relative;
-              bottom: 10vw;
-              right: 10vw;
-              z-index: 2;
-            "
-          >
-            DIAMOND
-          </p>
-        </div>
-        <div
-          class="rectangle"
-          style="
-            position: relative;
-            bottom: 0vw;
-            right: 18vw;
-            margin-top: 1.5vw;
-            margin-bottom: 1vw;
-            margin-left: 6.53vw;
-          "
-        >
-          <img src="public/star.svg" class="star-five" />
-          <img src="public/star.svg" class="star-six" />
-          <div class="rectangle-gold">
-            <div class="shadow-rect-gold"></div>
-          </div>
-          <p
-            class="sponsor-type"
-            style="
-              width: 101.157px;
-              height: 36.784px;
-              flex-shrink: 0;
-              color: #000;
-              font-family: AnimeAce2BB;
-
-              position: relative;
-              bottom: 8vw;
-              left: 54.5vw;
-              z-index: 2;
-            "
-          >
-            GOLD
-          </p>
-        </div>
-        <div
-          class="rectangle"
-          style="
-            position: relative;
-            right: 20vw;
-            margin-top: 1.5vw;
-            margin-bottom: 1vw;
-            margin-left: 35vw;
-          "
-        >
-          <img src="public/star.svg" class="star-seven" />
-          <img src="public/star.svg" class="star-eight" />
-          <div class="rectangle-silv">
-            <div class="shadow-rect-silv">
-              <img src="public/moon.svg" class="moon" />
+            <div class='flex flex-col sm:flex-row justify-around items-center relative bg-[#0F283F] h-48 w-[80%] xl:w-[70%] border-black border-8 self-end'>
+                <a href="https://replit.com">
+                    <img src='/Replit.png' alt='REPLIT LOGO' class="w-40 md:w-48 2xl:w-56"></img>
+                </a>
+                <div class='sponsor-tier bg-[#FFAD00] w-40 h-12 xl:w-48 xl:h-16 absolute -top-8 left-[40%] sm:left-[55%] md:top-1/2 md:-left-36 border-[3px] border-black'>
+                  <div class="w-[105%] md:w-[110%] h-[110%] absolute border-black border-[3px] right-1 bottom-1 md:right-2 md:bottom-2 grid place-items-center font-anime font-bold text-sm xl:text-lg pt-2 pl-2">GOLD</div>
+                </div>
             </div>
-          </div>
-          <p
-            class="sponsor-type"
-            style="
-              color: #000;
-              font-family: Anime Ace 2 BB;
-
-              position: relative;
-              bottom: 8vw;
-              right: 7vw;
-              z-index: 2;
-            "
-          >
-            SILVER
-          </p>
+            <!-- <div class='flex relative bg-[#0F283F] h-48 w-[60%] border-black border-8 self-end'>
+                <div class='sponsor-tier bg-[#A4CF48] w-48 h-12 absolute top-1/2 -left-40 outline-black outline-4 outline-offset-4 border-4 border-black outline grid place-items-center' style={AnimeAceBBbold.style}>SILVER</div>
+            </div> -->
         </div>
       </section>
-      <section
-        id="faqs"
-        class="h-screen w-full border-2 border-black grid place-items-center"
-      >
-        FAQS
-      </section>
+    <section class="w-full border-0 border-black">
+      <div class="faq-heading head text-[#E82338] text-stroke-2 flex justify-between">
+        <h1 class="head">FAQS</h1>
+        <h1 class="head">06</h1>
+      </div>
+      <!-- FAQ Desktop Pills -->
+      <div class="hidden xl:flex items-center mb-32 justify-center ">
+        <ul
+          class="mr-4 flex list-none flex-col flex-wrap pl-0 w-1/3 text-2xl font-bangers font-medium uppercase leading-tight text-black"
+          role="tablist"
+          data-te-nav-ref>
+          <li role="presentation" class="flex-grow border-b-4 border-red-500 border-dashed">
+            <a
+              href="#pills-1"
+              class="my-2 block pr-6 pb-3.5 pt-4 dark:bg-neutral-700 dark:text-white dark:data-[te-nav-active]:text-primary-700"
+              id="pills-tab-1"
+              data-te-toggle="pill"
+              data-te-target="#pills-1"
+              data-te-nav-active
+              role="tab"
+              aria-controls="pills-1"
+              aria-selected="true"
+              >HOW DO I REGISTER?</a
+            >
+          </li>
+          <li role="participation" class="flex-grow border-b-4 border-red-500 border-dashed">
+            <a
+              href="#pills-2"
+              class="my-2 block pr-6 pb-3.5 pt-4 font-bangers font-medium uppercase leading-tight text-black dark:bg-neutral-700 dark:text-white dark:data-[te-nav-active]:text-primary-700"
+              id="pills-tab-2"
+              data-te-toggle="pill"
+              data-te-target="#pills-2"
+              role="tab"
+              aria-controls="pills-2"
+              aria-selected="false"
+              >WHO CAN PARTICIPATE?</a
+            >
+          </li>
+          <li role="participation" class="flex-grow border-b-4 border-red-500 border-dashed">
+            <a
+              href="#pills-3"
+              class="my-2 block pr-6 pb-3.5 pt-4 font-bangers font-medium uppercase leading-tight text-black dark:bg-neutral-700 dark:text-white dark:data-[te-nav-active]:text-primary-700"
+              id="pills-tab-3"
+              data-te-toggle="pill"
+              data-te-target="#pills-3"
+              role="tab"
+              aria-controls="pills-3"
+              aria-selected="false"
+              >HOW MANY TEAM MEMBERS DO I NEED?</a
+            >
+          </li>
+          <li role="participation" class="flex-grow border-b-4 border-red-500 border-dashed">
+            <a
+              href="#pills-4"
+              class="my-2 block pr-6 pb-3.5 pt-4 font-bangers font-medium uppercase leading-tight text-black dark:bg-neutral-700 dark:text-white dark:data-[te-nav-active]:text-primary-700"
+              id="pills-tab-4"
+              data-te-toggle="pill"
+              data-te-target="#pills-4"
+              role="tab"
+              aria-controls="pills-4"
+              aria-selected="false"
+              >WILL THE HACKATHON BE IN-PERSON OR ONLINE?</a
+            >
+          </li>
+          <li role="participation" class="flex-grow border-b-4 border-red-500 border-dashed">
+            <a
+              href="#pills-5"
+              class="my-2 block pr-6 pb-3.5 pt-4 font-bangers font-medium uppercase leading-tight text-black dark:bg-neutral-700 dark:text-white dark:data-[te-nav-active]:text-primary-700"
+              id="pills-tab-5"
+              data-te-toggle="pill"
+              data-te-target="#pills-5"
+              role="tab"
+              aria-controls="pills-5"
+              aria-selected="false"
+              >HOW MUCH ARE THE PARTICIPATION FEES?</a
+            >
+          </li>
+          <li role="participation" class="flex-grow border-b-4 border-red-500 border-dashed">
+            <a
+              href="#pills-6"
+              class="my-2 block pr-6 pb-3.5 pt-4 font-bangers font-medium uppercase leading-tight text-black dark:bg-neutral-700 dark:text-white dark:data-[te-nav-active]:text-primary-700"
+              id="pills-tab-6"
+              data-te-toggle="pill"
+              data-te-target="#pills-6"
+              role="tab"
+              aria-controls="pills-6"
+              aria-selected="false"
+              >WHAT ARE THE PREREQUISITES TO PARTICIPATE IN REBASE&lt;01&gt;?</a
+            >
+          </li>
+          <li role="participation" class="flex-grow border-b-4 border-red-500 border-dashed">
+            <a
+              href="#pills-7"
+              class="my-2 block pr-6 pb-3.5 pt-4 font-bangers font-medium uppercase leading-tight text-black dark:bg-neutral-700 dark:text-white dark:data-[te-nav-active]:text-primary-700"
+              id="pills-tab-7"
+              data-te-toggle="pill"
+              data-te-target="#pills-7"
+              role="tab"
+              aria-controls="pills-7"
+              aria-selected="false"
+              >I AM A HIGH SCHOOL STUDENT. CAN I PARTICIPATE?</a
+            >
+          </li>
+          <li role="participation" class="flex-grow border-b-4 border-red-500 border-dashed">
+            <a
+              href="#pills-8"
+              class="my-2 block pr-6 pb-3.5 pt-4 text-2xl font-bangers font-medium uppercase leading-tight text-black dark:bg-neutral-700 dark:text-white dark:data-[te-nav-active]:text-primary-700"
+              id="pills-tab-8"
+              data-te-toggle="pill"
+              data-te-target="#pills-8"
+              role="tab"
+              aria-controls="pills-8"
+              aria-selected="false"
+              >HOW TO GET SELECTED?</a
+            >
+          </li>
+          <li role="participation" class="flex-grow border-b-4 border-red-500 border-dashed">
+            <a
+              href="#pills-9"
+              class="my-2 block pr-6 pb-3.5 pt-4 text-2xl font-bangers font-medium uppercase leading-tight text-black dark:bg-neutral-700 dark:text-white dark:data-[te-nav-active]:text-primary-700"
+              id="pills-tab-9"
+              data-te-toggle="pill"
+              data-te-target="#pills-9"
+              role="tab"
+              aria-controls="pills-9"
+              aria-selected="false"
+              >IS IT FOR BEGINNERS?</a
+            >
+          </li>
+        </ul>
+        <div class="w-1/3 h-full relative grid place-items-center">
+          <img src="./public/faqpanda3.svg" alt="" class="absolute animate-[bounce_3s_infinite_ease-in-out]">
+          <img src="./public/faqdesbox.svg" alt="" class="w-full">
+        </div>
+        <!--Pills content-->
+        <div class="my-2 w-1/3 flex flex-col self-center h-full text-white font-kosugi text-lg">
+          <div
+            class="faqMobileText hidden opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block relative border-4 border-black bg-[#48727E]"
+            id="pills-1"
+            role="tabpanel"
+            aria-labelledby="pills-tab-1"
+            data-te-tab-active
+            >
+            <div class="p-8">Register your team <a href="https://rebase01.devfolio.co/" target="_blank" rel="noopener noreferrer" class="text-black">@Devfolio.</a></div>
+          </div>
+          <div
+            class="faqMobileText hidden opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block relative border-4 border-black bg-[#48727E]"
+            id="pills-2"
+            role="tabpanel"
+            aria-labelledby="pills-tab-2"
+            >
+            <div class="p-8">Literally anyone, student(graduate, undergraduate, high-school), professional, and almost anyone we forgot to mention here.</div>
+          </div>
+          <div
+            class="faqMobileText hidden opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block relative border-4 border-black bg-[#48727E]"
+            id="pills-3"
+            role="tabpanel"
+            aria-labelledby="pills-tab-3"
+            >
+            <div class="p-8">You can participate individually or in teams of 2 to 4 members. If you are participating in the hackathon individually and looking for a team, we will help you in connecting to other individual participants to get you a team.</div>
+          </div>
+          <div
+            class="faqMobileText hidden opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block relative border-4 border-black bg-[#48727E]"
+            id="pills-4"
+            role="tabpanel"
+            aria-labelledby="pills-tab-4"
+            >
+            <div class="p-8"> Rebase&lt;01&gt; will be conducted in complete online mode, so you can participate from anywhere without any worry.</div>
+          </div>
+          <div
+            class="faqMobileText hidden opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block relative border-4 border-black bg-[#48727E]"
+            id="pills-5"
+            role="tabpanel"
+            aria-labelledby="pills-tab-5"
+            >
+            <div class="p-8">Rebase&lt;01&gt; is absolutely free inclusive of resources.</div>
+          </div>
+          <div
+            class="faqMobileText hidden opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block relative border-4 border-black bg-[#48727E]"
+            id="pills-6"
+            role="tabpanel"
+            aria-labelledby="pills-tab-6"
+            >
+            <div class="p-8">No prerequisites are required to participate in this hackathon. This event is open to participants of all skill levels.</div>
+          </div>
+          <div
+            class="faqMobileText hidden opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block relative border-4 border-black bg-[#48727E]"
+            id="pills-7"
+            role="tabpanel"
+            aria-labelledby="pills-tab-7"
+            >
+            <div class="p-8">Rebase &lt;01&gt; welcomes everyone! It is an inclusive open to all, so anyone can join in.</div>
+          </div>
+          <div
+            class="faqMobileText hidden opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block relative border-4 border-black bg-[#48727E]"
+            id="pills-8"
+            role="tabpanel"
+            aria-labelledby="pills-tab-8"
+            >
+            <div class="p-8">Submit a good application 🙂 Make sure your essays are good, that is how you move ahead. We will have:(i) An initial screening round to filter non-serious candidates and spam applications.(ii) A devfolio screening round where participants from round 1 will submit proposals and will get selected.</div>
+          </div>
+          <div
+            class="faqMobileText hidden opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block relative border-4 border-black bg-[#48727E]"
+            id="pills-9"
+            role="tabpanel"
+            aria-labelledby="pills-tab-9"
+            >
+            <div class="p-8">It is for EVERYBODY!! We will have mentors and resources available, along with several workshops targeted for beginners.</div>
+          </div>
+          <div class="border-4 border-black my-8 p-8 bg-[#193248]">
+            <div class="font-bangers text-[#F4E1B9] text-2xl">I HAVE SOME OTHER QUESTIONS...</div>
+            <div>You can reach out to us on our Discord Server in #Rebase&lt;01&gt; or email us at dsc.iiitkalyani@gmail.com! We're always ready to answer all your questions</div>
+          </div>
+        </div>
+      </div>
+      <!-- FAQ Accordian mobile-->
+      <div id="accordionFlushExample" class="xl:hidden">
+        <div class="question-1">
+          <h2 class="font-bangers text-black mb-0" id="flush-headingOne">
+            <button
+              class="group relative flex justify-stretch items-center w-full rounded-none border-0 py-2 xl:py-4 text-left text-lg lg:text-3xl 2xl:text-5xl text-black [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none"
+              type="button"
+              data-te-collapse-init
+              data-te-collapse-collapsed
+              data-te-target="#flush-collapseOne"
+              aria-expanded="false"
+              aria-controls="flush-collapseOne"
+            >
+              <div
+                class="grid place-items-centerrotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white"
+              >
+                <img
+                  src="public/faq-arrow.svg"
+                  alt=""
+                  class="w-5 mx-3"
+                />
+              </div>
+              HOW DO I REGISTER?
+            </button>
+          </h2>
+          <div
+            id="flush-collapseOne"
+            class="faqMobileText !visible hidden font-kosugi text-xs lg:text-base 2xl:text-2xl text-white bg-[#48727E] border-2 border-black ml-5"
+            data-te-collapse-item
+            aria-labelledby="flush-headingOne"
+            data-te-parent="#accordionFlushExample"
+          >
+            <div class="px-5 py-4">Register your team <a href="https://rebase01.devfolio.co/" target="_blank" rel="noopener noreferrer" class="text-black">@Devfolio.</a></div>
+          </div>
+        </div>
+        <div class="question-2">
+          <h2 class="font-bangers text-black mb-0" id="flush-headingTwo">
+            <button
+              class="group relative flex justify-stretch items-center w-full rounded-none border-0 py-2 xl:py-4 text-left text-lg lg:text-3xl 2xl:text-5xl text-black [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none"
+              type="button"
+              data-te-collapse-init
+              data-te-collapse-collapsed
+              data-te-target="#flush-collapseTwo"
+              aria-expanded="false"
+              aria-controls="flush-collapseTwo"
+            >
+              <div
+                class="grid place-items-center rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white"
+              >
+                <img
+                  src="public/faq-arrow.svg"
+                  alt=""
+                  class="w-5 mx-3"
+                />
+              </div>
+              <div class="w-[90%]">WHO CAN PARTICIPATE?</div>
+            </button>
+          </h2>
+          <div
+            id="flush-collapseTwo"
+            class="faqMobileText !visible hidden font-kosugi text-xs lg:text-base 2xl:text-2xl text-white bg-[#48727E] border-2 border-black ml-5"
+            data-te-collapse-item
+            aria-labelledby="flush-headingTwo"
+            data-te-parent="#accordionFlushExample"
+          >
+            <div class="px-5 py-4">
+              Literally anyone, student(graduate, undergraduate, high-school),
+              professional, and almost anyone we forgot to mention here.
+            </div>
+          </div>
+        </div>
+        <div class="question-3">
+          <h2 class="font-bangers text-black mb-0" id="flush-headingThree">
+            <button
+              class="group relative flex justify-stretch items-center w-full rounded-none border-0 py-2 xl:py-4 text-left text-lg lg:text-3xl 2xl:text-5xl text-black [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none"
+              type="button"
+              data-te-collapse-init
+              data-te-collapse-collapsed
+              data-te-target="#flush-collapseThree"
+              aria-expanded="false"
+              aria-controls="flush-collapseThree"
+            >
+              <div
+                class="grid place-items-center rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white"
+              >
+                <img
+                  src="public/faq-arrow.svg"
+                  alt=""
+                  class="w-5 mx-3"
+                />
+              </div>
+              HOW MANY TEAM MEMBERS DO I NEED?
+            </button>
+          </h2>
+          <div
+            id="flush-collapseThree"
+            class="faqMobileText !visible hidden font-kosugi text-xs lg:text-base 2xl:text-2xl text-white bg-[#48727E] border-2 border-black ml-5"
+            data-te-collapse-item
+            aria-labelledby="flush-headingThree"
+            data-te-parent="#accordionFlushExample"
+          >
+            <div class="px-5 py-4">
+              You can participate individually or in teams of 3 to 5 members. If
+              you are participating in the hackathon individually and looking
+              for a team, we will help you in connecting to other individual
+              participants to get you a team.
+            </div>
+          </div>
+        </div>
+        <div class="question-4">
+          <h2 class="font-bangers text-black mb-0" id="flush-headingFour">
+            <button
+              class="group relative flex justify-stretch items-center w-full rounded-none border-0 py-2 xl:py-4 text-left text-lg lg:text-3xl 2xl:text-5xl text-black [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none"
+              type="button"
+              data-te-collapse-init
+              data-te-collapse-collapsed
+              data-te-target="#flush-collapseFour"
+              aria-expanded="false"
+              aria-controls="flush-collapseFour"
+            >
+              <div
+                class="grid place-items-center rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white"
+              >
+                <img
+                  src="public/faq-arrow.svg"
+                  alt=""
+                  class="w-5 mx-3"
+                />
+              </div>
+              WILL THE HACKATHON BE ONLINE OR OFFLINE?
+            </button>
+          </h2>
+          <div
+            id="flush-collapseFour"
+            class="faqMobileText !visible hidden font-kosugi text-xs lg:text-base 2xl:text-2xl text-white bg-[#48727E] border-2 border-black ml-5"
+            data-te-collapse-item
+            aria-labelledby="flush-headingFour"
+            data-te-parent="#accordionFlushExample"
+          >
+            <div class="px-5 py-4">
+              Rebase&lt;01&gt; will be conducted in complete online mode, so you can
+              participate from anywhere without any worry.
+            </div>
+          </div>
+        </div>
+        <div class="question-5">
+          <h2 class="font-bangers text-black mb-0" id="flush-headingFive">
+            <button
+              class="group relative flex justify-stretch items-center w-full rounded-none border-0 py-2 xl:py-4 text-left text-lg lg:text-3xl 2xl:text-5xl text-black [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none"
+              type="button"
+              data-te-collapse-init
+              data-te-collapse-collapsed
+              data-te-target="#flush-collapseFive"
+              aria-expanded="false"
+              aria-controls="flush-collapseFive"
+            >
+              <div
+                class="grid place-items-center -rotate-180 fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white"
+              >
+                <img
+                  src="public/faq-arrow.svg"
+                  alt=""
+                  class="w-5 mx-3"
+                />
+              </div>
+              HOW MUCH ARE THE PARTICIPATION FEES?
+            </button>
+          </h2>
+          <div
+            id="flush-collapseFive"
+            class="faqMobileText !visible hidden font-kosugi text-xs lg:text-base 2xl:text-2xl text-white bg-[#48727E] border-2 border-black ml-5"
+            data-te-collapse-item
+            aria-labelledby="flush-headingFive"
+            data-te-parent="#accordionFlushExample"
+          >
+            <div class="px-5 py-4">
+              Rebase&lt;01&gt; is absolutely free inclusive of resources.
+            </div>
+          </div>
+        </div>
+        <div class="question-6">
+          <h2 class="font-bangers text-black mb-0" id="flush-headingSix">
+            <button
+              class="group relative flex justify-stretch items-center w-full rounded-none border-0 py-2 xl:py-4 text-left text-lg lg:text-3xl 2xl:text-5xl text-black [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none"
+              type="button"
+              data-te-collapse-init
+              data-te-collapse-collapsed
+              data-te-target="#flush-collapseSix"
+              aria-expanded="false"
+              aria-controls="flush-collapseSix"
+            >
+              <div
+                class="grid px-3 place-items-center -rotate-180 fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white"
+              >
+                <img
+                  src="/faq-arrow.svg"
+                  alt=""
+                  class="w-7 sm:w-5"
+                />
+              </div>
+              <div class="">WHAT ARE THE PREREQUISITES TO PARTICIPATE IN REBASE&lt;01&gt;?</div>
+            </button>
+          </h2>
+          <div
+            id="flush-collapseSix"
+            class="faqMobileText !visible hidden font-kosugi text-xs lg:text-base 2xl:text-2xl text-white bg-[#48727E] border-2 border-black ml-5"
+            data-te-collapse-item
+            aria-labelledby="flush-headingSix"
+            data-te-parent="#accordionFlushExample"
+          >
+            <div class="px-5 py-4">
+              No prerequisites are required to participate in this hackathon. This event is open to participants of all skill levels.
+            </div>
+          </div>
+        </div>
+        <div class="question-7">
+          <h2 class="font-bangers text-black mb-0" id="flush-headingSeven">
+            <button
+              class="group relative flex justify-stretch items-center w-full rounded-none border-0 py-2 xl:py-4 text-left text-lg lg:text-3xl 2xl:text-5xl text-black [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none"
+              type="button"
+              data-te-collapse-init
+              data-te-collapse-collapsed
+              data-te-target="#flush-collapseSeven"
+              aria-expanded="false"
+              aria-controls="flush-collapseSeven"
+            >
+              <div
+                class="grid px-3 place-items-center rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white"
+              >
+                <img
+                  src="public/faq-arrow.svg"
+                  alt=""
+                  class="w-[1.4rem]"
+                />
+              </div>
+              <div class="">I AM A HIGH SCHOOL STUDENT. CAN I PARTICIPATE?</div>
+            </button>
+          </h2>
+          <div
+            id="flush-collapseSeven"
+            class="faqMobileText !visible hidden font-kosugi text-xs lg:text-base 2xl:text-2xl text-white bg-[#48727E] border-2 border-black ml-5"
+            data-te-collapse-item
+            aria-labelledby="flush-headingSeven"
+            data-te-parent="#accordionFlushExample"
+          >
+            <div class="px-5 py-4">
+              Rebase &lt;01&gt; welcomes everyone! It is an inclusive open to all, so anyone can join in.
+            </div>
+          </div>
+        </div>
+        <div class="question-8">
+          <h2 class="font-bangers text-black mb-0" id="flush-headingEight">
+            <button
+              class="group relative transition flex items-center w-full rounded-none border-0 py-2 xl:py-4 text-left text-lg lg:text-3xl 2xl:text-5xl text-black [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none"
+              type="button"
+              data-te-collapse-init
+              data-te-collapse-collapsed
+              data-te-target="#flush-collapseEight"
+              aria-expanded="false"
+              aria-controls="flush-collapseEight"
+            >
+              <div
+                class="grid place-items-center rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white"
+              >
+                <img
+                  src="public/faq-arrow.svg"
+                  alt=""
+                  class="w-5 mx-3"
+                />
+              </div>
+              HOW TO GET SELECTED?
+            </button>
+          </h2>
+          <div
+            id="flush-collapseEight"
+            class="faqMobileText !visible hidden font-kosugi text-xs lg:text-base 2xl:text-2xl text-white bg-[#48727E] border-2 border-black ml-5"
+            data-te-collapse-item
+            aria-labelledby="flush-headingEight"
+            data-te-parent="#accordionFlushExample"
+          >
+            <div class="px-5 py-4">
+              Submit a good application 🙂 Make sure your essays are good, that is how you move ahead. We will have:(i) An initial screening round to filter non-serious candidates and spam applications.(ii) A devfolio screening round where participants from round 1 will submit proposals and will get selected.
+            </div>
+          </div>
+        </div>
+        <div class="question-9">
+          <h2 class="font-bangers text-black mb-0" id="flush-headingNine">
+            <button
+              class="group relative transition flex items-center w-full rounded-none border-0 py-2 xl:py-4 text-left text-lg lg:text-3xl 2xl:text-5xl text-black [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none"
+              type="button"
+              data-te-collapse-init
+              data-te-collapse-collapsed
+              data-te-target="#flush-collapseNine"
+              aria-expanded="false"
+              aria-controls="flush-collapseNine"
+            >
+              <div
+                class="grid place-items-center rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white"
+              >
+                <img
+                  src="public/faq-arrow.svg"
+                  alt=""
+                  class="w-5 mx-3"
+                />
+              </div>
+              IS IT FOR BEGINNERS?
+            </button>
+          </h2>
+          <div
+            id="flush-collapseNine"
+            class="faqMobileText !visible hidden font-kosugi text-xs lg:text-base 2xl:text-2xl text-white bg-[#48727E] border-2 border-black ml-5"
+            data-te-collapse-item
+            aria-labelledby="flush-headingNine"
+            data-te-parent="#accordionFlushExample"
+          >
+            <div class="px-5 py-4">
+              It is for EVERYBODY!! We will have mentors and resources available, along with several workshops targeted for beginners.
+            </div>
+          </div>
+        </div>
+        <div class="flex relative w-full">
+          <img src="public/faqpanda2.svg" alt="" class="absolute top-0 right-2 w-20 h-fit animate-[bounce_2s_infinite_ease-in-out] scale-x-[-1] " />
+          <div class="faqMobileText border-4 border-black my-8 p-8 bg-[#193248]">
+            <div class="font-bangers text-[#F4E1B9] text-2xl">I HAVE SOME OTHER QUESTIONS...</div>
+            <div class="text-white">You can reach out to us on our Discord Server in #Rebase&lt;01&gt; or email us at dsc.iiitkalyani@gmail.com! We're always ready to answer all your questions</div>
+          </div>
+        </div>
+      </div>
+    </section>
     </div>
 
     <!-- Footer Section  -->
@@ -808,6 +1237,6 @@
         class="right-0 absolute w-56 h-72 translate-y-10 extrasmall:w-28 extrasmall:h-36 sm:w-44 sm:h-56 xl:h-80 xl:w-72"
       />
     </footer>
-  
+  <script type="module" src="./index.js"></script>
   </body>
 </html>
