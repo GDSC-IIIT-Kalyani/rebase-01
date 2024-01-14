@@ -142,8 +142,11 @@ nav ul li a {
 /* ------------------- Landing page -----------------------------------*/
 
 @media screen and (max-width: 639px){
-  #landingimg, #socialcomp {
+  #socialcomp {
     visibility: hidden;
+  }
+  #compland{
+    display: none;
   }
 }
 
