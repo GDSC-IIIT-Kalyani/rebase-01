@@ -135,7 +135,7 @@
             class="relative after:absolute after:top-[10%] after:left-[-1%] after:right-[1%] after:bottom-[-10%] shrink-0"
           >
             <ul
-              class="flex 2xl:gap-12 xl:gap-12 lg:gap-4 gap-4 2xl:text-lg xl:text-md lg:text-sm md:text-xs mobwid:text-[0.7rem] font-bold 2xl:py-6 md:py-4 2xl:px-8 md:px-6 mobwid:py-2 mobwid:px-4 xl:px-8 bg-[#de533c]"
+              class="flex 2xl:gap-12 xl:gap-12 lg:gap-4 gap-4 2xl:text-lg xl:text-md lg:text-sm md:text-xs font-bold 2xl:py-6 md:py-4 2xl:px-8 md:px-6 xl:px-8 bg-[#de533c]"
             >
               <li class="navlist"><a href="#about">ABOUT</a></li>
               <li class="navlist"><a href="#schedule">SCHEDULE</a></li>
@@ -197,17 +197,52 @@
       </script>
 
       <section id="home" class="h-screen w-full">
-        <div class="herotext z-50">
-          <img class="" src="/public/herotext.png" alt="hero-text">
+        <div class="textpart">
+          <div class="head-vol flex md:gap-8 lg:gap-8 xl:gap-8 2xl:gap-8">
+            <div class="rebase-head heading">
+              <h1
+                class="md:text-[6.5rem] lg:text-[8rem] xl:text-10rem 2xl:text-[12rem] text-[#f4e1b9]"
+              >
+                REBASE
+              </h1>
+            </div>
+
+            <div class="block relative">
+              <div
+                class="hero-vol md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl 2xl:translate-y-24 xl:translate-y-[4.5rem] lg:translate-y-12 md:translate-y-8"
+              >
+                <h3 class="">VOLUME</h3>
+              </div>
+              <div
+                class="z-50 2xl:text-[18rem] xl:text-[13rem] lg:text-[10rem] md:text-[8rem] head-one absolute xl:-left-28 lg:-left-20 md:-left-20"
+              >
+                <h1 class="rebase-head text-[#E82338]">&lt;01&gt;</h1>
+              </div>
+            </div>
+          </div>
         </div>
 
         <!-- Images and socials -->
         <div
-          class="relative -z-50 2xl:-translate-y-52 lg:-translate-y-36 xl:-translate-y-44 md:-translate-y-32 mobwid:-translate-y-[6.5rem]"
+          class="relative 2xl:-translate-y-28 lg:-translate-y-16 xl:-translate-y-16 md:-translate-y-12"
         >
-          <img id="landingimg" class="m-auto w-full" src="/public/landing.png" alt="landing" />
 
-          <div class="absolute md:top-12 md:left-4 2xl:top-28 2xl:left-12">
+
+          <img id="landingimg" class="m-auto w-full" src="/public/landing.png" alt="landing" />
+          <img id="moblandimg" class="sm:hidden extrasmall:-translate-y-44 verysmall:-translate-y-24  mx-auto" src="/public/heroimgmob.png" alt="">
+
+          <!-- div for socials for mobile screen -->
+          <div class="">
+            <img id="moblandimg" class="sm:hidden extrasmall:-translate-y-44 verysmall:-translate-y-24 mx-auto" src="/public/socialmob.png" alt="">
+            <div class="">
+              <ul class="">
+                <li><a href="https://discord.gg/tcaxPN6CNs"><img class="w-12" src="/public/discord.svg" alt="discord"></a></li>
+              </ul>
+            </div>
+          </div>
+          
+
+          <div id="socialcomp" class="absolute md:top-12 md:left-4 2xl:top-28 2xl:left-12">
             <div class="mx-auto">
               <ul class="block m-auto">
                 <li class="">
@@ -331,10 +366,31 @@
       </section>
       <!--Timeline ends here-->
 
+      <!-- -----------------------Tracks section---------------------- -->
       <section
         id="tracks"
-        class="h-screen w-full border-2 border-black grid place-items-center"
+        class="h-screen w-full grid place-items-center"
       >
+        <div class="mascot">
+          <img src='public/mascot-tracks.svg' alt="">
+            
+        </div>
+        <div class="star1">
+          <svg width="68" height="103" viewBox="0 0 68 103" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24.9613 66.8218C20.258 60.3826 13.7315 56.8154 4.99666 54.4629C14.5451 52.4107 21.1885 48.27 25.7509 40.7274C29.6132 34.342 31.9367 25.5859 33.4 13.7823C34.4158 25.9221 36.4205 34.9772 40.2913 41.4903C44.491 48.5568 50.8132 52.5307 60.0632 54.3276C52.4695 55.9511 46.9689 59.4036 42.8994 65.4385C38.5096 71.9484 35.8507 81.3811 33.8282 94.4801C32.2591 81.8186 29.5006 73.0363 24.9613 66.8218Z" fill="white" stroke="black" stroke-width="2"/>
+            </svg>
+        </div>
+        <div class="star2">
+          <svg width="55" height="83" viewBox="0 0 55 83" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20.3426 53.7307C16.6402 48.6806 11.557 45.8113 4.84217 43.9072C12.1967 42.1909 17.3885 38.8541 20.9906 32.921C23.9426 28.0588 25.7847 21.5127 26.9797 12.8457C27.8458 21.7839 29.4606 28.5649 32.4251 33.5346C35.7224 39.0621 40.62 42.255 47.6641 43.7882C41.9342 45.1784 37.707 47.9436 34.5405 52.622C31.115 57.683 28.9916 64.9071 27.3798 74.7974C26.0828 65.2784 23.8815 58.5576 20.3426 53.7307Z" fill="white" stroke="black" stroke-width="2"/>
+            </svg>
+        </div>
+        <div class="star3">
+          <svg width="38" height="57" viewBox="0 0 38 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.3025 36.7119C11.8964 33.4498 8.66852 31.4965 4.51962 30.178C9.08493 28.9153 12.4079 26.633 14.7654 22.7733C16.5608 19.8339 17.764 16.0252 18.5925 11.1665C19.2397 16.21 20.3265 20.1728 22.1387 23.1925C24.2806 26.7616 27.3757 28.9322 31.6767 30.0895C28.2478 31.139 25.6252 33.0006 23.61 35.9601C21.4328 39.1573 20.0153 43.5733 18.9381 49.4356C18.0118 43.8504 16.5453 39.7526 14.3025 36.7119Z" fill="white" stroke="black" stroke-width="2"/>
+</svg>
+
+        </div>
         <div class="header">
           <div>
             <h1 class="hero_heading">TRACKS</h1>
@@ -402,61 +458,25 @@
             </div>
           </div>
           <div class="tracks-window">
-            <svg
-              width="451"
-              height="569"
-              viewBox="0 0 451 569"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M2.5 2.5H448.5V566.5H2.5V2.5Z"
-                fill="#F4E1B9"
-                stroke="black"
-                stroke-width="5"
-              />
-              <path
-                d="M422 44H441V560.5H422V44Z"
-                fill="#F4E1B9"
-                stroke="black"
-                stroke-width="2"
-              />
-              <path
-                d="M9 44H422V560.5H9V44Z"
-                fill="#193248"
-                stroke="black"
-                stroke-width="2"
-              />
-              <rect x="9" y="7" width="434" height="34" fill="black" />
-              <path
-                d="M438.5 11H410V37.5H438.5V11Z"
-                stroke="#F4E1B9"
-                stroke-width="2"
-              />
-              <path
-                d="M422.452 26.9922V26.7301C422.452 26.0057 422.511 25.4283 422.631 24.9979C422.754 24.5675 422.933 24.2223 423.168 23.9624C423.402 23.6982 423.688 23.4574 424.024 23.2401C424.293 23.0696 424.531 22.897 424.74 22.7223C424.953 22.5433 425.121 22.3516 425.245 22.147C425.369 21.9425 425.43 21.7102 425.43 21.4503C425.43 21.1989 425.371 20.9773 425.251 20.7855C425.132 20.5937 424.968 20.4467 424.759 20.3445C424.555 20.2379 424.327 20.1847 424.075 20.1847C423.824 20.1847 423.587 20.2422 423.366 20.3572C423.148 20.4723 422.969 20.6364 422.829 20.8494C422.692 21.0582 422.622 21.3118 422.618 21.6101H419.678C419.69 20.7152 419.897 19.9822 420.298 19.4112C420.702 18.8402 421.237 18.4183 421.902 18.1456C422.567 17.8686 423.3 17.7301 424.101 17.7301C424.979 17.7301 425.759 17.8665 426.44 18.1392C427.126 18.4119 427.665 18.8146 428.058 19.3473C428.45 19.88 428.646 20.532 428.646 21.3033C428.646 21.8104 428.56 22.2578 428.39 22.6456C428.219 23.0334 427.981 23.3764 427.674 23.6747C427.371 23.9687 427.016 24.2372 426.607 24.4801C426.287 24.6676 426.021 24.8636 425.808 25.0682C425.599 25.2727 425.441 25.5071 425.335 25.7713C425.228 26.0312 425.175 26.3509 425.175 26.7301V26.9922H422.452ZM423.864 31.1854C423.404 31.1854 423.01 31.0234 422.682 30.6996C422.358 30.3757 422.198 29.9837 422.202 29.5234C422.198 29.0717 422.358 28.6861 422.682 28.3665C423.01 28.0426 423.404 27.8807 423.864 27.8807C424.303 27.8807 424.689 28.0426 425.021 28.3665C425.354 28.6861 425.522 29.0717 425.526 29.5234C425.522 29.8303 425.441 30.1094 425.283 30.3608C425.13 30.6122 424.928 30.8125 424.676 30.9616C424.429 31.1108 424.158 31.1854 423.864 31.1854Z"
-                fill="#F4E1B9"
-              />
-            </svg>
-
+            <svg width="451" height="564" viewBox="0 0 451 564" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2.5 2.5H448.5V561.5H2.5V2.5Z" fill="#F4E1B9" stroke="black" stroke-width="5"/>
+              <path d="M422 44H441V554.5H422V44Z" fill="#F4E1B9" stroke="black" stroke-width="2"/>
+              <rect x="9" y="7" width="434" height="34" fill="black"/>
+              <path d="M438.5 11H410V37.5H438.5V11Z" stroke="#F4E1B9" stroke-width="2"/>
+              <path d="M422.452 26.9922V26.7301C422.452 26.0057 422.511 25.4283 422.631 24.9979C422.754 24.5675 422.933 24.2223 423.168 23.9624C423.402 23.6982 423.688 23.4574 424.024 23.2401C424.293 23.0696 424.531 22.897 424.74 22.7223C424.953 22.5433 425.121 22.3516 425.245 22.147C425.369 21.9425 425.43 21.7102 425.43 21.4503C425.43 21.1989 425.371 20.9773 425.251 20.7855C425.132 20.5937 424.968 20.4467 424.759 20.3445C424.555 20.2379 424.327 20.1847 424.075 20.1847C423.824 20.1847 423.587 20.2422 423.366 20.3572C423.148 20.4723 422.969 20.6364 422.829 20.8494C422.692 21.0582 422.622 21.3118 422.618 21.6101H419.678C419.69 20.7152 419.897 19.9822 420.298 19.4112C420.702 18.8402 421.237 18.4183 421.902 18.1456C422.567 17.8686 423.3 17.7301 424.101 17.7301C424.979 17.7301 425.759 17.8665 426.44 18.1392C427.126 18.4119 427.665 18.8146 428.058 19.3473C428.45 19.88 428.646 20.532 428.646 21.3033C428.646 21.8104 428.56 22.2578 428.39 22.6456C428.219 23.0334 427.981 23.3764 427.674 23.6747C427.371 23.9687 427.016 24.2372 426.607 24.4801C426.287 24.6676 426.021 24.8636 425.808 25.0682C425.599 25.2727 425.441 25.5071 425.335 25.7713C425.228 26.0312 425.175 26.3509 425.175 26.7301V26.9922H422.452ZM423.864 31.1854C423.404 31.1854 423.01 31.0234 422.682 30.6996C422.358 30.3757 422.198 29.9837 422.202 29.5234C422.198 29.0717 422.358 28.6861 422.682 28.3665C423.01 28.0426 423.404 27.8807 423.864 27.8807C424.303 27.8807 424.689 28.0426 425.021 28.3665C425.354 28.6861 425.522 29.0717 425.526 29.5234C425.522 29.8303 425.441 30.1094 425.283 30.3608C425.13 30.6122 424.928 30.8125 424.676 30.9616C424.429 31.1108 424.158 31.1854 423.864 31.1854Z" fill="#F4E1B9"/>
+              </svg>
+            <div class="scrollbar">
+              <svg width="22" height="125" viewBox="0 0 26 125" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.5 1.5H24.5V123.5H1.5V1.5Z" fill="#F4E1B9" stroke="black" stroke-width="3"/>
+                </svg>
+            </div>
             <div class="track-options">
               <div class="track-rectangles">
                 <div class="track-rectangle1">
-                  <svg
-                    viewBox="0 0 415 118"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <rect
-                      x="1"
-                      y="1"
-                      width="413"
-                      height="116"
-                      fill="#48727E"
-                      stroke="black"
-                      stroke-width="2"
-                    />
-                  </svg>
+                  <svg width="415" height="87" viewBox="0 0 415 87" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="1" y="1" width="413" height="85" fill="#48727E" stroke="black" stroke-width="2"/>
+                    </svg>
+                    
                   <div id="track-txt" class="track1">
                     <h5>TRACK 1</h5>
                   </div>
@@ -464,22 +484,11 @@
                     <h5>></h5>
                   </button>
                 </div>
-                <div class="track-rectangle2">
-                  <svg
-                    viewBox="0 0 415 118"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <rect
-                      x="1"
-                      y="1"
-                      width="413"
-                      height="116"
-                      fill="#48727E"
-                      stroke="black"
-                      stroke-width="2"
-                    />
-                  </svg>
+                <div class="track-rectangle">
+                  <svg width="415" height="87" viewBox="0 0 415 87" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="1" y="1" width="413" height="85" fill="#48727E" stroke="black" stroke-width="2"/>
+                    </svg>
+                    
                   <div id="track-txt" class="track2">
                     <h5>TRACK 2</h5>
                   </div>
@@ -487,26 +496,52 @@
                     <h5>></h5>
                   </button>
                 </div>
-                <div class="track-rectangle3">
-                  <svg
-                    viewBox="0 0 415 118"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <rect
-                      x="1"
-                      y="1"
-                      width="413"
-                      height="116"
-                      fill="#48727E"
-                      stroke="black"
-                      stroke-width="2"
-                    />
+                <div class="track-rectangle">
+                  <svg width="415" height="87" viewBox="0 0 415 87" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="1" y="1" width="413" height="85" fill="#48727E" stroke="black" stroke-width="2"/>
+                    </svg>
+                    
                   </svg>
                   <div id="track-txt" class="track3">
                     <h5>TRACK 3</h5>
                   </div>
                   <button id="drop-down" class="button3">
+                    <h5>></h5>
+                  </button>
+                </div>
+                <div class="track-rectangle">
+                  <svg width="415" height="87" viewBox="0 0 415 87" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="1" y="1" width="413" height="85" fill="#48727E" stroke="black" stroke-width="2"/>
+                    </svg>
+                    
+                  <div id="track-txt" class="track4">
+                    <h5>TRACK 4</h5>
+                  </div>
+                  <button id="drop-down" class="button4">
+                    <h5>></h5>
+                  </button>
+                </div>
+                <div class="track-rectangle">
+                  <svg width="415" height="87" viewBox="0 0 415 87" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="1" y="1" width="413" height="85" fill="#48727E" stroke="black" stroke-width="2"/>
+                    </svg>
+                    
+                  <div id="track-txt" class="track">
+                    <h5>TRACK 5</h5>
+                  </div>
+                  <button id="drop-down" class="button5">
+                    <h5>></h5>
+                  </button>
+                </div>
+                <div class="track-rectangle">
+                  <svg width="415" height="87" viewBox="0 0 415 87" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="1" y="1" width="413" height="85" fill="#48727E" stroke="black" stroke-width="2"/>
+                    </svg>
+                    
+                  <div id="track-txt" class="track6">
+                    <h5>TRACK 6</h5>
+                  </div>
+                  <button id="drop-down" class="button6">
                     <h5>></h5>
                   </button>
                 </div>
@@ -519,7 +554,7 @@
         id="prizes"
         class="w-full grid place-items-start"
       >
-        <div class="stack">
+        <div class="stack flex">
           <h1 class="head">PRIZES</h1>
           <h3 class="prizes_page_no">04.</h3>
           <div class="imgDiv">

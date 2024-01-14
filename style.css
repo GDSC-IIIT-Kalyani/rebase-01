@@ -138,10 +138,17 @@ nav ul li a {
 /* ------------------- Landing page -----------------------------------*/
 
 @media screen and (max-width: 639px){
-  #landingimg {
+  #landingimg, #socialcomp {
     visibility: hidden;
   }
+  #moblandimg{
+    visibility: visible;
+  }
 }
+
+/* #moblandimg{
+  visibility: hidden;
+} */
 
 /* --------------------- PRIZES SECTION BEGINING------------------------------- */
 .stack {
@@ -405,7 +412,7 @@ img {
 
 /*----------------------TIMELINE ENDING---------------------------------------*/
 
-/* Tracks css */
+/* ----------------------------------Tracks css------------------------------------------- */
 .hero_heading {
   position: absolute;
   color: #e82338;
@@ -419,7 +426,42 @@ img {
   -webkit-text-stroke: 0.178571rem #000;
   margin: -11rem 0rem 0rem -28rem;
 }
-
+.mascot{
+  position:absolute;
+  z-index: 6;
+  margin: 33rem 0rem 0rem 46rem;
+}
+.mascot svg {
+  height: 100%;
+  width: 100%;
+}
+.star1{
+  position: absolute;
+  z-index: 6;
+  margin: 2rem 0rem 0rem -57rem;
+}
+.star1 svg {
+  height: 100%;
+  width: 100%;
+}
+.star2{
+  position: absolute;
+  z-index: 6;
+  margin: -25rem 0rem 0rem 53rem;
+}
+.star2 svg {
+  height: 100%;
+  width: 100%;
+}
+.star3{
+  position: absolute;
+  z-index: 6;
+  margin: 37rem 0rem 0rem 1rem;
+}
+.star3 svg {
+  height: 100%;
+  width: 100%;
+}
 .page_no {
   position: absolute;
   color: #e82338;
@@ -440,10 +482,14 @@ img {
   height: 100%;
   width: 100%;
 }
-
+.scrollbar{
+  position:absolute;
+  margin: -22rem 0rem 0rem 20.85rem;
+  z-index: 5;
+}
 .info-window {
   position: absolute;
-  margin: -31rem 0rem 0rem -5rem;
+  margin: -35rem 0rem 0rem -5rem;
   height: 34.0625rem;
   z-index: 2;
 }
@@ -455,27 +501,19 @@ img {
 
 .track-rectangle1 {
   position: relative;
-  height: 5.85rem;
+  height: 4.34rem;
   top: 0;
   left: 0;
   z-index: 4;
-  margin: -26rem 0rem 0rem -1rem;
+  margin: -26.05rem 0rem 0rem -1rem;
 }
-.track-rectangle2 {
+.track-rectangle {
   position: relative;
-  height: 5.85rem;
+  height: 4.34rem;
   top: 0;
   left: 0;
   z-index: 4;
-  margin: -0.4rem 0rem 0rem -1rem;
-}
-.track-rectangle3 {
-  position: relative;
-  height: 5.85rem;
-  top: 0;
-  left: 0;
-  z-index: 4;
-  margin: -0.2rem 0rem 0rem -1rem;
+  margin: -0.1rem 0rem 0rem -1rem;
 }
 
 #drop-down {
@@ -521,14 +559,8 @@ img {
   line-height: normal;
   letter-spacing: 1.68px;
   z-index: 5;
-  margin: -28rem 0rem 0rem 4rem;
+  margin: -29rem 0rem 0rem 4rem;
 }
-
-/* .image-window{
-  position: absolute;
-  padding: 29rem 0rem 0rem 62rem;
-  z-index: 6;
-} */
 
 body,
 .hero_heading,
@@ -540,8 +572,14 @@ body,
   transition: all 0.3s ease;
 }
 @media (max-width: 1300px) {
+  .mascot{
+    margin: 34rem 0rem 0rem 41rem;
+  }
+  .star1{
+    margin: -22rem 0rem 0rem -45rem;
+  }
   .hero_heading {
-    font-size: 5rem;
+    font-size: 6rem;
     -webkit-text-stroke: 0.15rem #000;
     margin: -10rem 0rem 0rem -25rem;
     text-shadow: 0.12rem 0.2rem 0 #000;
@@ -554,19 +592,27 @@ body,
 }
 
 @media (max-width: 1260px) {
+  .mascot{
+    margin: 31rem 0rem 0rem 38rem;
+  }
+  .star2{
+    margin:-25rem 0rem 0rem 46rem;
+  }
   .hero_heading {
-    font-size: 4rem;
+    font-size: 5.5rem;
     -webkit-text-stroke: 0.15rem #000;
     margin: -10rem 0rem 0rem -22rem;
     text-shadow: 0.12rem 0.2rem 0 #000;
     letter-spacing: 0.2rem;
+    margin: -10rem 0rem 0rem -25rem;
+    z-index: 5;
   }
   .page_no {
     font-size: 35px;
     margin: -10rem 0rem 0rem 20rem;
   }
   .info-window {
-    margin: -27rem 0rem 0rem -5rem;
+    margin: -33rem 0rem 0rem -5rem;
     height: 30.0625rem;
   }
   .tracks-window {
@@ -574,17 +620,20 @@ body,
     height: 24.1875rem;
     z-index: 3;
   }
+  #track-txt{
+    font-size: 0.9rem;
+  }
+  .scrollbar{
+    margin: -20rem 0rem 0rem 17.9rem;
+    height: 6.72rem;
+  }
   .track-rectangle1 {
-    height: 5rem;
-    margin: -22.4rem 0rem 0rem -0.8rem;
+    height: 3.72rem;
+    margin: -22.3rem 0rem 0rem -0.85rem;
   }
-  .track-rectangle2 {
-    height: 5rem;
-    margin: -0.4rem 0rem 0rem -0.8rem;
-  }
-  .track-rectangle3 {
-    height: 5rem;
-    margin: -0.2rem 0rem 0rem -0.8rem;
+  .track-rectangle {
+    height: 3.72rem;
+    margin: -0.07rem 0rem 0rem -0.8rem;
   }
   .body-text {
     font-size: 17px;
@@ -592,7 +641,61 @@ body,
     margin: -25rem 0rem 0rem 3rem;
   }
 }
+@media (max-width: 900px){
+  .hero_heading {
+    margin: -11rem 0rem 0rem -21rem;
+}
+  .mascot{
+    margin: 31rem 0rem 0rem 29rem;
+  }
+  .star1 {
+    margin: -23rem 0rem 0rem -37rem;
+  }
+  .star2 {
+    margin: -41rem 0rem 0rem 13rem;
+  }
+  .page_no {
+    margin: -10rem 0rem 0rem 17rem;
+}
+.info-window {
+  margin: -33rem 0rem 0rem -5rem;
+  height: 29.0625rem;
+}
+.body-text {
+  font-size: 17px;
+  width: 320px;
+  margin: -24.5rem 0rem 0rem 3rem;
+}
+.tracks-window {
+  margin: -14rem 0rem 0rem -22rem;
+  height: 23.1875rem;
+  z-index: 3;
+}
+.scrollbar {
+  margin: -20rem 0rem 0rem 17.22rem;
+  height: 5.9rem;
+}
+.track-rectangle1{
+  height:3.56rem;
+  margin: -21.4rem 0rem 0rem -0.8rem;
+}
+.track-rectangle{
+  height: 3.56rem;
+  margin: -0.06rem 0rem 0rem -0.8rem;
+
+}
+}
 @media (max-width: 780px) {
+  .mascot {
+    height: 15rem;
+    margin: 24rem 0rem 0rem 23rem;
+  }
+  .star1{
+    margin: -21rem 0rem 0rem -33rem;
+  }
+  .star2 {
+    margin: -42rem 0rem 0rem 13rem;
+  }
   .hero_heading {
     font-size: 4rem;
     margin: -10rem 0rem 0rem -18rem;
@@ -604,8 +707,8 @@ body,
     margin: -10rem 0rem 0rem 14rem;
   }
   .info-window {
-    height: 27.0625rem;
-    margin: -29rem 0rem 0rem -5rem;
+    height: 26.0625rem;
+    margin: -34rem 0rem 0rem -5rem;
   }
   .tracks-window {
     margin: -12rem 0rem 0rem -19rem;
@@ -613,67 +716,111 @@ body,
     z-index: 3;
   }
   .track-rectangle1 {
-    height: 4.185rem;
+    height: 3.1rem;
     margin: -18.635rem 0rem 0rem -0.7rem;
   }
-  .track-rectangle2 {
-    height: 4.185rem;
-    margin: -0.4rem 0rem 0rem -0.7rem;
-  }
-  .track-rectangle3 {
-    height: 4.185rem;
-    margin: -0.2rem 0rem 0rem -0.7rem;
+  .track-rectangle {
+    height: 3.1rem;
+    margin: -0.06rem 0rem 0rem -0.7rem;
   }
   #track-txt {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
   #drop-down {
     font-size: 3.3rem;
   }
   .body-text {
     font-size: 15px;
-    width: 280px;
+    width: 275px;
     margin: -22.5rem 0rem 0rem 3rem;
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 640px){
+  .mascot {
+    height: 14rem;
+    margin: 27rem 0rem 0rem 17rem;
+  }
+  .star1 {
+    margin: -13rem 0rem 0rem -24rem;
+  }
+  .star3 {
+    position: absolute;
+    z-index: 6;
+    margin: 46rem 0rem 0rem 8rem;
+  }
+  .hero_heading {
+    font-size: 4rem;
+    margin: -11rem 0rem 0rem -14.5rem;
+    text-shadow: 0.13rem 0.2rem 0 #000;
+    letter-spacing: 0.2rem;
+  }
+  .page_no {
+    font-size: 32px;
+    margin: -10rem 0rem 0rem 11rem;
+  }
+  .info-window {
+    height: 24.0625rem;
+    margin: -34rem 0rem 0rem -7rem;
+  }
+  .body-text {
+    font-size: 14px;
+    width: 275px;
+    margin: -20.5rem 0rem 0rem 2.5rem;
+  }
+  .tracks-window {
+    margin: -11rem 0rem 0rem -15rem;
+    height: 20.1875rem;
+    z-index: 3;
+  }
+}
+@media (max-width: 420px) {
+
+  .mascot {
+    height: 10rem;
+    margin: 0rem 0rem 0rem 11rem;
+}
+  .star1{
+    height: 3rem;
+    margin: -4rem 0rem 0rem 0rem;
+  }
+  .star2{
+    height: 5rem;
+    margin: -40rem 0rem 0rem 13rem;
+  }
+  .star3{
+    height: 4rem;
+    margin: 31rem 0rem 0rem -17rem;
+  }
   .hero_heading {
     font-size: 3rem;
     -webkit-text-stroke: 0.1rem #000;
-    margin: -10rem 0rem 0rem -13rem;
-  }
-  .page_no {
-    font-size: 30px;
-    margin: -10rem 0rem 0rem 10rem;
+    margin: -12rem 0rem 0rem -9.5rem;
+ }
+ .page_no {
+  font-size: 1.8rem;
+  margin: -12rem 0rem 0rem 6rem;
   }
   .tracks-window {
     height: 17.1875rem;
-    margin: -28rem 0rem 0rem -12rem;
-  }
+    margin: -32rem 0rem 0rem -10rem;
+}
   .info-window {
-    height: 20.5rem;
-    margin: -10rem 0rem 0rem -7rem;
-  }
-  /* .image-window{
-      padding: 28rem 0rem 0rem 49rem;
-  } */
+    height: 19.5rem;
+    margin: -8rem 0rem 0rem -8rem;
+}
   .track-rectangle1 {
-    height: 3.56rem;
+    height: 2.64rem;
     margin: -15.9rem 0rem 0rem -0.6rem;
   }
-  .track-rectangle2 {
-    height: 3.56rem;
-    margin: -0.1rem 0rem 0rem -0.6rem;
-  }
-  .track-rectangle3 {
-    height: 3.56rem;
-    margin: -0.1rem 0rem 0rem -0.6rem;
+  .track-rectangle {
+    height: 2.64rem;
+    margin: -0.05rem 0rem 0rem -0.6rem;
   }
   .body-text {
-    font-size: 12px;
-    width: 230px;
-    margin: -17rem 0rem 0rem 2rem;
-  }
+    font-size: 11px;
+    width: 210px;
+    margin: -16.5rem 0rem 0rem 2rem;
+}
   #track-txt {
     font-family: 'Press Start 2P';
     color: #fff;
