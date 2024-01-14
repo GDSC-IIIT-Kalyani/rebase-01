@@ -219,6 +219,50 @@ img {
   margin: 2.2rem 2.5rem 0rem -35rem;
 }
 
+/* css for timeline heading and timeline page no by Aryan. */
+.timeline-heading {
+  color: #e82338;
+  text-shadow: 0.21875rem 0.30625rem 0 #000;
+  font-family: Bangers;
+  font-size: 7rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.3rem;
+  -webkit-text-stroke: 0.178571rem #000;
+  
+}
+.timeline-page {
+  color: #e82338;
+  font-family: 'Japanese Robot', sans-serif;
+  font-size: 40px;
+  -webkit-text-stroke: 3px#000;
+}
+.fo{
+  font-size: 4rem;
+}
+.anime{
+  font-family: 'Anime Ace';
+  font-style: italic;
+}
+@media (max-width:640px) {
+  .timeline-heading{
+    font-size: 3rem;
+    text-shadow: 0.11865rem 0.20615rem 0 #000;
+    -webkit-text-stroke: 0.118571rem #000;
+    font-weight: 100;
+  }
+  .timeline-page{
+    font-size: 1.5rem;
+    -webkit-text-stroke: 1.5px#000;
+  }
+
+  
+}
+
+
+
+
 .page {
   position: absolute;
   color: #e82338;
