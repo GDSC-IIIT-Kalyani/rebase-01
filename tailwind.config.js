@@ -13,7 +13,7 @@ export default {
     },
     extend: {
       screens: {
-        extrasmall: { max: '639px' },
+        extrasmall: { max: '640px' },
         exsm: { max: '460px' },
         verysmall: { max: '475px' },
         mobwid : {max : '768px'},

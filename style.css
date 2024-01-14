@@ -138,10 +138,17 @@ nav ul li a {
 /* ------------------- Landing page -----------------------------------*/
 
 @media screen and (max-width: 639px){
-  #landingimg {
+  #landingimg, #socialcomp {
     visibility: hidden;
   }
+  #moblandimg{
+    visibility: visible;
+  }
 }
+
+/* #moblandimg{
+  visibility: hidden;
+} */
 
 /* --------------------- PRIZES SECTION BEGINING------------------------------- */
 .stack {
