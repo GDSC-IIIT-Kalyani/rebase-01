@@ -631,21 +631,21 @@ body,
   .mascot {
     height: 14rem;
     margin: 27rem 0rem 0rem 17rem;
-}
-.star1 {
-  margin: -13rem 0rem 0rem -24rem;
-}
-.star3 {
-  position: absolute;
-  z-index: 6;
-  margin: 46rem 0rem 0rem 8rem;
-}
+  }
+  .star1 {
+    margin: -13rem 0rem 0rem -24rem;
+  }
+  .star3 {
+    position: absolute;
+    z-index: 6;
+    margin: 46rem 0rem 0rem 8rem;
+  }
   .hero_heading {
     font-size: 4rem;
     margin: -11rem 0rem 0rem -14.5rem;
     text-shadow: 0.13rem 0.2rem 0 #000;
     letter-spacing: 0.2rem;
-}
+  }
   .page_no {
     font-size: 32px;
     margin: -10rem 0rem 0rem 11rem;
