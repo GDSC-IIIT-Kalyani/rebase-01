@@ -135,6 +135,14 @@ nav ul li a {
   font-weight: bold;
 }
 
+/* ------------------- Landing page -----------------------------------*/
+
+@media screen and (max-width: 639px){
+  #landingimg {
+    visibility: hidden;
+  }
+}
+
 /* --------------------- PRIZES SECTION BEGINING------------------------------- */
 .stack {
   display: grid;
@@ -149,7 +157,7 @@ nav ul li a {
   text-shadow: 0.35vw 0.25vw 0px black;
   text-align: start;
   letter-spacing: 0.3vw;
-  margin: 0rem 0rem 0rem 3rem;
+  /* margin: 0rem 0rem 0rem 3rem; */
   z-index: 1;
 }
 .prizes_page_no {
@@ -187,8 +195,9 @@ img {
     -webkit-text-stroke: 0.2.3vw #000;
   }
   .head {
+    font-size: 14vw;
     text-align: start;
-    margin: 0rem 0rem 0rem 1rem;
+    /* margin: 0rem 0rem 0rem 1rem; */
   }
   .img {
     width: 100%;
@@ -245,6 +254,59 @@ img {
   font-family: 'Anime Ace';
   font-style: italic;
 }
+
+.floating1 {  
+  animation-name: floating1;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+ 
+}
+
+@keyframes floating1 {
+  0% { transform: translate(-8rem,-8rem); }
+  50%  { transform: translate(-8rem,-8.6rem); }
+  100%   { transform: translate(-8rem,-8rem); }    
+}
+.floating2 {  
+  animation-name: floating2;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+ 
+}
+
+@keyframes floating2 {
+  0% { transform: translate(-8.9rem,10rem); }
+  50%  { transform: translate(-8.9rem,12rem); }
+  100%   { transform: translate(-8.9rem,10rem); }    
+}
+.floating3 {  
+  animation-name: floating3;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+ 
+}
+
+@keyframes floating3 {
+  0% { transform: translate(1rem,6rem); }
+  50%  { transform: translate(1rem,6.7rem); }
+  100%   { transform: translate(1rem,6rem); }    
+}
+.floating4 {  
+  animation-name: floating4;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+ 
+}
+
+@keyframes floating4 {
+  0% { transform: translate(1rem,-15rem); }
+  50%  { transform: translate(1rem,-15.7rem); }
+  100%   { transform: translate(1rem,-15rem); }    
+}
 @media (max-width:640px) {
   .timeline-heading{
     font-size: 3rem;
@@ -255,6 +317,9 @@ img {
   .timeline-page{
     font-size: 1.5rem;
     -webkit-text-stroke: 1.5px#000;
+  }
+  .fo{
+    font-size: 2.5rem;
   }
 
   
@@ -678,11 +743,6 @@ body,
   top: -382px;
 }
 
-#GreenBG,
-#Group39 {
-  width: 100%;
-}
-
 #Group39 {
   position: relative;
   left: -16%;
@@ -694,6 +754,62 @@ body,
   position: relative;
   height: 46vw;
   left: -20%;
+}
+
+@media screen and (min-width: 1985px) {
+  #zero-one {
+    left: 76%;
+  }
+}
+@media screen and (min-width: 1961px) {
+  #main-paragraph {
+    top: 15rem;
+    font-size: 1.1rem;
+  }
+
+  #images {
+    top: -28rem;
+  }
+}
+
+@media screen and (min-width: 1955px) and (max-width: 1984px) {
+  #zero-one {
+    left: 77%;
+  }
+}
+
+@media screen and (min-width: 1917px) and (max-width: 1954px) {
+  #zero-one {
+    left: 78%;
+  }
+}
+
+@media screen and (min-width: 1782px) and (max-width: 1960px) {
+  #main-paragraph {
+    top: 15rem;
+    font-size: 1.1rem;
+  }
+
+  #images {
+    top: -29rem;
+  }
+}
+
+@media screen and (min-width: 1704px) and (max-width: 1781px) {
+  #images {
+    top: -26rem;
+  }
+
+  #main-paragraph {
+    top: 14rem;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1603px) and (max-width: 1703px) {
+  #images {
+    top: -22rem;
+  }
 }
 
 @media (max-width: 1362px) {
@@ -1512,5 +1628,29 @@ body {
   }
   .moon {
     max-width: 9.58vw;
+  }
+}
+
+/* FAQS */
+
+.faqMobileText {
+  box-shadow: 5px 5px black;
+  /* clip-path: polygon(10% 0, 100% 0, 100% 100%, 10% 100%, 10% 80%, 0 90%, 10% 60%); */
+  /* padding-left: 10%; */
+  /* transform: translateX(-10%); */
+}
+
+.animate-oscillate {
+  animation: oscillate infinite 1s;
+}
+
+@keyframes oscillate {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
   }
 }
