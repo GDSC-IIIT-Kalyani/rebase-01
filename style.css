@@ -1165,6 +1165,10 @@ body,
 }
 
 @media screen and (max-width: 768px) {
+  #about {
+    left: -14%;
+  }
+
   #images {
     display: none;
   }
@@ -1203,6 +1207,7 @@ body,
   #main-paragraph {
     top: 149px;
     left: 37%;
+    font-weight: bold;
   }
 
   #about {
