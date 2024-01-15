@@ -59,6 +59,10 @@
 
 /* ----------------------------------- fonts end ---------------------------------------- */
 
+
+html {
+  scroll-behavior: smooth;
+}
 /* write vannila css below */
 
 /* ---------------------------------------- NAVBAR -------------------------------------- */
@@ -138,18 +142,22 @@ nav ul li a {
 /* ------------------- Landing page -----------------------------------*/
 
 @media screen and (max-width: 639px){
-  #landingimg, #socialcomp {
+  #socialcomp {
     visibility: hidden;
   }
-  #moblandimg{
-    visibility: visible;
+  #compland{
+    display: none;
   }
 }
 
-/* #moblandimg{
-  visibility: hidden;
-} */
+.moblinks ul li a img{
+  cursor: pointer;
+  transition: 0.5s;
+}
 
+.moblinks ul li a img:hover{
+  transform: scale(1.2);
+}
 /* --------------------- PRIZES SECTION BEGINING------------------------------- */
 .stack {
   display: grid;

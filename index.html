@@ -130,12 +130,13 @@
           </div>
         </div>
 
+        <!-- navbar normal screens -->
         <div class="hidden sm:block p-2 ">
           <nav
             class="relative after:absolute after:top-[10%] after:left-[-1%] after:right-[1%] after:bottom-[-10%] shrink-0"
           >
             <ul
-              class="flex 2xl:gap-12 xl:gap-12 lg:gap-4 gap-4 2xl:text-lg xl:text-md lg:text-sm md:text-xs font-bold 2xl:py-6 md:py-4 2xl:px-8 md:px-6 xl:px-8 bg-[#de533c]"
+              class="flex 2xl:gap-12 xl:gap-12 lg:gap-4 gap-3 2xl:text-lg xl:text-md lg:text-sm md:text-xs sm:text-[0.65rem] font-bold 2xl:py-6 md:py-4 sm:py-3 sm:px-6 2xl:px-8 md:px-6 xl:px-8 bg-[#de533c]"
             >
               <li class="navlist"><a href="#about">ABOUT</a></li>
               <li class="navlist"><a href="#schedule">SCHEDULE</a></li>
@@ -146,6 +147,7 @@
             </ul>
           </nav>
         </div>
+        <!-- navbar normal screens -->
       </div>
 
       <div
@@ -196,81 +198,44 @@
         });
       </script>
 
-      <section id="home" class="h-screen w-full">
-        <div class="textpart">
-          <div class="head-vol flex md:gap-8 lg:gap-8 xl:gap-8 2xl:gap-8">
-            <div class="rebase-head heading">
-              <h1
-                class="md:text-[6.5rem] lg:text-[8rem] xl:text-10rem 2xl:text-[12rem] text-[#f4e1b9]"
-              >
-                REBASE
-              </h1>
-            </div>
-
-            <div class="block relative">
-              <div
-                class="hero-vol md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl 2xl:translate-y-24 xl:translate-y-[4.5rem] lg:translate-y-12 md:translate-y-8"
-              >
-                <h3 class="">VOLUME</h3>
-              </div>
-              <div
-                class="z-50 2xl:text-[18rem] xl:text-[13rem] lg:text-[10rem] md:text-[8rem] head-one absolute xl:-left-28 lg:-left-20 md:-left-20"
-              >
-                <h1 class="rebase-head text-[#E82338]">&lt;01&gt;</h1>
-              </div>
-            </div>
-          </div>
+      <!-- LANDING PAGE -->
+      <section id="home" class="w-full">
+        <!-- Hero text -->
+        <div class="">
+          <img class=" w-full"  src="/public/herotext.png" alt="">
         </div>
 
         <!-- Images and socials -->
-        <div
-          class="relative 2xl:-translate-y-28 lg:-translate-y-16 xl:-translate-y-16 md:-translate-y-12"
-        >
-
-
-          <img id="landingimg" class="m-auto w-full" src="/public/landing.png" alt="landing" />
-          <img id="moblandimg" class="sm:hidden extrasmall:-translate-y-44 verysmall:-translate-y-24  mx-auto" src="/public/heroimgmob.png" alt="">
-
-          <!-- div for socials for mobile screen -->
-          <div class="">
-            <img id="moblandimg" class="sm:hidden extrasmall:-translate-y-44 verysmall:-translate-y-24 mx-auto" src="/public/socialmob.png" alt="">
-            <div class="">
-              <ul class="">
-                <li><a href="https://discord.gg/tcaxPN6CNs"><img class="w-12" src="/public/discord.svg" alt="discord"></a></li>
+        <div id="compland" class="flex justify-center items-center -translate-y-24 md:-translate-y-28 lg:-translate-y-32">
+          <div class="relative">
+            <img class="w-full" src="/public/socialcomp.png" alt="">
+            <div class="absolute inset-6">
+              <ul>
+                <li><a href="https://discord.gg/tcaxPN6CNs"><img class="verysmall:w-[70%]" src="/public/discordhero.svg" alt=""></a></li>
+                <li><a href="https://twitter.com/gdsciiitkalyani"><img class="verysmall:w-[90%]" src="/public/x.svg" alt=""></a></li>
+                <li><a href="https://www.youtube.com/channel/UCvRPKamvUtnQhij5y1MF11A"><img class="verysmall:w-[80%]" src="/public/youtube.svg" alt=""></a></li>
+                <li><a href="https://instagram.com/gdsciiitkalyani"><img class="verysmall:w-[70%]" src="/public/instahero.svg" alt=""></a></li>
               </ul>
             </div>
           </div>
-          
+          <div>
+            <img class="w-full -z-50" src="/public/landingcomp.png" alt="">
+          </div>
+        </div>
 
-          <div id="socialcomp" class="absolute md:top-12 md:left-4 2xl:top-28 2xl:left-12">
-            <div class="mx-auto">
-              <ul class="block m-auto">
-                <li class="">
-                  <a href="https://gdsc.bio.link/"
-                    ><img class="md:w-16" src="/public/gdschero.svg" alt="gdsc"
-                  /></a>
-                </li>
-                <li class="md:my-3">
-                  <a href="https://discord.gg/tcaxPN6CNs"
-                    ><img class="md:w-10" src="/public/discord.svg" alt=""
-                  /></a>
-                </li>
-                <li class="md:my-4">
-                  <a href="https://twitter.com/gdsciiitkalyani"
-                    ><img class="md:w-7" src="/public/x.svg" alt=""
-                  /></a>
-                </li>
-                <li class="md:my-4">
-                  <a
-                    href="https://www.youtube.com/channel/UCvRPKamvUtnQhij5y1MF11A"
-                    ><img class="md:w-10" src="/public/ythero.svg" alt=""
-                  /></a>
-                </li>
-                <li class="md:my-4">
-                  <a href="https://instagram.com/gdsciiitkalyani"
-                    ><img class="md:w-10" src="/public/instahero.svg" alt=""
-                  /></a>
-                </li>
+        <!-- Images and socials mobile -->
+        <div class="sm:hidden">
+          <!-- mobile landing image -->
+          <img id="moblandimg" class="w-[85%] mx-auto" src="/public/heroimgmob.png" alt="">
+          <!-- div for socials for mobile screen -->
+          <div class="mobsocials relative">
+            <img id="moblanding" class=" w-[80%] sm:hidden mx-auto" src="/public/socialmob.png" alt="">
+            <div class="moblinks absolute inset-0 flex justify-center items-center">
+              <ul class="flex justify-center exsm:gap-1 verysmall:gap-3 extrasmall:gap-7">
+                <li><a href="https://discord.gg/tcaxPN6CNs"><img class="verysmall:w-[70%]" src="/public/discordhero.svg" alt=""></a></li>
+                <li><a href="https://twitter.com/gdsciiitkalyani"><img class="verysmall:w-[90%]" src="/public/x.svg" alt=""></a></li>
+                <li><a href="https://www.youtube.com/channel/UCvRPKamvUtnQhij5y1MF11A"><img class="verysmall:w-[80%]" src="/public/youtube.svg" alt=""></a></li>
+                <li><a href="https://instagram.com/gdsciiitkalyani"><img class="verysmall:w-[70%]" src="/public/instahero.svg" alt=""></a></li>
               </ul>
             </div>
           </div>
@@ -562,7 +527,7 @@
           </div>
         </div>
       </section>
-      <section class="mb-5">
+      <section id="sponsors" class="mb-5">
         <div class="faq-heading head text-[#E82338] text-stroke-2 flex justify-between mb-12 md:mb-0">
             <h1 class="head">Sponsors</h1>
             <h1 class="head">05</h1>
@@ -595,7 +560,7 @@
             </div> -->
         </div>
       </section>
-    <section class="w-full border-0 border-black">
+    <section id="faqs" class="w-full border-0 border-black">
       <div class="faq-heading head text-[#E82338] text-stroke-2 flex justify-between">
         <h1 class="head">FAQS</h1>
         <h1 class="head">06</h1>
