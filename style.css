@@ -59,6 +59,10 @@
 
 /* ----------------------------------- fonts end ---------------------------------------- */
 
+
+html {
+  scroll-behavior: smooth;
+}
 /* write vannila css below */
 
 /* ---------------------------------------- NAVBAR -------------------------------------- */
@@ -135,6 +139,30 @@ nav ul li a {
   font-weight: bold;
 }
 
+/* ------------------- Landing page -----------------------------------*/
+
+@media screen and (max-width: 639px){
+  #compland{
+    display: none;
+  }
+}
+
+.moblinks ul li a img{
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.moblinks ul li a img:hover{
+  transform: scale(1.1);
+}
+
+#socialcompu ul li a img{
+  transition: 0.5s;
+}
+
+#socialcompu ul li a img:hover{
+  transform: scale(1.2);
+}
 /* --------------------- PRIZES SECTION BEGINING------------------------------- */
 .stack {
   display: grid;
@@ -149,7 +177,7 @@ nav ul li a {
   text-shadow: 0.35vw 0.25vw 0px black;
   text-align: start;
   letter-spacing: 0.3vw;
-  margin: 0rem 0rem 0rem 3rem;
+  /* margin: 0rem 0rem 0rem 3rem; */
   z-index: 1;
 }
 .prizes_page_no {
@@ -187,8 +215,9 @@ img {
     -webkit-text-stroke: 0.2.3vw #000;
   }
   .head {
+    font-size: 14vw;
     text-align: start;
-    margin: 0rem 0rem 0rem 1rem;
+    /* margin: 0rem 0rem 0rem 1rem; */
   }
   .img {
     width: 100%;
@@ -218,6 +247,106 @@ img {
   -webkit-text-stroke: 0.178571rem #000;
   margin: 2.2rem 2.5rem 0rem -35rem;
 }
+
+/* css for timeline heading and timeline page no by Aryan. */
+.timeline-heading {
+  color: #e82338;
+  text-shadow: 0.21875rem 0.30625rem 0 #000;
+  font-family: Bangers;
+  font-size: 7rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.3rem;
+  -webkit-text-stroke: 0.178571rem #000;
+  
+}
+.timeline-page {
+  color: #e82338;
+  font-family: 'Japanese Robot', sans-serif;
+  font-size: 40px;
+  -webkit-text-stroke: 3px#000;
+}
+.fo{
+  font-size: 4rem;
+}
+.anime{
+  font-family: 'Anime Ace';
+  font-style: italic;
+}
+
+.floating1 {  
+  animation-name: floating1;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+ 
+}
+
+@keyframes floating1 {
+  0% { transform: translate(-8rem,-8rem); }
+  50%  { transform: translate(-8rem,-8.6rem); }
+  100%   { transform: translate(-8rem,-8rem); }    
+}
+.floating2 {  
+  animation-name: floating2;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+ 
+}
+
+@keyframes floating2 {
+  0% { transform: translate(-8.9rem,10rem); }
+  50%  { transform: translate(-8.9rem,12rem); }
+  100%   { transform: translate(-8.9rem,10rem); }    
+}
+.floating3 {  
+  animation-name: floating3;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+ 
+}
+
+@keyframes floating3 {
+  0% { transform: translate(1rem,6rem); }
+  50%  { transform: translate(1rem,6.7rem); }
+  100%   { transform: translate(1rem,6rem); }    
+}
+.floating4 {  
+  animation-name: floating4;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+ 
+}
+
+@keyframes floating4 {
+  0% { transform: translate(1rem,-15rem); }
+  50%  { transform: translate(1rem,-15.7rem); }
+  100%   { transform: translate(1rem,-15rem); }    
+}
+@media (max-width:640px) {
+  .timeline-heading{
+    font-size: 3rem;
+    text-shadow: 0.11865rem 0.20615rem 0 #000;
+    -webkit-text-stroke: 0.118571rem #000;
+    font-weight: 100;
+  }
+  .timeline-page{
+    font-size: 1.5rem;
+    -webkit-text-stroke: 1.5px#000;
+  }
+  .fo{
+    font-size: 2.5rem;
+  }
+
+  
+}
+
+
+
 
 .page {
   position: absolute;
@@ -296,7 +425,7 @@ img {
 
 /*----------------------TIMELINE ENDING---------------------------------------*/
 
-/* Tracks css */
+/* ----------------------------------Tracks css------------------------------------------- */
 .hero_heading {
   position: absolute;
   color: #e82338;
@@ -310,7 +439,63 @@ img {
   -webkit-text-stroke: 0.178571rem #000;
   margin: -11rem 0rem 0rem -28rem;
 }
+@keyframes floating {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
 
+.mascot {
+  position: absolute;
+  z-index: 6;
+  margin: 31rem 0rem 0rem 46rem;
+  animation: floating 2s ease-in-out infinite; 
+}
+.mascot svg {
+  height: 100%;
+  width: 100%;
+}
+@keyframes twinkling {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.6);
+  }
+}
+.star1{
+  position: absolute;
+  z-index: 6;
+  margin: 2rem 0rem 0rem -57rem;
+  animation: twinkling 1.5s ease-in-out infinite;
+}
+.star1 svg {
+  height: 100%;
+  width: 100%;
+}
+.star2{
+  position: absolute;
+  z-index: 6;
+  margin: -25rem 0rem 0rem 53rem;
+  animation: twinkling 1.3s ease-in-out infinite;
+}
+.star2 svg {
+  height: 100%;
+  width: 100%;
+}
+.star3{
+  position: absolute;
+  z-index: 6;
+  margin: 37rem 0rem 0rem 1rem;
+  animation: twinkling 1.7s ease-in-out infinite;
+}
+.star3 svg {
+  height: 100%;
+  width: 100%;
+}
 .page_no {
   position: absolute;
   color: #e82338;
@@ -322,8 +507,8 @@ img {
 
 .tracks-window {
   position: absolute;
-  margin: -19rem 0rem 0rem -26rem;
-  height: 28.1875rem;
+  margin: -19rem 0rem 0rem -24rem;
+  height: 26rem;
   z-index: 3;
 }
 
@@ -331,11 +516,15 @@ img {
   height: 100%;
   width: 100%;
 }
-
+.scrollbar{
+  position:absolute;
+  margin: -22rem 0rem 0rem 20.85rem;
+  z-index: 5;
+}
 .info-window {
   position: absolute;
   margin: -31rem 0rem 0rem -5rem;
-  height: 34.0625rem;
+  height: 32rem;
   z-index: 2;
 }
 
@@ -346,27 +535,19 @@ img {
 
 .track-rectangle1 {
   position: relative;
-  height: 5.85rem;
+  height: 4rem;
   top: 0;
   left: 0;
   z-index: 4;
-  margin: -26rem 0rem 0rem -1rem;
+  margin: -24rem 0rem 0rem -0.9rem;
 }
-.track-rectangle2 {
+.track-rectangle {
   position: relative;
-  height: 5.85rem;
+  height: 4rem;
   top: 0;
   left: 0;
   z-index: 4;
-  margin: -0.4rem 0rem 0rem -1rem;
-}
-.track-rectangle3 {
-  position: relative;
-  height: 5.85rem;
-  top: 0;
-  left: 0;
-  z-index: 4;
-  margin: -0.2rem 0rem 0rem -1rem;
+  margin: -0.09rem 0rem 0rem -0.9rem;
 }
 
 #drop-down {
@@ -406,20 +587,14 @@ img {
   width: 350px;
   height: 393px;
   color: #fff;
-  font-size: 20px;
+  font-size: 19px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   letter-spacing: 1.68px;
   z-index: 5;
-  margin: -28rem 0rem 0rem 4rem;
+  margin: -27rem 0rem 0rem 3.5rem;
 }
-
-/* .image-window{
-  position: absolute;
-  padding: 29rem 0rem 0rem 62rem;
-  z-index: 6;
-} */
 
 body,
 .hero_heading,
@@ -431,8 +606,14 @@ body,
   transition: all 0.3s ease;
 }
 @media (max-width: 1300px) {
+  .mascot{
+    margin: 34rem 0rem 0rem 41rem;
+  }
+  .star1{
+    margin: -22rem 0rem 0rem -45rem;
+  }
   .hero_heading {
-    font-size: 5rem;
+    font-size: 6rem;
     -webkit-text-stroke: 0.15rem #000;
     margin: -10rem 0rem 0rem -25rem;
     text-shadow: 0.12rem 0.2rem 0 #000;
@@ -445,37 +626,49 @@ body,
 }
 
 @media (max-width: 1260px) {
+  .mascot{
+    height: 13rem;
+    margin: 31rem 0rem 0rem 38rem;
+  }
+  .star2{
+    margin:-25rem 0rem 0rem 46rem;
+  }
   .hero_heading {
-    font-size: 4rem;
+    font-size: 5.5rem;
     -webkit-text-stroke: 0.15rem #000;
     margin: -10rem 0rem 0rem -22rem;
     text-shadow: 0.12rem 0.2rem 0 #000;
     letter-spacing: 0.2rem;
+    margin: -10rem 0rem 0rem -25rem;
+    z-index: 5;
   }
   .page_no {
     font-size: 35px;
     margin: -10rem 0rem 0rem 20rem;
   }
   .info-window {
-    margin: -27rem 0rem 0rem -5rem;
-    height: 30.0625rem;
+    margin: -28rem 0rem 0rem -5rem;
+    height: 30rem;
   }
   .tracks-window {
     margin: -17rem 0rem 0rem -23rem;
     height: 24.1875rem;
     z-index: 3;
   }
+  #track-txt{
+    font-size: 0.9rem;
+  }
+  .scrollbar{
+    margin: -20rem 0rem 0rem 17.9rem;
+    height: 6.72rem;
+  }
   .track-rectangle1 {
-    height: 5rem;
-    margin: -22.4rem 0rem 0rem -0.8rem;
+    height: 3.72rem;
+    margin: -22.3rem 0rem 0rem -0.85rem;
   }
-  .track-rectangle2 {
-    height: 5rem;
-    margin: -0.4rem 0rem 0rem -0.8rem;
-  }
-  .track-rectangle3 {
-    height: 5rem;
-    margin: -0.2rem 0rem 0rem -0.8rem;
+  .track-rectangle {
+    height: 3.72rem;
+    margin: -0.07rem 0rem 0rem -0.8rem;
   }
   .body-text {
     font-size: 17px;
@@ -483,7 +676,62 @@ body,
     margin: -25rem 0rem 0rem 3rem;
   }
 }
+@media (max-width: 900px){
+  .hero_heading {
+    margin: -11rem 0rem 0rem -21rem;
+}
+  .mascot{
+    margin: 31rem 0rem 0rem 29rem;
+    height:13rem;
+  }
+  .star1 {
+    margin: -23rem 0rem 0rem -37rem;
+  }
+  .star2 {
+    margin: -41rem 0rem 0rem 13rem;
+  }
+  .page_no {
+    margin: -10rem 0rem 0rem 17rem;
+}
+.info-window {
+  margin: -29rem 0rem 0rem -5rem;
+  height: 29rem;
+}
+.body-text {
+  font-size: 17px;
+  width: 320px;
+  margin: -24.5rem 0rem 0rem 3rem;
+}
+.tracks-window {
+  margin: -14rem 0rem 0rem -22rem;
+  height: 23.1875rem;
+  z-index: 3;
+}
+.scrollbar {
+  margin: -20rem 0rem 0rem 17.22rem;
+  height: 5.9rem;
+}
+.track-rectangle1{
+  height:3.56rem;
+  margin: -21.4rem 0rem 0rem -0.8rem;
+}
+.track-rectangle{
+  height: 3.56rem;
+  margin: -0.06rem 0rem 0rem -0.8rem;
+
+}
+}
 @media (max-width: 780px) {
+  .mascot {
+    height: 13rem;
+    margin: 29rem 0rem 0rem 27rem;
+  }
+  .star1{
+    margin: -21rem 0rem 0rem -33rem;
+  }
+  .star2 {
+    margin: -42rem 0rem 0rem 13rem;
+  }
   .hero_heading {
     font-size: 4rem;
     margin: -10rem 0rem 0rem -18rem;
@@ -495,8 +743,8 @@ body,
     margin: -10rem 0rem 0rem 14rem;
   }
   .info-window {
-    height: 27.0625rem;
-    margin: -29rem 0rem 0rem -5rem;
+    height: 26rem;
+    margin: -28rem 0rem 0rem -4rem;
   }
   .tracks-window {
     margin: -12rem 0rem 0rem -19rem;
@@ -504,67 +752,118 @@ body,
     z-index: 3;
   }
   .track-rectangle1 {
-    height: 4.185rem;
+    height: 3.1rem;
     margin: -18.635rem 0rem 0rem -0.7rem;
   }
-  .track-rectangle2 {
-    height: 4.185rem;
-    margin: -0.4rem 0rem 0rem -0.7rem;
-  }
-  .track-rectangle3 {
-    height: 4.185rem;
-    margin: -0.2rem 0rem 0rem -0.7rem;
+  .track-rectangle {
+    height: 3.1rem;
+    margin: -0.06rem 0rem 0rem -0.7rem;
   }
   #track-txt {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
   #drop-down {
     font-size: 3.3rem;
   }
   .body-text {
     font-size: 15px;
-    width: 280px;
-    margin: -22.5rem 0rem 0rem 3rem;
+    width: 275px;
+    margin: -22rem 0rem 0rem 3rem;
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 640px){
+  .mascot {
+    height: 14rem;
+    margin: 27rem 0rem 0rem 17rem;
+  }
+  .star1 {
+    margin: -13rem 0rem 0rem -24rem;
+  }
+  .star3 {
+    position: absolute;
+    z-index: 6;
+    margin: 46rem 0rem 0rem 8rem;
+  }
   .hero_heading {
-    font-size: 3rem;
-    -webkit-text-stroke: 0.1rem #000;
-    margin: -10rem 0rem 0rem -13rem;
+    font-size: 4rem;
+    margin: -11rem 0rem 0rem -14.5rem;
+    text-shadow: 0.13rem 0.2rem 0 #000;
+    letter-spacing: 0.2rem;
   }
   .page_no {
-    font-size: 30px;
-    margin: -10rem 0rem 0rem 10rem;
-  }
-  .tracks-window {
-    height: 17.1875rem;
-    margin: -28rem 0rem 0rem -12rem;
+    font-size: 32px;
+    margin: -10rem 0rem 0rem 11rem;
   }
   .info-window {
-    height: 20.5rem;
-    margin: -10rem 0rem 0rem -7rem;
-  }
-  /* .image-window{
-      padding: 28rem 0rem 0rem 49rem;
-  } */
-  .track-rectangle1 {
-    height: 3.56rem;
-    margin: -15.9rem 0rem 0rem -0.6rem;
-  }
-  .track-rectangle2 {
-    height: 3.56rem;
-    margin: -0.1rem 0rem 0rem -0.6rem;
-  }
-  .track-rectangle3 {
-    height: 3.56rem;
-    margin: -0.1rem 0rem 0rem -0.6rem;
+    height: 21rem;
+    margin: -28rem 0rem 0rem -3rem;
   }
   .body-text {
     font-size: 12px;
-    width: 230px;
-    margin: -17rem 0rem 0rem 2rem;
+    width: 231px;
+    margin: -18rem 0rem 0rem 2rem;
+}
+  .tracks-window {
+    margin: -9rem 0rem 0rem -16rem;
+    height: 19rem;
+    z-index: 3;
   }
+  .track-rectangle1{
+    height:2.92rem;
+    margin: -17.55rem 0rem 0rem -0.7rem;
+  }
+  .track-rectangle{
+    height:2.92rem;
+  }
+}
+@media (max-width: 420px) {
+
+  .mascot {
+    height: 10rem;
+    margin: -6rem 0rem 0rem 15rem;
+}
+  .star1{
+    height: 3rem;
+    margin: -4rem 0rem 0rem 0rem;
+  }
+  .star2{
+    height: 5rem;
+    margin: -40rem 0rem 0rem 13rem;
+  }
+  .star3{
+    height: 4rem;
+    margin: 31rem 0rem 0rem -17rem;
+  }
+  .hero_heading {
+    font-size: 3rem;
+    -webkit-text-stroke: 0.1rem #000;
+    margin: -12rem 0rem 0rem -10.5rem;
+ }
+ .page_no {
+  font-size: 1.8rem;
+  margin: -12rem 0rem 0rem 6rem;
+  }
+  .tracks-window {
+    height: 17.1875rem;
+    margin: -30rem 0rem 0rem -10rem;
+}
+  .info-window {
+    height: 19.5rem;
+    margin: -10rem 0rem 0rem -8rem;
+}
+  .track-rectangle1 {
+    height: 2.64rem;
+    margin: -15.9rem 0rem 0rem -0.6rem;
+  }
+  .track-rectangle {
+    height: 2.64rem;
+    margin: -0.05rem 0rem 0rem -0.6rem;
+  }
+  .body-text {
+    font-size: 11px;
+    width: 210px;
+    margin: -16.5rem 0rem 0rem 2rem;
+}
   #track-txt {
     font-family: 'Press Start 2P';
     color: #fff;
@@ -1520,4 +1819,32 @@ body {
   .moon {
     max-width: 9.58vw;
   }
+}
+
+/* FAQS */
+
+.faqMobileText {
+  box-shadow: 5px 5px black;
+  /* clip-path: polygon(10% 0, 100% 0, 100% 100%, 10% 100%, 10% 80%, 0 90%, 10% 60%); */
+  /* padding-left: 10%; */
+  /* transform: translateX(-10%); */
+}
+
+.animate-oscillate {
+  animation: oscillate infinite 1s;
+}
+
+@keyframes oscillate {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+#footsocial a img{
+  transition: 0.5s;
 }
