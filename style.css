@@ -115,6 +115,24 @@ nav ul li a {
   }
 }
 
+@keyframes mascot {
+  0%{
+      transform: translateY(0.5rem);
+  }
+  25%{
+      transform: translateY(-0.5rem);
+  }
+  50%{
+      transform: translateY(0.5rem);
+  }
+  75%{
+      transform: translateY(-0.5rem);
+  }
+  100%{
+      transform: translateY(0.5rem);
+  }
+}
+
 /* navbar ends */
 
 /* Hero Text Items */
