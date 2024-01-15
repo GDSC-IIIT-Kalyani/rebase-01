@@ -434,19 +434,38 @@ img {
   -webkit-text-stroke: 0.178571rem #000;
   margin: -11rem 0rem 0rem -28rem;
 }
-.mascot{
-  position:absolute;
+@keyframes floating {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.mascot {
+  position: absolute;
   z-index: 6;
-  margin: 33rem 0rem 0rem 46rem;
+  margin: 31rem 0rem 0rem 46rem;
+  animation: floating 2s ease-in-out infinite; 
 }
 .mascot svg {
   height: 100%;
   width: 100%;
 }
+@keyframes twinkling {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.6);
+  }
+}
 .star1{
   position: absolute;
   z-index: 6;
   margin: 2rem 0rem 0rem -57rem;
+  animation: twinkling 1.5s ease-in-out infinite;
 }
 .star1 svg {
   height: 100%;
@@ -456,6 +475,7 @@ img {
   position: absolute;
   z-index: 6;
   margin: -25rem 0rem 0rem 53rem;
+  animation: twinkling 1.3s ease-in-out infinite;
 }
 .star2 svg {
   height: 100%;
@@ -465,6 +485,7 @@ img {
   position: absolute;
   z-index: 6;
   margin: 37rem 0rem 0rem 1rem;
+  animation: twinkling 1.7s ease-in-out infinite;
 }
 .star3 svg {
   height: 100%;
@@ -481,8 +502,8 @@ img {
 
 .tracks-window {
   position: absolute;
-  margin: -19rem 0rem 0rem -26rem;
-  height: 28.1875rem;
+  margin: -19rem 0rem 0rem -24rem;
+  height: 26rem;
   z-index: 3;
 }
 
@@ -497,8 +518,8 @@ img {
 }
 .info-window {
   position: absolute;
-  margin: -35rem 0rem 0rem -5rem;
-  height: 34.0625rem;
+  margin: -31rem 0rem 0rem -5rem;
+  height: 32rem;
   z-index: 2;
 }
 
@@ -509,19 +530,19 @@ img {
 
 .track-rectangle1 {
   position: relative;
-  height: 4.34rem;
+  height: 4rem;
   top: 0;
   left: 0;
   z-index: 4;
-  margin: -26.05rem 0rem 0rem -1rem;
+  margin: -24rem 0rem 0rem -0.9rem;
 }
 .track-rectangle {
   position: relative;
-  height: 4.34rem;
+  height: 4rem;
   top: 0;
   left: 0;
   z-index: 4;
-  margin: -0.1rem 0rem 0rem -1rem;
+  margin: -0.09rem 0rem 0rem -0.9rem;
 }
 
 #drop-down {
@@ -561,13 +582,13 @@ img {
   width: 350px;
   height: 393px;
   color: #fff;
-  font-size: 20px;
+  font-size: 19px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   letter-spacing: 1.68px;
   z-index: 5;
-  margin: -29rem 0rem 0rem 4rem;
+  margin: -27rem 0rem 0rem 3.5rem;
 }
 
 body,
@@ -601,6 +622,7 @@ body,
 
 @media (max-width: 1260px) {
   .mascot{
+    height: 13rem;
     margin: 31rem 0rem 0rem 38rem;
   }
   .star2{
@@ -620,8 +642,8 @@ body,
     margin: -10rem 0rem 0rem 20rem;
   }
   .info-window {
-    margin: -33rem 0rem 0rem -5rem;
-    height: 30.0625rem;
+    margin: -28rem 0rem 0rem -5rem;
+    height: 30rem;
   }
   .tracks-window {
     margin: -17rem 0rem 0rem -23rem;
@@ -655,6 +677,7 @@ body,
 }
   .mascot{
     margin: 31rem 0rem 0rem 29rem;
+    height:13rem;
   }
   .star1 {
     margin: -23rem 0rem 0rem -37rem;
@@ -666,8 +689,8 @@ body,
     margin: -10rem 0rem 0rem 17rem;
 }
 .info-window {
-  margin: -33rem 0rem 0rem -5rem;
-  height: 29.0625rem;
+  margin: -29rem 0rem 0rem -5rem;
+  height: 29rem;
 }
 .body-text {
   font-size: 17px;
@@ -695,8 +718,8 @@ body,
 }
 @media (max-width: 780px) {
   .mascot {
-    height: 15rem;
-    margin: 24rem 0rem 0rem 23rem;
+    height: 13rem;
+    margin: 29rem 0rem 0rem 27rem;
   }
   .star1{
     margin: -21rem 0rem 0rem -33rem;
@@ -715,8 +738,8 @@ body,
     margin: -10rem 0rem 0rem 14rem;
   }
   .info-window {
-    height: 26.0625rem;
-    margin: -34rem 0rem 0rem -5rem;
+    height: 26rem;
+    margin: -28rem 0rem 0rem -4rem;
   }
   .tracks-window {
     margin: -12rem 0rem 0rem -19rem;
@@ -740,7 +763,7 @@ body,
   .body-text {
     font-size: 15px;
     width: 275px;
-    margin: -22.5rem 0rem 0rem 3rem;
+    margin: -22rem 0rem 0rem 3rem;
   }
 }
 @media (max-width: 640px){
@@ -767,25 +790,32 @@ body,
     margin: -10rem 0rem 0rem 11rem;
   }
   .info-window {
-    height: 24.0625rem;
-    margin: -34rem 0rem 0rem -7rem;
+    height: 21rem;
+    margin: -28rem 0rem 0rem -3rem;
   }
   .body-text {
-    font-size: 14px;
-    width: 275px;
-    margin: -20.5rem 0rem 0rem 2.5rem;
-  }
+    font-size: 12px;
+    width: 231px;
+    margin: -18rem 0rem 0rem 2rem;
+}
   .tracks-window {
-    margin: -11rem 0rem 0rem -15rem;
-    height: 20.1875rem;
+    margin: -9rem 0rem 0rem -16rem;
+    height: 19rem;
     z-index: 3;
+  }
+  .track-rectangle1{
+    height:2.92rem;
+    margin: -17.55rem 0rem 0rem -0.7rem;
+  }
+  .track-rectangle{
+    height:2.92rem;
   }
 }
 @media (max-width: 420px) {
 
   .mascot {
     height: 10rem;
-    margin: 0rem 0rem 0rem 11rem;
+    margin: -6rem 0rem 0rem 15rem;
 }
   .star1{
     height: 3rem;
@@ -802,7 +832,7 @@ body,
   .hero_heading {
     font-size: 3rem;
     -webkit-text-stroke: 0.1rem #000;
-    margin: -12rem 0rem 0rem -9.5rem;
+    margin: -12rem 0rem 0rem -10.5rem;
  }
  .page_no {
   font-size: 1.8rem;
@@ -810,11 +840,11 @@ body,
   }
   .tracks-window {
     height: 17.1875rem;
-    margin: -32rem 0rem 0rem -10rem;
+    margin: -30rem 0rem 0rem -10rem;
 }
   .info-window {
     height: 19.5rem;
-    margin: -8rem 0rem 0rem -8rem;
+    margin: -10rem 0rem 0rem -8rem;
 }
   .track-rectangle1 {
     height: 2.64rem;
