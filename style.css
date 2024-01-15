@@ -142,9 +142,6 @@ nav ul li a {
 /* ------------------- Landing page -----------------------------------*/
 
 @media screen and (max-width: 639px){
-  #socialcomp {
-    visibility: hidden;
-  }
   #compland{
     display: none;
   }
@@ -156,6 +153,14 @@ nav ul li a {
 }
 
 .moblinks ul li a img:hover{
+  transform: scale(1.1);
+}
+
+#socialcompu ul li a img{
+  transition: 0.5s;
+}
+
+#socialcompu ul li a img:hover{
   transform: scale(1.2);
 }
 /* --------------------- PRIZES SECTION BEGINING------------------------------- */

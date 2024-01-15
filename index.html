@@ -199,34 +199,40 @@
       </script>
 
       <!-- LANDING PAGE -->
-      <section id="home" class="w-full">
-        <!-- Hero text -->
-        <div class="">
+      <section id="home" class="h-fit w-full">
+        <!-- Hero text mobile -->
+        <div class="sm:hidden">
           <img class=" w-full"  src="/public/herotext.png" alt="">
         </div>
 
         <!-- Images and socials -->
-        <div id="compland" class="flex justify-center items-center -translate-y-24 md:-translate-y-28 lg:-translate-y-32">
-          <div class="relative">
-            <img class="w-full" src="/public/socialcomp.png" alt="">
-            <div class="absolute inset-6">
-              <ul>
-                <li><a href="https://discord.gg/tcaxPN6CNs"><img class="verysmall:w-[70%]" src="/public/discordhero.svg" alt=""></a></li>
-                <li><a href="https://twitter.com/gdsciiitkalyani"><img class="verysmall:w-[90%]" src="/public/x.svg" alt=""></a></li>
-                <li><a href="https://www.youtube.com/channel/UCvRPKamvUtnQhij5y1MF11A"><img class="verysmall:w-[80%]" src="/public/youtube.svg" alt=""></a></li>
-                <li><a href="https://instagram.com/gdsciiitkalyani"><img class="verysmall:w-[70%]" src="/public/instahero.svg" alt=""></a></li>
-              </ul>
+        <div id="compland" class="">
+          <img src="/public/herotext.png" alt="">
+          <div class="flex justify-center">
+            <!-- -translate-y-24 md:-translate-y-28 lg:-translate-y-32 -->
+            <div class="relative">
+              <img class="w-full" src="/public/socialcomp.png" alt="">
+              <div id="socialcompu" class="absolute sm:inset-6 ">
+                <!-- lg:inset-9 xl:inset-12 -->
+                <ul class="">
+                  <li class=""><a href="https://gdsc.bio.link"><img class="sm:w-[80%]" src="/public/gdschero.svg" alt=""></a></li>
+                  <li class="sm:my-6 lg:my-7 2xl:my-8"><a href="https://discord.gg/tcaxPN6CNs"><img class="sm:w-[50%]" src="/public/discordhero.svg" alt=""></a></li>
+                  <li class="sm:my-6 lg:my-7 2xl:my-8"><a href="https://twitter.com/gdsciiitkalyani"><img class="sm:w-[30%]" src="/public/x.svg" alt=""></a></li>
+                  <li class="sm:my-6 lg:my-7 2xl:my-8"><a href="https://www.youtube.com/channel/UCvRPKamvUtnQhij5y1MF11A"><img class="sm:w-[40%]" src="/public/youtube.svg" alt=""></a></li>
+                  <li class="sm:my-6 lg:my-7 2xl:my-8"><a href="https://instagram.com/gdsciiitkalyani"><img class="sm:w-[40%]" src="/public/instahero.svg" alt=""></a></li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div>
-            <img class="w-full -z-50" src="/public/landingcomp.png" alt="">
+            <div>
+              <img class="w-full -z-50 " src="/public/landingcomp.png" alt="">
+            </div>
           </div>
         </div>
 
         <!-- Images and socials mobile -->
         <div class="sm:hidden">
           <!-- mobile landing image -->
-          <img id="moblandimg" class="w-[85%] mx-auto" src="/public/heroimgmob.png" alt="">
+          <img id="moblandimg" class="w-full mx-auto" src="/public/heroimgmob.png" alt="">
           <!-- div for socials for mobile screen -->
           <div class="mobsocials relative">
             <img id="moblanding" class=" w-[80%] sm:hidden mx-auto" src="/public/socialmob.png" alt="">
@@ -279,7 +285,7 @@
 
       <!--Timeline begins here - by Aryan (You can call me astroneko :)-->
       <section
-        id="timeline"
+        id="schedule"
         class="w-full border-2 border-[#F4E1B9] flex flex-col extrasmall:mt-10 h-fit sm:mt-8 lg:mb-10  pb-11 mb-5"
       >
      
