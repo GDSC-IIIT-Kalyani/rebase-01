@@ -458,20 +458,34 @@ img {
   margin: -11rem 0rem 0rem -28rem;
 }
 @keyframes floating {
-  0%, 100% {
-    transform: translateY(0);
+  0% {
+    transform: rotate(0deg);
   }
-  50% {
-    transform: translateY(-20px);
+  100% {
+    transform: rotate(360deg);
   }
+}
+
+@keyframes left_right {
+  0% {
+    transform: translateX(-100vw);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
+
+.panda{
+    animation: floating 4s linear infinite; 
 }
 
 .mascot {
   position: absolute;
   z-index: 6;
-  margin: 31rem 0rem 0rem 46rem;
-  animation: floating 2s ease-in-out infinite; 
+  margin: 41rem 0rem 0rem 46rem;
+  animation: left_right 10s linear 1.5 !important; 
 }
+
 .mascot svg {
   height: 100%;
   width: 100%;
