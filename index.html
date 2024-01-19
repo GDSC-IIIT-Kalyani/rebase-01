@@ -19,8 +19,9 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
       rel="stylesheet"
     />
-   
+    
     <title>Rebase <01></title>
+    
   </head>
 
   <body class="bg-[#f4e1b9]">
@@ -47,7 +48,7 @@
 
         <!-- navbar -->
         <div
-          class="w-screen flex pt-4 md:justify-end justify-between mx-auto md:pt-1 sm:hidden  "
+          class="w-screen flex pt-4 md:justify-end justify-between mx-auto md:pt-1 md:hidden  "
         >
           <div class="flex flex-row md:hidden">
             <img
@@ -67,7 +68,7 @@
             />
           </div>
 
-          <div class="sm:hidden flex items-center">
+          <div class="md:hidden flex items-center">
             <button
               type="button"
               class="mobile-menu-button inline-flex items-center p-2 w-14 h-14 justify-center text-sm md:hidden"
@@ -130,8 +131,7 @@
           </div>
         </div>
 
-        <!-- navbar normal screens -->
-        <div class="hidden sm:block p-2 ">
+        <div class="hidden md:block p-2 ">
           <nav
             class="relative after:absolute after:top-[10%] after:left-[-1%] after:right-[1%] after:bottom-[-10%] shrink-0"
           >
@@ -151,7 +151,7 @@
       </div>
 
       <div
-        class="dropdown_item-1 bg-[#48727E] sm:w-72 extrasmall:right-[14vw] border-4 border-black shadow-[5px_5px_0px_0px_rgba(0,0,0)] hidden mt-1 mobile-menu sm:right-[5.2rem] absolute z-[100] sm:hidden"
+        class="dropdown_item-1 bg-[#48727E] sm:w-72 extrasmall:right-[14vw] border-4 border-black shadow-[5px_5px_0px_0px_rgba(0,0,0)] hidden mt-1 mobile-menu sm:right-[5.2rem] absolute z-[100] md:hidden"
       >
         <div
           class="divide-[#F4E1B9] divide-y-2 divide-solid flex flex-col w-64 p-4 gap-y-2"
@@ -285,15 +285,15 @@
 
       <!--Timeline begins here - by Aryan (You can call me astroneko :)-->
       <section
-        id="schedule"
-        class="w-full border-2 border-[#F4E1B9] flex flex-col extrasmall:mt-10 h-fit sm:mt-8 lg:mb-10  pb-11 mb-5"
+        id="timeline"
+        class="w-full  flex flex-col extrasmall:mt-10 h-fit sm:mt-8 lg:mb-10  pb-11 mb-5"
       >
      
 
     
      
-      <div class="h-fit md:h-[30rem] xl:h-[34rem]">
-        <div class="header flex flex-row justify-between w-full lg:px-6  extrasmall:px-3  sm:px-3   md:px-4 exsm:mb-6 extrasmall:mb-9 ">
+      <div class="h-fit exsm:h-[20rem] sm:h-[20rem] md:h-[30rem] xl:h-[34rem]">
+        <div class="header flex flex-row justify-between w-full lg:px-6  extrasmall:px-3  sm:px-3   md:px-4 exsm:mb-6 extrasmall:mb-9">
           <div>
             <h1 class="timeline-heading sm:text-[4rem] md:text-[6rem]">TIMELINE</h1>
           </div>
@@ -304,33 +304,158 @@
         </div>
       
          
-       
+        
 
-          <div class="justify-center flex flex-row items-center gap-10   text-center exsm:gap-5 exsm:p-1 extrasmall:p-1 extrasmall:gap-4 sm:gap-5 sm:mt-20  md:mt-[10rem] extrasmall:mt-[6rem] exsm:mt-[4rem]">
+          <div class="justify-center flex flex-row items-center gap-10   text-center exsm:gap-5 exsm:p-1 extrasmall:p-1 extrasmall:gap-4 sm:gap-5 sm:mt-20  md:mt-[5rem] extrasmall:mt-[6rem] exsm:mt-[3rem]  ">
           
-          <!-- Backgtound svg -->
-            <img  class="absolute -z-50  h-fit w-[80%] lg:w-[70%]" src="public/Group313.svg" alt="" srcset="">
-            <!-- star svgs -->
+          <!-- Background svg -->
+          <div class="w-[80%] lg:w-[70%] absolute -z-50   exsm:mt-[3rem] extrasmall:-mt-3 sm:mt-[4.6rem] xl:mt-[9rem]">
+            <img  class="  object-contain"  src="public/Group313.svg" alt="" srcset="">
+          </div>
+
+            <!-- star svgs
             <img class="absolute w-12 floating2 left-[24%] hidden lg:block z-[100] sm:" src="public/star.svg" alt="" srcset="">
             <img   class="absolute w-8 floating3  z-[100] hidden lg:block  right-[20%] translate-y-[6rem]"   src="public/star.svg" alt="" srcset="">
-            <img  class="absolute w-12 floating4  z-[100]  hidden lg:block  right-[20%] md:-translate-y-[15rem] sm:-translate-y-[6rem]"  src="public/star.svg" alt="" srcset="">
+            <img  class="absolute w-12 floating4  z-[100]  hidden lg:block  right-[20%] md:-translate-y-[15rem] sm:-translate-y-[6rem]"  src="public/star.svg" alt="" srcset=""> -->
 
-            <div class="flex w-[60%] flex-row absolute  exsm:justify-center  exsm:gap-4  extrasmall:justify-center extrasmall:gap-7 sm:justify-center sm:gap-10 md:justify-around lg:justify-around  ">
-             <img  class="exsm:w-[15%]   exsm:h-[10%] extrasmall:w-[15%] extrasmall:h-[11%] sm:w-[18%] sm:h-[14%] md:h-[5rem] md:w-[5rem] lg:w-[7rem] lg:h-[7rem]" src="public/moon1.png" alt="">
-             <img  class="exsm:w-[15%] exsm:h-[10% extrasmall:w-[15%] extrasmall:h-[11%] sm:w-[18%] sm:h-[14%] md:h-[5rem] md:w-[5rem] lg:w-[7rem] lg:h-[7rem]"  src="public/moon2.png" alt="">
-             <img  class="exsm:w-[15%] exsm:h-[10%] extrasmall:w-[15%] extrasmall:h-[11%] sm:w-[18%] sm:h-[14%] md:h-[5rem] md:w-[5rem] lg:w-[7rem] lg:h-[7rem]" src="public/moon3.png" alt="">
+
+       
+<!--          
+            <div class=" timeline-wrapper  flex  w-[57%] flex-row absolute  exsm:justify-center  exsm:gap-4  extrasmall:justify-center extrasmall:gap-7 sm:justify-center sm:gap-10 md:justify-around lg:justify-center lg:gap-[13rem] overflow-x-scroll flex-nowrap no-scrollbar">
+             <img  class="timeline-element  flex-none exsm:w-[15%]   exsm:h-[10%] extrasmall:w-[15%] extrasmall:h-[11%] sm:w-[18%] sm:h-[14%] md:h-[5rem] md:w-[5rem] lg:w-[7rem] lg:h-[7rem]" src="public/moon1.png" alt="">
+             <img  class="timeline-element   flex-none exsm:w-[15%] exsm:h-[10% extrasmall:w-[15%] extrasmall:h-[11%] sm:w-[18%] sm:h-[14%] md:h-[5rem] md:w-[5rem] lg:w-[7rem] lg:h-[7rem]"  src="public/moon2.png" alt="">
+             <img  class=" timeline-element   flex-none  exsm:w-[15%] exsm:h-[10%] extrasmall:w-[15%] extrasmall:h-[11%] sm:w-[18%] sm:h-[14%] md:h-[5rem] md:w-[5rem] lg:w-[7rem] lg:h-[7rem]" src="public/moon3.png" alt="">
+             <img  class="timeline-element    flex-none   exsm:w-[15%] exsm:h-[10%] extrasmall:w-[15%] extrasmall:h-[11%] sm:w-[18%] sm:h-[14%] md:h-[5rem] md:w-[5rem] lg:w-[7rem] lg:h-[7rem]" src="public/moon4.png" alt="">
+             <img  class="timeline-element     flex-none  exsm:w-[15%] exsm:h-[10%] extrasmall:w-[15%] extrasmall:h-[11%] sm:w-[18%] sm:h-[14%] md:h-[5rem] md:w-[5rem] lg:w-[7rem] lg:h-[7rem]" src="public/moon5.png" alt="">
+             <img  class="timeline-element        flex-none  exsm:w-[15%] exsm:h-[10%] extrasmall:w-[15%] extrasmall:h-[11%] sm:w-[18%] sm:h-[14%] md:h-[5rem] md:w-[5rem] lg:w-[7rem] lg:h-[7rem]" src="public/moon6.png" alt="">
+             <img  class="timeline-element       flex-none  exsm:w-[15%] exsm:h-[10%] extrasmall:w-[15%] extrasmall:h-[11%] sm:w-[18%] sm:h-[14%] md:h-[5rem] md:w-[5rem] lg:w-[7rem] lg:h-[7rem]" src="public/moon7.png" alt="">
+             <img  class="timeline-element  flex-none exsm:w-[15%]   exsm:h-[10%] extrasmall:w-[15%] extrasmall:h-[11%] sm:w-[18%] sm:h-[14%] md:h-[5rem] md:w-[5rem] lg:w-[7rem] lg:h-[7rem]" src="public/moon1.png" alt="">
+             <img  class="timeline-element   flex-none exsm:w-[15%] exsm:h-[10% extrasmall:w-[15%] extrasmall:h-[11%] sm:w-[18%] sm:h-[14%] md:h-[5rem] md:w-[5rem] lg:w-[7rem] lg:h-[7rem]"  src="public/moon2.png" alt="">
+             
+            </div> -->
+               <!-- 7 Phases of Moon :heart: -->
+            <div class="timeline mx-30 flex justify-center absolute  lg:w-[65%]  sm:w-[75%] extrasmall:w-[74%]  md:w-[72%] flex-row  exsm:justify-center  exsm:gap-4  extrasmall:justify-center extrasmall:gap-7 sm:justify-center sm:gap-5 md:justify-center   exsm:mt-[4rem] sm:mt-[6rem] xl:mt-[10rem]">
+              <button class="prev  opacity-80 hover:opacity-100  timeline-page fo z-[999] cursor-pointer">
+               
+                &lt;
+              </button>
+      
+              <div class="contents mx-30 flex mx-auto">
+                <div class="timeline-wrapper max-w-[990px] flex overflow-x-auto no-scrollbar">
+                 
+      
+                  <div class="flex flex-col justify-center items-center min-w-[330px]  m-1">
+                    <h1 class="text-white exsm:text-[0.6rem] sm:text-[1rem] extrasmall:text-[0.8rem]  anime md:text-[1rem] lg:text-[1.2rem]  xl:text-[1.4rem] exsm:mb-1 ">
+                      Jan 25 12:00AM
+                    </h1>
+                    
+                    <img  class="exsm:w-[25%] exsm:h-[39%] extrasmall:w-[28%] extrasmall:h-[36%] sm:w-[42%] sm:h-[53%] md:w-[45%] md:h-[54%] lg:w-[50%] lg:h-[59%] object-contain" src="/public/moon1.png" alt="">
+                    <h3 class="text-white exsm:text-[0.6rem] extrasmall:text-[0.8rem] sm:text-[1rem]  md:text-[1rem] xl:text-3xl lg:text-[1.2rem]  xl:text-[1.4rem] anime exsm:mt-1 sm:mt-0">
+                      Registration begins
+                    </h3>
+                    
+                  </div>
+      
+                  <div class="flex flex-col justify-center items-center min-w-[330px]  m-1">
+                    <h1 class="text-white exsm:text-[0.6rem] sm:text-[1rem] extrasmall:text-[0.8rem]  anime md:text-[1rem] lg:text-[1.2rem]  xl:text-[1.4rem] exsm:mb-1 ">
+                      Feb 25 11:59AM
+                    </h1>
+                    
+                    <img  class="exsm:w-[25%] exsm:h-[39%] extrasmall:w-[28%] extrasmall:h-[36%] sm:w-[42%] sm:h-[53%] md:w-[45%] md:h-[54%] lg:w-[50%] lg:h-[59%] object-contain" src="/public/moon2.png" alt="">
+                    <h3 class="text-white exsm:text-[0.6rem] extrasmall:text-[0.8rem] sm:text-[1rem]  md:text-[1rem] xl:text-3xl lg:text-[1.2rem]  xl:text-[1.4rem] anime exsm:mt-1 sm:mt-0">
+                      Registration closes
+                    </h3>
+                    
+                  </div>
+      
+                  <div class="flex flex-col justify-center items-center min-w-[330px]  m-1">
+                    <h1 class="text-white exsm:text-[0.6rem] sm:text-[1rem] extrasmall:text-[0.8rem]  anime md:text-[1rem] lg:text-[1.2rem]  xl:text-[1.4rem] exsm:mb-1 ">
+                      Mar 17
+                    </h1>
+                    
+                    <img  class="exsm:w-[25%] exsm:h-[39%] extrasmall:w-[28%] extrasmall:h-[36%] sm:w-[42%] sm:h-[53%] md:w-[45%] md:h-[54%] lg:w-[50%] lg:h-[59%] object-contain" src="/public/moon3.png" alt="">
+                    <h3 class="text-white exsm:text-[0.6rem] extrasmall:text-[0.8rem] sm:text-[1rem]  md:text-[1rem] xl:text-3xl lg:text-[1.2rem]  xl:text-[1.4rem] anime exsm:mt-1 sm:mt-0">
+                      Opening Ceremony
+                    </h3>
+                    
+                  </div>
+      
+                  <div class="flex flex-col justify-center items-center min-w-[330px]  m-1">
+                    <h1 class="text-white exsm:text-[0.6rem] sm:text-[1rem] extrasmall:text-[0.8rem]  anime md:text-[1rem] lg:text-[1.2rem]  xl:text-[1.4rem] exsm:mb-1 ">
+                      Mar 18
+                    </h1>
+                    
+                    <img  class="exsm:w-[25%] exsm:h-[39%] extrasmall:w-[28%] extrasmall:h-[36%] sm:w-[42%] sm:h-[53%] md:w-[45%] md:h-[54%] lg:w-[50%] lg:h-[59%] object-contain" src="/public/moon4.png" alt="">
+                    <h3 class="text-white exsm:text-[0.6rem] extrasmall:text-[0.8rem] sm:text-[1rem]  md:text-[1rem] xl:text-3xl lg:text-[1.2rem]  xl:text-[1.4rem] anime exsm:mt-1 sm:mt-0">
+                      Proposal Writing
+                    </h3>
+                    
+                  </div>
+      
+                  <div class="flex flex-col justify-center items-center min-w-[330px]  m-1">
+                    <h1 class="text-white exsm:text-[0.6rem] sm:text-[1rem] extrasmall:text-[0.8rem]  anime md:text-[1rem] lg:text-[1.2rem]  xl:text-[1.4rem] exsm:mb-1 ">
+                      Mar 22
+                    </h1>
+                    
+                    <img  class="exsm:w-[25%] exsm:h-[39%] extrasmall:w-[28%] extrasmall:h-[36%] sm:w-[42%] sm:h-[53%] md:w-[45%] md:h-[54%] lg:w-[50%] lg:h-[59%] object-contain" src="/public/moon5.png" alt="">
+                    <h3 class="text-white exsm:text-[0.6rem] extrasmall:text-[0.8rem] sm:text-[1rem]  md:text-[1rem] xl:text-3xl lg:text-[1.2rem]  xl:text-[1.4rem] anime exsm:mt-1 sm:mt-0">
+                      Proposal ends
+                    </h3>
+                    
+                  </div>
+      
+                  <div class="flex flex-col justify-center items-center min-w-[330px]  m-1">
+                    <h1 class="text-white exsm:text-[0.6rem] sm:text-[1rem] extrasmall:text-[0.8rem]  anime md:text-[1rem] lg:text-[1.2rem]  xl:text-[1.4rem] exsm:mb-1 ">
+                      Apr 1
+                    </h1>
+                    
+                    <img  class="exsm:w-[25%] exsm:h-[39%] extrasmall:w-[28%] extrasmall:h-[36%] sm:w-[42%] sm:h-[53%] md:w-[45%] md:h-[54%] lg:w-[50%] lg:h-[59%] object-contain" src="/public/moon6.png" alt="">
+                    <h3 class="text-white exsm:text-[0.6rem] extrasmall:text-[0.8rem] sm:text-[1rem]  md:text-[1rem] xl:text-3xl lg:text-[1.2rem]  xl:text-[1.4rem] anime exsm:mt-1 sm:mt-0">
+                      Hacking starts
+                    </h3>
+                    
+                  </div>
+      
+                  <div class="flex flex-col justify-center items-center min-w-[330px]  m-1">
+                    <h1 class="text-white exsm:text-[0.6rem] sm:text-[1rem] extrasmall:text-[0.8rem]  anime md:text-[1rem] lg:text-[1.2rem]  xl:text-[1.4rem] exsm:mb-1 ">
+                      Apr 18
+                    </h1>
+                    
+                    <img  class="exsm:w-[25%] exsm:h-[39%] extrasmall:w-[28%] extrasmall:h-[36%] sm:w-[42%] sm:h-[53%] md:w-[45%] md:h-[54%] lg:w-[50%] lg:h-[59%] object-contain" src="/public/moon7.png" alt="">
+                    <h3 class="text-white exsm:text-[0.6rem] extrasmall:text-[0.8rem] sm:text-[1rem]  md:text-[1rem] xl:text-3xl lg:text-[1.2rem]  xl:text-[1.4rem] anime exsm:mt-1 sm:mt-0">
+                      Hacking ends
+                    </h3>
+                    
+                  </div>
+
+                  <div class="flex flex-col justify-center items-center min-w-[330px]  m-1">
+                    <h1 class="text-white exsm:text-[0.6rem] sm:text-[1rem] extrasmall:text-[0.8rem]  anime md:text-[1rem] lg:text-[1.2rem]  xl:text-[1.4rem] exsm:mb-1 ">
+                      Jan 25 12:00AM
+                    </h1>
+                    
+                    <img  class="exsm:w-[25%] exsm:h-[39%] extrasmall:w-[28%] extrasmall:h-[36%] sm:w-[42%] sm:h-[53%] md:w-[45%] md:h-[54%] lg:w-[50%] lg:h-[59%] object-contain" src="/public/moon1.png" alt="">
+                    <h3 class="text-white exsm:text-[0.6rem] extrasmall:text-[0.8rem] sm:text-[1rem]  md:text-[1rem] xl:text-3xl lg:text-[1.2rem]  xl:text-[1.4rem] anime exsm:mt-1 sm:mt-0">
+                      Registration begins
+                    </h3>
+                    
+                  </div>
+                </div>
+              </div>
+              <button class="next  opacity-80 hover:opacity-100  timeline-page fo z-[999] cursor-pointer">
+               
+                >
+              </button>
             </div>
+         
+
  
-           <div class="timeline-page fo"> &lt; </div>
-           <img  class="absolute w-8  floating1 hidden lg:block z-[200]" src="public/star.svg" alt="" srcset="">
-           <div class=" border-dashed border-[#F4E1B9] w-[60%]  border-2  h-0 exsm:w-[80%] extrasmall:w-[75%] sm:w-[80%]"></div>
-           <div class="text-9xl fo"><h1 class="text timeline-page fo" >></h1></div>
+           <!-- <div class="prev   timeline-page fo z-[999] cursor-pointer"> &lt; </div> -->
+           <!-- <img  class="absolute w-8  floating1 hidden lg:block z-[200]" src="public/star.svg" alt="" srcset=""> -->
+           <div class=" border-dashed border-[#F4E1B9] w-[60%]  border-2  h-0 exsm:w-[80%] extrasmall:w-[75%] sm:w-[80%] exsm:mt-[4rem] sm:mt-[6rem] xl:mt-[10rem]"></div>
+           <!-- <div class="text-9xl fo z-[999] next"><h1 class="text timeline-page fo cursor-pointer" >></h1></div> -->
          </div>
         
-         <div class="text-center mt-10 exsm:mt-0 extrasmall:mt-1 sm:mt-2">
-
-           <h1 class="text-2xl anime text-white exsm:text-[0.7rem] extrasmall:text-[0.9rem] sm:text-[1.2rem]">EVENT NAME</h1>
-         </div>
+         
        
 
         </div>  
@@ -1246,6 +1371,68 @@
         class="right-0 absolute w-56 h-72 translate-y-10 extrasmall:w-28 extrasmall:h-36 sm:w-44 sm:h-56 xl:h-80 xl:w-72"
       />
     </footer>
+   
+<script>
+
+var timelineElementWidth = 338;
+      var timelineWrapperWidth =
+        document.querySelector('.timeline-wrapper').clientWidth;
+      var defaultShiftWidth =
+        timelineWrapperWidth < timelineElementWidth
+          ? timelineElementWidth / 4
+          : 0;
+      document
+        .querySelector('.timeline-wrapper')
+        .scrollBy({ left: defaultShiftWidth, behavior: 'smooth' });
+
+      document.querySelector('.prev').addEventListener('click', () => {
+        var timelineWrapperWidth =
+          document.querySelector('.timeline-wrapper').clientWidth;
+        var defaultShiftWidth =
+          timelineWrapperWidth < timelineElementWidth
+            ? timelineElementWidth / 4
+            : 0;
+        var leftPosition =
+          defaultShiftWidth +
+          Math.max(
+            0,
+            Math.floor(
+              (document.querySelector('.timeline-wrapper').scrollLeft -
+                timelineElementWidth) /
+                timelineElementWidth
+            ) * timelineElementWidth
+          );
+        document
+          .querySelector('.timeline-wrapper')
+          .scrollTo({ left: leftPosition, behavior: 'smooth' });
+      });
+      document.querySelector('.next').addEventListener('click', () => {
+        var timelineWrapperWidth =
+          document.querySelector('.timeline-wrapper').clientWidth;
+        var defaultShiftWidth =
+          timelineWrapperWidth < timelineElementWidth
+            ? timelineElementWidth / 4
+            : 0;
+        var leftPosition =
+          defaultShiftWidth +
+          Math.min(
+            document.querySelector('.timeline-wrapper').scrollWidth -
+              timelineWrapperWidth,
+            Math.ceil(
+              (document.querySelector('.timeline-wrapper').scrollLeft +
+                timelineElementWidth) /
+                timelineElementWidth
+            ) * timelineElementWidth
+          );
+        document
+          .querySelector('.timeline-wrapper')
+          .scrollTo({ left: leftPosition, behavior: 'smooth' });
+      });
+
+</script>
+
+
+
     <script  type="module" src="./main.js"></script>
   <script type="module" src="./index.js"></script>
   </body>
