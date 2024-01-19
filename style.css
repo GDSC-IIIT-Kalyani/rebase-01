@@ -299,6 +299,30 @@ img {
 .fo{
   font-size: 4rem;
 }
+@media (max-width:1280px  ) and (min-width:1024px) {
+  .fo{
+    font-size: 5rem;
+  }
+  
+}
+@media (max-width:1536px  ) and (min-width:1281px) {
+  .fo{
+    font-size: 6rem;
+  }
+  
+}
+@media (max-width:1536px  ) and (min-width:1281px) {
+  .fo{
+    font-size: 6rem;
+  }
+  
+}
+@media (max-width:2000px  ) and (min-width:1537px) {
+  .fo{
+    font-size: 7rem;
+  }
+  
+}
 .anime{
   font-family: 'Anime Ace';
   font-style: italic;
@@ -494,7 +518,7 @@ img {
   position: absolute;
   z-index: 6;
   margin: 41rem 0rem 0rem 46rem;
-  animation: left_right 10s linear 1.5 !important; 
+  
 }
 
 .mascot svg {
