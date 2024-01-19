@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "prettier": "^3.1.1",
+    "scrollreveal": "^4.0.9",
     "tw-elements": "^1.1.0"
   }
 }
