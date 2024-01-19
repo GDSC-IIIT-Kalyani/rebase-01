@@ -21,6 +21,7 @@
 </p>
 
 ## **Getting Started**
+
 [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/GDSC-IIIT-Kalyani/rebase-01?logo=github)](https://GDSC-IIIT-Kalyani/rebase-01/) [![GitHub commit activity](https://img.shields.io/github/commit-activity/m/GDSC-IIIT-Kalyani/rebase-01?color=bluevoilet&logo=github)](https://github.com/GDSC-IIIT-Kalyani/rebase-01/commits/) [![GitHub repo size](https://img.shields.io/github/repo-size/GDSC-IIIT-Kalyani/rebase-01?logo=github)](https://github.com/GDSC-IIIT-Kalyani/rebase-01)
 
 For the quick start, you can follow the steps below:
@@ -49,13 +50,16 @@ Run the following command to install the required dependencies.
 
 1. `npm install ` - install the required dependencies
 2. `npm run dev` - start the development server
-3. Open http://localhost:3000 in your browser
+3. Open http://localhost:5173 in your browser
 
 4. <a href="/CONTRIBUTING.md">Contribute</a>
 
-5. Stage your changes and commit
+5. Run `npx prettier --write .` to indent the code properly.
+
+6. Stage your changes and commit
 
 ```css
+
 git add -a
 
 git commit -m "<your_commit_message>"
@@ -82,7 +86,7 @@ git push -u origin <your_branch_name>
 
 Before making pull requests please look at our contributing guidelines (coming soon). You can start working on the issue which are mentioned in issues section. Just drop a comment before working on the issue. Thank you!
 
-#  License & Copyright
+# License & Copyright
 
 The code is this repo is licensed under the <a href="https://github.com/GDSC-IIIT-Kalyani/rebase-01/blob/master/LICENSE">MIT License</a>. Feel free to use and share it as per the license.
 
@@ -91,7 +95,6 @@ The code is this repo is licensed under the <a href="https://github.com/GDSC-III
 <a href="https://github.com/GDSC-IIIT-Kalyani/rebase-01/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=GDSC-IIIT-Kalyani/rebase-01" />
 </a>
-
 
 <div align="center">
  <img src="https://forthebadge.com/images/badges/built-with-love.svg" alt="love" />
