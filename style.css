@@ -455,7 +455,7 @@ img {
 /*----------------------TIMELINE ENDING---------------------------------------*/
 
 /* ----------------------------------Tracks css------------------------------------------- */
-.hero_heading {
+/* .hero_heading {
   position: absolute;
   color: #e82338;
   text-shadow: 0.21875rem 0.30625rem 0 #000;
@@ -922,7 +922,7 @@ body,
     font-size: 2.7rem;
     transform: translate(-230%, -50%);
   }
-}
+} */
 
 /* ---------------------------------------- ABOUT SECTION BEGINS HERE - By Iman --------------------------------------------- */
 #about-text {
