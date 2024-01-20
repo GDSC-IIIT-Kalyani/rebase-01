@@ -151,12 +151,12 @@ nav ul li a {
   font-family: 'Japanese Robot';
 }
 
-.heading {
+/* .heading {
   -webkit-text-stroke: 0.3rem black;
   text-shadow:
     -0.6rem 0.6rem black,
     -1.2rem 1.2rem #e32735;
-}
+} */
 
 .head-one {
   -webkit-text-stroke: 0.3rem black;
