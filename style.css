@@ -151,13 +151,6 @@ nav ul li a {
   font-family: 'Japanese Robot';
 }
 
-/* .heading {
-  -webkit-text-stroke: 0.3rem black;
-  text-shadow:
-    -0.6rem 0.6rem black,
-    -1.2rem 1.2rem #e32735;
-} */
-
 .head-one {
   -webkit-text-stroke: 0.3rem black;
   text-shadow: -0.6rem 0.6rem black;
@@ -197,13 +190,13 @@ nav ul li a {
   display: grid;
 }
 
-.head {
+.heading {
   color: #e82338;
   font-family: 'Bangers';
-  font-size: 8vw;
-  -webkit-text-stroke-width: 0.26vw;
-  -webkit-text-stroke-color: black;
-  text-shadow: 0.35vw 0.25vw 0px black;
+  font-size: 7rem;
+  text-shadow: 4px 4px black;
+  -webkit-text-stroke: 4px black;
+  /* text-shadow: 0.35vw 0.25vw 0px black; */
   text-align: start;
   letter-spacing: 0.3vw;
   /* margin: 0rem 0rem 0rem 3rem; */
@@ -243,7 +236,8 @@ img {
     font-size: 3vw;
     -webkit-text-stroke: 0.2.3vw #000;
   }
-  .head {
+  .heading {
+    -webkit-text-stroke-width: 0.6vw;
     font-size: 14vw;
     text-align: start;
     /* margin: 0rem 0rem 0rem 1rem; */
@@ -1076,6 +1070,10 @@ body,
     top: 62px;
   }
 
+  .heading {
+    font-size: 6rem;
+  }
+
   #main-paragraph {
     top: 164px;
   }
@@ -1087,6 +1085,10 @@ body,
 
 @media (max-width: 1293px) {
   #about-text {
+    font-size: 5.5rem;
+  }
+
+  .heading {
     font-size: 5.5rem;
   }
 
@@ -1110,6 +1112,10 @@ body,
     font-size: 5rem;
   }
 
+  .heading {
+    font-size: 5rem;
+  }
+
   #zero-one {
     font-size: 2.5rem;
   }
@@ -1123,6 +1129,10 @@ body,
   #about-text {
     font-size: 4.5rem;
     top: 49px;
+  }
+
+  .heading {
+    font-size: 4.5rem;
   }
 
   #zero-one {
@@ -1142,6 +1152,10 @@ body,
   #about-text {
     font-size: 4rem;
     top: 49px;
+  }
+
+  .heading {
+    font-size: 4rem;
   }
 
   #zero-one {
@@ -1168,6 +1182,10 @@ body,
     top: 49px;
   }
 
+  .heading {
+    font-size: 3.5rem;
+  }
+
   #zero-one {
     font-size: 1.8rem;
   }
@@ -1186,6 +1204,10 @@ body,
   #about-text {
     font-size: 3rem;
     top: 49px;
+  }
+
+  .heading {
+    font-size: 3rem;
   }
 
   #zero-one {
@@ -1245,6 +1267,10 @@ body,
   }
 
   #about-text {
+    -webkit-text-stroke: 2px black;
+  }
+  
+  .heading {
     -webkit-text-stroke: 2px black;
   }
 
@@ -1890,6 +1916,29 @@ body {
   }
   .moon {
     max-width: 9.58vw;
+  }
+}
+
+/* PAGE NUMBER */
+
+.page-number {
+  -webkit-text-stroke: #000 4px;
+}
+
+@media (max-width: 768px) {
+  .page-number {
+    -webkit-text-stroke: #000 2px;
+  }
+}
+
+/* SPONSORS */
+.star {
+  animation: twinkle 2s infinite ease-in-out;
+}
+
+@keyframes twinkle {
+  50% {
+    transform: scale(0.8);
   }
 }
 

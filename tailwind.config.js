@@ -9,7 +9,8 @@ export default {
     fontFamily: {
       'bangers': ['Bangers'],
       'kosugi': ['Kosugi\\ Maru'],
-      'anime': ['Anime\\ Ace']
+      'anime': ['Anime\\ Ace'],
+      'japan': ['Japanese\\ Robot'],
     },
     extend: {
       screens: {
