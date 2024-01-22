@@ -191,26 +191,44 @@
 
 
     <!-- About section begins here - By Iman-->
-    <div id="about">
-      <p id="about-text">About</p>
-      <p id="zero-one">01.</p>
-      <p id="main-paragraph">
-        Unleash your creativity and be part of Rebase&lt;01&gt;, a month-long
-        online hackathon extravaganza! Compete across various categories,
-        showcasing your skills, creativity, and teamwork alongside peers who
-        share your passion. This is your chance to challenge yourself, learn
-        new skills, and create remarkable projects that can make a real
-        difference. Don't miss this unparalleled opportunity to rebase your
-        talent and elevate your skills to a new level. Step into
-        Rebase&lt;01&gt;—where creativity has no bounds.
-      </p>
-      <div id="images">
-        <img src="public/Group 243.svg" alt="GreenBG" id="GreenBG" />
-        <img id="Group39" src="public/Group 39.svg" alt="Comp Pic" />
+    <div id="about" class="h-fit w-full">
+      <!-- <p id="about-text">About</p>
+      <p id="zero-one">01.</p> -->
+
+
+      <!-- Desktop About text and 01 -->
+      <div class="relative flex justify-between">
+        <h1 class="absolute timeline-heading sm:text-[4rem] md:text-[6rem] top-[7vw] left-[4vw] extrasmall:hidden">About</h1>
+        <h1 class="absolute font-japan text-2xl text-[#E82338] md:text-5xl page-number self-center left-[73vw] lg:left-[63vw] xl:left-[65vw] wid1:left-[63vw] wid2:left-[61vw] top-[3vw] extrasmall:hidden">01.</h1>
       </div>
-      <div id="mobile-images">
-        <img id="GreenBGMobile" src="public/Group 28.svg" alt="GreenBGMobile" />
-        <img src="public/Group 244.svg" alt="Mobile Comp" id="MobileComp" />
+
+      <!-- Mobile About text and 01 -->
+      <div class="text-[#E82338] flex justify-between mb-12 mt-12 md:mb-0 sm:hidden">
+          <h1 class="timeline-heading sm:text-[4rem] md:text-[6rem] text-[5rem] sm:hidden">About</h1>
+          <h1 class="font-japan text-2xl md:text-5xl page-number self-center sm:hidden">01.</h1>
+      </div>
+
+      <div class="relative">
+        <div class="absolute top-[23vw] lg:top-[17vw] w-[30%] left-[7vw] text-[1vw] extrasmall:z-10 extrasmall:text-[2vw] extrasmall:w-[60%] extrasmall:top-[10vw] extrasmall:left-[10vw]">
+          <p id="main-paragraph">
+            Unleash your creativity and be part of Rebase&lt;01&gt;, a month-long
+            online hackathon extravaganza! Compete across various categories,
+            showcasing your skills, creativity, and teamwork alongside peers who
+            share your passion. This is your chance to challenge yourself, learn
+            new skills, and create remarkable projects that can make a real
+            difference. Don't miss this unparalleled opportunity to rebase your
+            talent and elevate your skills to a new level. Step into
+            Rebase&lt;01&gt;—where creativity has no bounds.
+          </p>
+        </div>
+      </div>
+      <div id="images">
+        <img src="public/Group 243.svg" alt="GreenBG" id="GreenBG" class="extrasmall:hidden"/>
+        <img id="Group39" src="public/Group 39.svg" alt="Comp Pic" class="extrasmall:hidden"/>
+      </div>
+      <div id="mobile-images" class="relative sm:hidden w-[80%] left-[8vw] h-fit">
+        <img id="GreenBGMobile" src="public/Group 28.svg" alt="GreenBGMobile" class="relative w-full left-[-5vw]"/>
+        <img src="public/Group 244.svg" alt="Mobile Comp" id="MobileComp" class="relative w-full top-[-8vw] left-[5vw]"/>
       </div>
     </div>
     <!-- About section ends here -->

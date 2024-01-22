@@ -948,13 +948,13 @@ body,
   color: #e82338;
   text-shadow: 5px 5px black;
   -webkit-text-stroke: 4px black;
-  font-size: 7rem;
+  /* font-size: 7rem;
   position: absolute;
   left: 17%;
   width: 13%;
   margin-top: 0%;
   margin-bottom: 0%;
-  top: 62px;
+  top: 62px; */
   z-index: 1;
 }
 
@@ -973,25 +973,24 @@ body,
 
 #main-paragraph {
   font-family: 'Roboto Mono', sans-serif;
-  margin-top: 0%;
+  /* margin-top: 0%;
   margin-bottom: 0%;
-  width: 25%;
+  width: 25%; */
   color: white;
   z-index: 1;
-  position: relative;
+  /* position: relative;
   top: 200px;
-  left: 19%;
-  line-height: 1.5;
-  font-size: 0.9rem;
+  left: 19%; */
+  /* font-size: 0.9rem; */
 }
 
 #images {
   display: flex;
   flex-direction: row;
-  left: 14%;
-  position: relative;
-  width: 38%;
-  top: -382px;
+  /* left: 14%;
+  position: relative; */
+  width: 54%;
+  /* top: -382px; */
 }
 
 #Group39 {
@@ -1000,14 +999,14 @@ body,
   top: 3rem;
 }
 
-#about {
+/* #about {
   width: 97vw;
   position: relative;
   height: 46vw;
   left: -20%;
-}
+} */
 
-@media screen and (min-width: 1985px) {
+/* @media screen and (min-width: 1985px) {
   #zero-one {
     left: 76%;
   }
@@ -1415,7 +1414,7 @@ body,
   #mobile-images {
     top: -4px;
   }
-}
+} */
 /* ---------------------------------------- ABOUT SECTION ENDS HERE --------------------------------------------- */
 
 /* ---------------------------------------- SPONSORS SECTION STARTS HERE --------------------------------------------- */
