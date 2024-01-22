@@ -77,7 +77,6 @@ html {
 /* write vannila css below */
 
 /* ---------------------------------------- NAVBAR -------------------------------------- */
-
 nav::after {
   content: '';
   border: 0.188rem solid black;
