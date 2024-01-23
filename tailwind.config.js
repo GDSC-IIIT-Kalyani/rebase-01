@@ -19,6 +19,8 @@ export default {
         exsm: { max: '460px' },
         verysmall: { max: '475px' },
         mobwid : {max : '768px'},
+        wid1 : {min : '1847px'},
+        wid2 : {min : '1908px'} 
       },
     },
   },
