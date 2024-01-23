@@ -132,7 +132,7 @@
       <!-- Hero Text, Images and socials -->
       <div id="compland" class="-space-y-20 md:-space-y-24 lg:-space-y-28 xl:-space-y-32 2xl:-space-y-40">
         <!-- Hero Text -->
-        <img class="" src="/public/herotext.png" alt="">
+        <img class="z-50" src="/public/herotext.png" alt="">
         <div class="flex justify-center -space-x-6 md:-space-x-7 lg:-space-x-8 xl:-space-x-10 2xl:-space-x-12">
           <div class="relative">
             <img class="w-full" src="/public/socialcomp.png" alt="">
@@ -152,11 +152,15 @@
               </ul>
             </div>
           </div>
-          <div class="-z-50 relative">
-            <img class="w-full" src="/public/landingcomp.png" alt="">
+          <div class="relative">
+            <img class="w-full -z-50 relative" src="/public/landingcomp.png" alt="">
             <img id="mascot"
               class="absolute bottom-[-2%] right-[32%] sm:w-[13rem] sm:h-[14rem] md:w-[16rem] md:h-[17rem] lg:w-[20rem] lg:h-[19rem] xl:w-[21rem] xl:h-[22rem] 2xl:w-[28rem] 2xl:h-[30rem] animate-[mascot_5s_infinite_ease-in-out]"
               src="/public/mascot comp.svg" alt="">
+            <a href="https://rebase01.devfolio.co" target="_blank" class="">
+              <div class="absolute bottom-[15%] bg-[#DF2B2E] px-4 xl:px-8 py-2 border-2 md:border-4 border-black font-anime sm:text-base xl:text-2xl 2xl:text-3xl italic translate-x-2 translate-y-2">REGISTER</div>
+              <div class="absolute bottom-[15%] bg-[#f4e1b9] px-4 xl:px-8 py-2 border-2 md:border-4 border-black font-anime sm:text-base xl:text-2xl 2xl:text-3xl italic hover:translate-x-1 hover:translate-y-1 transition-transform">REGISTER</div>
+            </a>
           </div>
         </div>
       </div>
@@ -166,8 +170,12 @@
         <!-- mobile landing image -->
         <img id="moblandimg" class="w-full mx-auto" src="/public/heroimgmob.svg" alt="">
         <img id="mascot"
-          class="absolute bottom-[10%] right-[15%] w-[70%] h-[70%] animate-[mascot_5s_infinite_ease-in-out]"
+          class="absolute bottom-[10%] right-[25%] w-[60%] h-[60%] animate-[mascot_5s_infinite_ease-in-out]"
           src="/public/mascot comp.svg" alt="">
+        <a href="https://rebase01.devfolio.co" target="_blank" class="">
+          <div class="absolute top-[25%] right-0 bg-[#DF2B2E] exsm:px-4 px-6 py-2 border-4 border-black font-anime sm:text-base xl:text-2xl 2xl:text-3xl italic translate-x-2 translate-y-2">REGISTER</div>
+          <div class="absolute top-[25%] right-0 bg-[#f4e1b9] exsm:px-4 px-6 py-2 border-4 border-black font-anime sm:text-base xl:text-2xl 2xl:text-3xl italic">REGISTER</div>
+        </a>
         <!-- div for socials for mobile screen -->
         <div class="mobsocials relative">
           <img id="moblanding" class=" w-[80%] sm:hidden mx-auto" src="/public/socialmob.png" alt="">
@@ -191,26 +199,44 @@
 
 
     <!-- About section begins here - By Iman-->
-    <div id="about">
-      <p id="about-text">About</p>
-      <p id="zero-one">01.</p>
-      <p id="main-paragraph">
-        Unleash your creativity and be part of Rebase&lt;01&gt;, a month-long
-        online hackathon extravaganza! Compete across various categories,
-        showcasing your skills, creativity, and teamwork alongside peers who
-        share your passion. This is your chance to challenge yourself, learn
-        new skills, and create remarkable projects that can make a real
-        difference. Don't miss this unparalleled opportunity to rebase your
-        talent and elevate your skills to a new level. Step into
-        Rebase&lt;01&gt;—where creativity has no bounds.
-      </p>
-      <div id="images">
-        <img src="public/Group 243.svg" alt="GreenBG" id="GreenBG" />
-        <img id="Group39" src="public/Group 39.svg" alt="Comp Pic" />
+    <div id="about" class="h-fit w-full">
+      <!-- <p id="about-text">About</p>
+      <p id="zero-one">01.</p> -->
+
+
+      <!-- Desktop About text and 01 -->
+      <div class="relative flex justify-between">
+        <h1 class="absolute timeline-heading sm:text-[4rem] md:text-[6rem] top-[7vw] left-[4vw] extrasmall:hidden">About</h1>
+        <h1 class="absolute font-japan text-2xl text-[#E82338] md:text-5xl page-number self-center left-[73vw] lg:left-[63vw] xl:left-[65vw] wid1:left-[63vw] wid2:left-[61vw] top-[3vw] extrasmall:hidden">01.</h1>
       </div>
-      <div id="mobile-images">
-        <img id="GreenBGMobile" src="public/Group 28.svg" alt="GreenBGMobile" />
-        <img src="public/Group 244.svg" alt="Mobile Comp" id="MobileComp" />
+
+      <!-- Mobile About text and 01 -->
+      <div class="text-[#E82338] flex justify-between mb-12 mt-12 md:mb-0 sm:hidden">
+          <h1 class="timeline-heading sm:text-[4rem] md:text-[6rem] text-[5rem] sm:hidden">About</h1>
+          <h1 class="font-japan text-2xl md:text-5xl page-number self-center sm:hidden">01.</h1>
+      </div>
+
+      <div class="relative">
+        <div class="absolute top-[23vw] lg:top-[17vw] w-[30%] left-[7vw] text-[1vw] extrasmall:z-10 extrasmall:text-[2vw] extrasmall:w-[60%] extrasmall:top-[10vw] extrasmall:left-[10vw]">
+          <p id="main-paragraph">
+            Unleash your creativity and be part of Rebase&lt;01&gt;, a month-long
+            online hackathon extravaganza! Compete across various categories,
+            showcasing your skills, creativity, and teamwork alongside peers who
+            share your passion. This is your chance to challenge yourself, learn
+            new skills, and create remarkable projects that can make a real
+            difference. Don't miss this unparalleled opportunity to rebase your
+            talent and elevate your skills to a new level. Step into
+            Rebase&lt;01&gt;—where creativity has no bounds.
+          </p>
+        </div>
+      </div>
+      <div id="images">
+        <img src="public/Group 243.svg" alt="GreenBG" id="GreenBG" class="extrasmall:hidden"/>
+        <img id="Group39" src="public/Group 39.svg" alt="Comp Pic" class="extrasmall:hidden"/>
+      </div>
+      <div id="mobile-images" class="relative sm:hidden w-[80%] left-[8vw] h-fit">
+        <img id="GreenBGMobile" src="public/Group 28.svg" alt="GreenBGMobile" class="relative w-full left-[-5vw]"/>
+        <img src="public/Group 244.svg" alt="Mobile Comp" id="MobileComp" class="relative w-full top-[-8vw] left-[5vw]"/>
       </div>
     </div>
     <!-- About section ends here -->
@@ -1158,13 +1184,17 @@
           RESOURCES:
         </h1>
         <p
+          class="text-white text-lg extrasmall:text-xl sm:text-2xl tracking-wider text-nowrap md:text-xl kosigu lg:text-2xl xl:text-3xl pt-2">
+          <a target="_blank" href="https://forms.gle/D3hZnH3KWzeWP8Qd8" class="hover:text-gray-500 transition">Become an Evangelist</a>
+        </p>
+        <p
           class="text-white text-lg extrasmall:text-xl sm:text-2xl tracking-wider text-nowrap md:text-xl kosigu lg:text-2xl xl:text-3xl  pt-2">
           <a target="_blank" href="https://drive.google.com/file/d/1p_Krw76j8a-6HpmuUzVysqdGz0Muo3yf/view?usp=sharing"
             class="hover:text-gray-500 transition">Sponsorship Brochure</a>
         </p>
         <p
           class="text-white text-lg extrasmall:text-xl sm:text-2xl tracking-wider text-nowrap md:text-xl kosigu lg:text-2xl xl:text-3xl  pt-2">
-          <a href="https://devfolio.co/code-of-conduct" class="hover:text-gray-500 transition">Code Of Conduct</a>
+          <a target="_blank" href="https://devfolio.co/code-of-conduct" class="hover:text-gray-500 transition">Code Of Conduct</a>
         </p>
          <p
           class="text-white text-lg extrasmall:text-xl sm:text-2xl tracking-wider text-nowrap md:text-xl kosigu lg:text-2xl xl:text-3xl pt-2 ">
