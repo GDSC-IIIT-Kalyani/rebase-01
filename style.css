@@ -1935,6 +1935,42 @@ body {
   animation: twinkle 2s infinite ease-in-out;
 }
 
+.star_1 {
+  animation: twinkle 1.5s ease-in-out infinite;
+}
+
+.star_2 {
+  animation: twinkle 1.3s ease-in-out infinite;
+}
+
+.star_3 {
+  animation: twinkle 1.2s ease-in-out infinite;
+}
+
+.star_4 {
+  animation: twinkle 1s ease-in-out infinite;
+}
+
+.star_5 {
+  animation: twinkle 2s ease-in-out infinite;
+}
+
+.star_6 {
+  animation: twinkle 2.5s ease-in-out infinite;
+}
+
+.star_7 {
+  animation: twinkle 1.7s ease-in-out infinite;
+}
+
+.star_8 {
+  animation: twinkle 1.5s ease-in-out infinite;
+}
+
+.star_9 {
+  animation: twinkle 1.3s ease-in-out infinite;
+}
+
 @keyframes twinkle {
   50% {
     transform: scale(0.8);
