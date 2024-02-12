@@ -11,6 +11,8 @@ export default {
       'kosugi': ['Kosugi\\ Maru'],
       'anime': ['Anime\\ Ace'],
       'japan': ['Japanese\\ Robot'],
+      'press': ['Press\\ Start\\ 2P'],
+      'mono': ['Roboto\\ Mono'],
     },
     extend: {
       screens: {
