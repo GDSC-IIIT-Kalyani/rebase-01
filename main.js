@@ -1,59 +1,82 @@
-// Tracks js
-document.addEventListener('DOMContentLoaded', function () {
-  const bodyText = document.querySelector('.body-text');
+// tracks section js
+// multiline string in js
+const tracks = [
+`Rebase&lt;01&gt; is a month-long online hackathon extravaganza where you can compete across various categories,
+showcasing your skills, creativity, and teamwork alongside peers who share your passion. This is your chance
+to challenge yourself, learn new skills, and create remarkable projects that can make a real difference. Don't
+miss this unparalleled opportunity to rebase your talent and elevate your skills to a new level. Step into
+Rebase&lt;01&gt;—where creativity has no bounds. Rebase&lt;01&gt; is a month-long online hackathon extravaganza where you can compete across various categories,
+showcasing your skills, creativity, and teamwork alongside peers who share your passion. This is your chance
+to challenge yourself, learn new skills, and create remarkable projects that can make a real difference. Don't
+miss this unparalleled opportunity to rebase your talent and elevate your skills to a new level. Step into
+Rebase&lt;01&gt;—where creativity has no bounds.`, 
 
-  function updateBodyText(track) {
-    switch (track) {
-      case 'track1':
-        bodyText.innerHTML = '<h5>Body text for Track 1</h5>';
-        break;
-      case 'track2':
-        bodyText.innerHTML = '<h5>Body text for Track 2</h5>';
-        break;
-      case 'track3':
-        bodyText.innerHTML = '<h5>Body text for Track 3</h5>';
-        break;
-      case 'track4':
-        bodyText.innerHTML = '<h5>Body text for Track 4</h5>';
-        break;
-      case 'track5':
-        bodyText.innerHTML = '<h5>Body text for Track 5</h5>';
-        break;
-      case 'track6':
-        bodyText.innerHTML = '<h5>Body text for Track 6</h5>';
-        break;
-      default:
-        bodyText.innerHTML = '<h5>Lorem ipsum dolor sit amet</h5>';
-    }
+`Rebase&lt;02&gt; is a month-long online hackathon extravaganza where you can compete across various categories,This is your chance
+to challenge yourself, learn new skills, and create remarkable projects that can make a real difference. Don't
+miss this unparalleled opportunity to rebase your talent and elevate your skills to a new level. Step into
+Rebase&lt;01&gt;—where creativity has no bounds. Rebase&lt;01&gt; is a month-long online hackathon extravaganza where you can compete across various categories,
+showcasing your skills, creativity, and teamwork alongside peers who share your passion. This is your chance
+to challenge yourself, learn new skills, and create remarkable projects that can make a real difference. Don't
+miss this unparalleled opportunity to rebase your talent and elevate your skills to a new level. Step into
+Rebase&lt;01&gt;—where creativity has no bounds.`,
+
+`Rebase&lt;03&gt; is a month-long online hackathon extravaganza where you can compete across various categories,This is your chance
+to challenge yourself, learn new skills, and create remarkable projects that can make a real difference. Don't
+miss this unparalleled opportunity to rebase your talent and elevate your skills to a new level. Step into
+Rebase&lt;01&gt;—where creativity has no bounds. Rebase&lt;01&gt; is a month-long online hackathon extravaganza where you can compete across various categories,
+showcasing your skills, creativity, and teamwork alongside peers who share your passion. This is your chance
+to challenge yourself, learn new skills, and create remarkable projects that can make a real difference. Don't
+miss this unparalleled opportunity to rebase your talent and elevate your skills to a new level. Step into
+Rebase&lt;01&gt;—where creativity has no bounds.`,
+
+`Rebase&lt;04&gt; is a month-long online hackathon extravaganza where you can compete across various categories,This is your chance
+to challenge yourself, learn new skills, and create remarkable projects that can make a real difference. Don't
+miss this unparalleled opportunity to rebase your talent and elevate your skills to a new level. Step into
+Rebase&lt;01&gt;—where creativity has no bounds. Rebase&lt;01&gt; is a month-long online hackathon extravaganza where you can compete across various categories,
+showcasing your skills, creativity, and teamwork alongside peers who share your passion. This is your chance
+to challenge yourself, learn new skills, and create remarkable projects that can make a real difference. Don't
+miss this unparalleled opportunity to rebase your talent and elevate your skills to a new level. Step into
+Rebase&lt;01&gt;—where creativity has no bounds.`,
+
+`Rebase&lt;05&gt; is a month-long online hackathon extravaganza where you can compete across various categories,This is your chance
+to challenge yourself, learn new skills, and create remarkable projects that can make a real difference. Don't
+miss this unparalleled opportunity to rebase your talent and elevate your skills to a new level. Step into
+Rebase&lt;01&gt;—where creativity has no bounds. Rebase&lt;01&gt; is a month-long online hackathon extravaganza where you can compete across various categories,
+showcasing your skills, creativity, and teamwork alongside peers who share your passion. This is your chance
+to challenge yourself, learn new skills, and create remarkable projects that can make a real difference. Don't
+miss this unparalleled opportunity to rebase your talent and elevate your skills to a new level. Step into
+Rebase&lt;01&gt;—where creativity has no bounds.`,
+
+`Rebase&lt;06&gt; is a month-long online hackathon extravaganza where you can compete across various categories,This is your chance
+to challenge yourself, learn new skills, and create remarkable projects that can make a real difference. Don't
+miss this unparalleled opportunity to rebase your talent and elevate your skills to a new level. Step into
+Rebase&lt;01&gt;—where creativity has no bounds. Rebase&lt;01&gt; is a month-long online hackathon extravaganza where you can compete across various categories,
+showcasing your skills, creativity, and teamwork alongside peers who share your passion. This is your chance
+to challenge yourself, learn new skills, and create remarkable projects that can make a real difference. Don't
+miss this unparalleled opportunity to rebase your talent and elevate your skills to a new level. Step into
+Rebase&lt;01&gt;—where creativity has no bounds.`,
+
+`Rebase&lt;07&gt; is a month-long online hackathon extravaganza where you can compete across various categories,This is your chance
+to challenge yourself, learn new skills, and create remarkable projects that can make a real difference. Don't
+miss this unparalleled opportunity to rebase your talent and elevate your skills to a new level. Step into
+Rebase&lt;01&gt;—where creativity has no bounds. Rebase&lt;01&gt; is a month-long online hackathon extravaganza where you can compete across various categories,
+showcasing your skills, creativity, and teamwork alongside peers who share your passion. This is your chance
+to challenge yourself, learn new skills, and create remarkable projects that can make a real difference. Don't
+miss this unparalleled opportunity to rebase your talent and elevate your skills to a new level. Step into
+Rebase&lt;01&gt;—where creativity has no bounds.`,
+]
+
+function addListenersandUpdateText() {
+  const tracksTopics = document.getElementsByClassName('tracks-topics').item(0).children;
+  const tracksText = document.querySelector('.tracks-body-text');
+  for (let i = 0; i < tracksTopics.length; i++) {
+    tracksTopics[i].addEventListener('click', function() {
+      tracksText.innerHTML = tracks[i];
+      console.log(tracks[i]);
+      console.log(tracksText);
+    });
   }
+  console.log(tracksTopics);
+}
 
-  const dropdown1 = document.querySelector('.button1');
-  const dropdown2 = document.querySelector('.button2');
-  const dropdown3 = document.querySelector('.button3');
-  const dropdown4 = document.querySelector('.button4');
-  const dropdown5 = document.querySelector('.button5');
-  const dropdown6 = document.querySelector('.button6');
-
-
-  dropdown1.addEventListener('click', function () {
-    updateBodyText('track1');
-  });
-
-  dropdown2.addEventListener('click', function () {
-    updateBodyText('track2');
-  });
-
-  dropdown3.addEventListener('click', function () {
-    updateBodyText('track3');
-  });
-
-  dropdown4.addEventListener('click', function () {
-    updateBodyText('track4');
-  });
-  dropdown5.addEventListener('click', function () {
-    updateBodyText('track5');
-  });
-  dropdown6.addEventListener('click', function () {
-    updateBodyText('track6');
-  });
-});
+document.addEventListener('DOMContentLoaded', addListenersandUpdateText);
