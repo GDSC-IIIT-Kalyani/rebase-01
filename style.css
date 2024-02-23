@@ -21,7 +21,7 @@
 *::-webkit-scrollbar {
   width: 25px;
   height: 100px;
-	background-color: #00000000;
+	background-color: transparent;
 }
 
 .tracks-body-text::-webkit-scrollbar
@@ -42,7 +42,7 @@
   height: 30rem;
 }
 
-@media screen and (max-width: 639px){
+@media screen and (max-width: 768px){
   .tracks-topics {
     height: 24rem;
   }
