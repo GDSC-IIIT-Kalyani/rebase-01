@@ -18,7 +18,7 @@
 
 
 
-*::-webkit-scrollbar {
+.tracks-topics::-webkit-scrollbar-thumb, .tracks-body-text::-webkit-scrollbar-thumb {
   width: 25px;
   height: 100px;
 	background-color: transparent;
@@ -60,7 +60,7 @@
   }
 }
 
-*::-webkit-scrollbar-thumb
+.tracks-topics::-webkit-scrollbar-thumb, .tracks-body-text::-webkit-scrollbar-thumb
 {
   background-color: #f4e1b9;
 	background-image: url('./public/scrollbar-image.svg');
