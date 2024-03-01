@@ -39,12 +39,12 @@
 }
 
 .tracks-topics {
-  height: 30rem;
+  height: 20rem;
 }
 
 @media screen and (max-width: 768px){
   .tracks-topics {
-    height: 24rem;
+    height: 16rem;
   }
 }
 
@@ -56,7 +56,7 @@
     border-right: 2px black solid;
   }
   .tracks-topics {
-    height: 35rem;
+    height: 25rem;
   }
 }
 

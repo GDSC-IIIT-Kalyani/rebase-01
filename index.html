@@ -454,30 +454,34 @@
     <!-- -----------------------Tracks section---------------------- -->
 
     <!-- Tracks -->
-    <section id="tracks" class="h-fit w-full sm:mt-[4rem] md:mt-[0rem] 2xl:mt-[6rem] mb-20 xl:mb-40">
+    <section id="tracks" class="h-fit w-full sm:mt-[4rem] md:mt-[0rem] 2xl:mt-[6rem] mb-20 xl:mb-24 relative">
+      <!-- <img class="star absolute w-20 md:top-32 md:right-20 xl:-top-32 xl:left-[25%] 2xl:top-0 2xl:left-0" src="./public/star.svg"></img> -->
+      <!-- <img class="star absolute w-20 md:-top-32 md:right-20 xl:right-[25%] xl:-bottom-[22rem] 2xl:-bottom-72 z-[10000]" src="./public/star.svg"></img> -->
       <div class="text-[#E82338] flex justify-between">
         <h1 class="timeline-heading sm:text-[4rem] md:text-[6rem]">TRACKS</h1>
         <h1 class="font-japan text-2xl md:text-5xl page-number self-center">03.</h1>
       </div>
-      <div class="flex flex-col xl:flex-row xl:justify-center gap-x-4 md:px-20 xl:px-0">
-        <div class="border-black border-4 text-white mt-10 xl:mt-0 xl:translate-y-20 md:w-fit">
+      <div class="flex flex-col xl:flex-row xl:justify-center gap-x-4 md:px-20 xl:px-0 relative">
+        <div class="border-black border-4 text-white mt-10 xl:mt-0 xl:translate-y-40 md:w-fit h-fit">
           <div class="flex bg-black w-auto h-8 m-2 justify-end items-center text-[#F4E1B9]">
             <div class="border-2 border-[#f1debc] w-6 h-6 mr-1 text-center text-bold">?</div>
           </div>
           <div class="scrollbar-wrapper md:w-fit relative border-2 border-r-0 border-black m-2 bg-[#48727E]">
+            <!-- todo: change css height when ading new tracks -->
             <div class="tracks-scrollbar absolute top-0 right-0 w-[20px] h-full bg-[#f4e1b9] border-2 border-y-0 border-black"></div>
             <div class="tracks-topics w-full md:w-[25rem] font-press overflow-y-scroll relative">
               <a class="h-16 md:h-20 cursor-pointer border border-r-0 border-black flex px-4 md:px-6 justify-between items-center text-sm hover:text-black lg:text-lg lg:hover:text-xl transition-all">AI/ML<img src="./public/tracks-arrow.svg" alt="" class="w-4 sm:w-6"></a>
-              <a class="h-16 md:h-20 cursor-pointer border border-r-0 border-black flex px-4 md:px-6 justify-between items-center text-sm hover:text-black lg:text-lg lg:hover:text-xl transition-all">MEDICINE<img src="./public/tracks-arrow.svg" alt="" class="w-4 sm:w-6"></a>
-              <a class="h-16 md:h-20 cursor-pointer border border-r-0 border-black flex px-4 md:px-6 justify-between items-center text-sm hover:text-black lg:text-lg lg:hover:text-xl transition-all">SUSTAINABILITY<img src="./public/tracks-arrow.svg" alt="" class="w-4 sm:w-6"></a>
-              <a class="h-16 md:h-20 cursor-pointer border border-r-0 border-black flex px-4 md:px-6 justify-between items-center text-sm hover:text-black lg:text-lg lg:hover:text-xl transition-all">BLOCKCHAIN<img src="./public/tracks-arrow.svg" alt="" class="w-4 sm:w-6"></a>
-              <a class="h-16 md:h-20 cursor-pointer border border-r-0 border-black flex px-4 md:px-6 justify-between items-center text-sm hover:text-black lg:text-lg lg:hover:text-xl transition-all">OPEN INNOVATION<img src="./public/tracks-arrow.svg" alt="" class="ml-4 w-4 sm:ml-0 sm:w-6"></a>
-              <a class="h-16 md:h-20 cursor-pointer border border-r-0 border-black flex px-4 md:px-6 justify-between items-center text-sm hover:text-black lg:text-lg lg:hover:text-xl transition-all">EDUCATION<img src="./public/tracks-arrow.svg" alt="" class="w-4 sm:w-6"></a>
               <a class="h-16 md:h-20 cursor-pointer border border-r-0 border-black flex px-4 md:px-6 justify-between items-center text-sm hover:text-black lg:text-lg lg:hover:text-xl transition-all">HARDWARE<img src="./public/tracks-arrow.svg" alt="" class="w-4 sm:w-6"></a>
+              <a class="h-16 md:h-20 cursor-pointer border border-r-0 border-black flex px-4 md:px-6 justify-between items-center text-sm hover:text-black lg:text-lg lg:hover:text-xl transition-all">BLOCKCHAIN<img src="./public/tracks-arrow.svg" alt="" class="w-4 sm:w-6"></a>
+              <a class="h-16 md:h-20 cursor-pointer border border-r-0 border-black flex px-4 md:px-6 justify-between items-center text-sm hover:text-black lg:text-lg lg:hover:text-xl transition-all">SUSTAINABILITY<img src="./public/tracks-arrow.svg" alt="" class="w-4 sm:w-6"></a>
+              <a class="h-16 md:h-20 cursor-pointer border border-r-0 border-black flex px-4 md:px-6 justify-between items-center text-sm hover:text-black lg:text-lg lg:hover:text-xl transition-all">OPEN INNOVATION<img src="./public/tracks-arrow.svg" alt="" class="ml-4 w-4 sm:ml-0 sm:w-6"></a>
             </div>
           </div>
         </div>
-        <div class="place-self-end self-end xl:place-self-center xl:self-center border-4 border-black mt-5 xl:mt-0 2xl:-translate-y-20">
+        <div class="place-self-end self-end xl:place-self-center xl:self-center border-4 border-black mt-5 xl:mt-0 2xl:-translate-y-20 relative">
+          <div class="mascot hidden md:block absolute -right-20 lg:-right-40 bottom-0 z-[1000]">
+            <img src='public/mascot-tracks.svg' alt="" class="panda w-40 lg:w-60">
+          </div>
           <div class="flex bg-black w-auto h-8 m-2 justify-between items-center text-[#F4E1B9] font-bold ">
             <div class="ml-2 font-press font-thin">Tracks.txt</div>
             <div class="flex">
@@ -488,15 +492,9 @@
           <div class="scrollbar-wrapper m-2 bg-[#0F283F] border-2 border-r-0 border-black relative">
             <div class="tracks-scrollbar absolute top-0 right-0 w-[20px] h-full bg-[#f4e1b9] border-2 border-y-0 border-black"></div>
             <div class="tracks-body-text relative text-md sm:text-xl text-white h-[50vh] w-full md:w-[25rem] overflow-y-scroll p-4 md:p-8 pr-4 font-mono transition-all">
-              Rebase&lt;01&gt; is a month-long online hackathon extravaganza where you can compete across various categories,
-              showcasing your skills, creativity, and teamwork alongside peers who share your passion. This is your chance
-              to challenge yourself, learn new skills, and create remarkable projects that can make a real difference. Don't
-              miss this unparalleled opportunity to rebase your talent and elevate your skills to a new level. Step into
-              Rebase&lt;01&gt;—where creativity has no bounds. Rebase&lt;01&gt; is a month-long online hackathon extravaganza where you can compete across various categories,
-              showcasing your skills, creativity, and teamwork alongside peers who share your passion. This is your chance
-              to challenge yourself, learn new skills, and create remarkable projects that can make a real difference. Don't
-              miss this unparalleled opportunity to rebase your talent and elevate your skills to a new level. Step into
-              Rebase&lt;01&gt;—where creativity has no bounds.
+              Calling all AI-curious cats and coding wizards! ‍ Rebase&lt;01&gt;'s Machine Learning (ML) track is your chance to dive into the world of artificial intelligence, whether you're a total newbie or a seasoned pro.
+                Think robots that see, chatbots that chat, and algorithms that predict the next big thing? That's ML!
+                See the world like a computer and build apps that can analyze medical images, power self-driving cars, or even identify your dog's breed in a photo.  (Think: next-level Instagram filters!). Talk to machines (and have them understand you!): Create chatbots that answer customer questions, translate languages in real time, or even write creative content. (Imagine: a chatty virtual assistant who gets your jokes!)Predict the future (sort of): Build models that guess what might happen next, like stock market trends, what movie you'll love next, or even the weather forecast. (No guarantees on winning the lottery though!)
             </div>
           </div>
         </div>
