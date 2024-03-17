@@ -1,6 +1,9 @@
 // tracks section js
 // multiline string in js
 const tracks = [
+// Devpod
+`Best Use of <a href="https://devpod.sh" target="_blank" class="text-gray-400 hover:text-white">Devpod</a><br><br>Build a project that uses DevPod to win prizes and certifications, and stand a chance to be featured on the Loft blog. Each member of the winning team gets a T-shirt.<br>.<br>.<br>.<br>.<br>.<br>.<br>
+Best Share of <a href="https://devpod.sh" target="_blank" class="text-gray-400 hover:text-white">Devpod</a><br><br>Share about how you’re using DevPod on your socials, or write a blog post and win accessories. The winner of the best blog or social post gets Wireless In-Ear Earbuds.`,
 // AI/ML
 `Calling all AI-curious cats and coding wizards! ‍ Rebase&lt;01&gt;'s Machine Learning (ML) track is your chance to dive into the world of artificial intelligence, whether you're a total newbie or a seasoned pro.
 Think robots that see, chatbots that chat, and algorithms that predict the next big thing.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>you get a cool swag kit ;)`, 
