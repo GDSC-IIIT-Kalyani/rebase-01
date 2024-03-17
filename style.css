@@ -238,6 +238,19 @@ nav ul li a {
   transform: scale(1.2);
 }
 /* --------------------- PRIZES SECTION BEGINING------------------------------- */
+.card:hover .inner {
+  transform: rotateY(-180deg);
+}
+
+.front, .back {
+  -webkit-backface-visibility: hidden; /*Safari*/
+  backface-visibility: hidden;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
 .stack {
   display: grid;
 }
