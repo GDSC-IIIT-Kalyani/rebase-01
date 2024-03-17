@@ -243,6 +243,7 @@ nav ul li a {
 }
 
 .front, .back {
+  transform: rotateX(0deg);
   -webkit-backface-visibility: hidden; /*Safari*/
   backface-visibility: hidden;
 }
